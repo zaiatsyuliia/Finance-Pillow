@@ -1,0 +1,11 @@
+﻿@using Financeillow.Data.Models
+
+@model IEnumerable<User>
+
+@foreach (var user in Model)
+{
+    <div>
+        <strong>@user.Login</strong>
+        <p>@user.IdUser</p>
+    </div>
+}

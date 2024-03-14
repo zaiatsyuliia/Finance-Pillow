@@ -1,4 +1,6 @@
 ﻿using Financeillow.Data;
+using Financeillow.Data.Models;
+using Financeillow.Data.Repositories;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
@@ -20,6 +22,8 @@ namespace Financeillow
         {
             services.AddDbContext<MyContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IUserRepository, UserRepository>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

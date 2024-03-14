@@ -27,7 +27,6 @@
   <ItemGroup>
     <Folder Include="Businness\Interfaces\" />
     <Folder Include="Businness\Services\" />
-    <Folder Include="Data\Models\" />
   </ItemGroup>
 
 </Project>

@@ -1,12 +1,10 @@
-﻿using Financeillow.Presentation.Models;
+﻿using Financeillow.Data.Models;
 
 namespace Financeillow.Data.Repositories
 {
     public interface IUserRepository
     {
-        Task<IEnumerable<Users>> GetAllAsync();
-
-        Task<Users> GetByIdAsync(int id);
+        Task<IEnumerable<User>> GetAllAsync();
+        Task<User> GetByIdAsync(int id);
     }
-
 }

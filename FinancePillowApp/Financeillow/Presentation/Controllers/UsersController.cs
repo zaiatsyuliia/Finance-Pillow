@@ -15,7 +15,7 @@ namespace Financeillow.Presentation.Controllers
         public async Task<IActionResult> Index()
         {
             var users = await _userRepository.GetAllAsync();
-            return View("/Views/Home/Index.cshtml");
+            return View(users);
         }
     }
 
