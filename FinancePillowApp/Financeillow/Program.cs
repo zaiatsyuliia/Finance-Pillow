@@ -1,6 +1,7 @@
-using Financeillow.Data.Repositories;
 using Financeillow.Data;
+using Financeillow.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,12 @@ builder.Services.AddDbContext<MyContext>(options =>
 
 // Repository registration
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(configuration)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 

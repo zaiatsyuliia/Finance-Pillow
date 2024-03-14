@@ -1,7 +1,6 @@
 using Financeillow.Presentation.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using Serilog;
 
 namespace Financeillow.Controllers
 {
@@ -16,17 +15,20 @@ namespace Financeillow.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Main page called");
             return View();
         }
 
         public IActionResult Privacy()
         {
+            _logger.LogInformation("Privacy page called");
             return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
+            _logger.LogError("Error on Home View");
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }

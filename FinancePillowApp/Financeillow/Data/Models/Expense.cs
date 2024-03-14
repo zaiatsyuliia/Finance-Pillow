@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Financeillow.Data.Models;
+﻿namespace Financeillow.Data.Models;
 
 public partial class Expense
 {

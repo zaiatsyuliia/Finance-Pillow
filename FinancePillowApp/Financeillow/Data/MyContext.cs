@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Financeillow.Data.Models;
+﻿using Financeillow.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Financeillow.Data
