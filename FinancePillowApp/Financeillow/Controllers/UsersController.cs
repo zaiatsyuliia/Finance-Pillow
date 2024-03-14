@@ -1,11 +1,12 @@
-﻿using Financeillow.Data.Repositories;
-using Microsoft.AspNetCore.Mvc;
-
-namespace Financeillow.Presentation.Controllers
+﻿namespace Financeillow.Controllers
 {
+    using Financeillow.Data.Repositories;
+    using Financeillow.Data.Models;
+    using Microsoft.AspNetCore.Mvc;
+
     public class UsersController : Controller
     {
-        private readonly IUserRepository _userRepository;
+        private IUserRepository _userRepository;
 
         public UsersController(IUserRepository userRepository)
         {
@@ -17,6 +18,10 @@ namespace Financeillow.Presentation.Controllers
             var users = await _userRepository.GetAllAsync();
             return View(users);
         }
-    }
 
+        public IActionResult Test()
+        {
+            return View();
+        }
+    }
 }

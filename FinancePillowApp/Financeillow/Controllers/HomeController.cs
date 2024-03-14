@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using Serilog;
 
-namespace Financeillow.Presentation.Controllers
+namespace Financeillow.Controllers
 {
     public class HomeController : Controller
     {

@@ -1,8 +1,8 @@
-﻿using Financeillow.Data.Models;
-using Microsoft.EntityFrameworkCore;
-
-namespace Financeillow.Data.Repositories
+﻿namespace Financeillow.Data.Repositories
 {
+    using Financeillow.Data.Models;
+    using Microsoft.EntityFrameworkCore;
+
     public class UserRepository : IUserRepository
     {
         private readonly MyContext _context;
