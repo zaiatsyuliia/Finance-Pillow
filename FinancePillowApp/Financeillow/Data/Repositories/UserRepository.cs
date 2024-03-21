@@ -1,25 +1,24 @@
-﻿namespace Financeillow.Data.Repositories
+﻿using Financeillow.Data;
+using Financeillow.Data.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace Financeillow.Data.Repositories;
+public class UserRepository : IUserRepository
 {
-    using Financeillow.Data.Models;
-    using Microsoft.EntityFrameworkCore;
+    private readonly MyContext _context;
 
-    public class UserRepository : IUserRepository
+    public UserRepository(MyContext context)
     {
-        private readonly MyContext _context;
+        _context = context;
+    }
 
-        public UserRepository(MyContext context)
-        {
-            _context = context;
-        }
+    public async Task<IEnumerable<User>> GetAllAsync()
+    {
+        return await _context.Users.ToListAsync();
+    }
 
-        public async Task<IEnumerable<User>> GetAllAsync()
-        {
-            return await _context.Users.ToListAsync();
-        }
-
-        public async Task<User> GetByIdAsync(int id)
-        {
-            return await _context.Users.FindAsync(id);
-        }
+    public async Task<User> GetByIdAsync(int id)
+    {
+        return await _context.Users.FindAsync(id);
     }
 }
