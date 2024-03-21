@@ -23,7 +23,7 @@ builder.Services.AddDbContext<MyContext>(options =>
     options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
 // Repository registration
-builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(configuration)

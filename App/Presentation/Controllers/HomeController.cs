@@ -7,9 +7,9 @@ namespace Presentation.Controllers
 {
     public class HomeController : Controller
     {
-        private UserRepository _userRepository;
+        private IUserRepository _userRepository;
 
-        public HomeController(UserRepository userRepository)
+        public HomeController(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
