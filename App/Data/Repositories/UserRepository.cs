@@ -1,8 +1,8 @@
-﻿using Data;
-using Data.Models;
+﻿using Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Data.Repositories;
+
 public class UserRepository
 {
     private readonly MyContext _context;

@@ -47,6 +47,8 @@ public partial class MyContext : DbContext
 
     public virtual DbSet<UserBudget> UserBudgets { get; set; }
 
+    public DbSet<HistoryEntry> History { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=FinancePillow;User Id=postgres;Password=postgres;");
@@ -298,6 +300,20 @@ public partial class MyContext : DbContext
 
             entity.Property(e => e.Budget).HasColumnName("budget");
             entity.Property(e => e.IdUser).HasColumnName("id_user");
+        });
+
+        modelBuilder.Entity<HistoryEntry>(entity =>
+        {
+            entity.HasNoKey(); // As the view doesn't have a primary key
+
+            entity.ToView("history"); // Specify the view name
+
+            // Map properties to columns
+            entity.Property(e => e.TransactionType).HasColumnName("transaction_type");
+            entity.Property(e => e.UserId).HasColumnName("id_user");
+            entity.Property(e => e.Category).HasColumnName("category");
+            entity.Property(e => e.Time).HasColumnName("time");
+            entity.Property(e => e.Sum).HasColumnName("sum");
         });
 
         OnModelCreatingPartial(modelBuilder);
