@@ -3,43 +3,32 @@
   "WorkspaceRootPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\repositories\\statisticsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\repositories\\historyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\repositories\\budgetrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\globalsuppressions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F55545C-4064-43C8-A94E-3345B35A6A68}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\logic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7F55545C-4064-43C8-A94E-3345B35A6A68}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\wwwroot\\js\\transactionform.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:wwwroot\\js\\transactionform.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\models\\history.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,163 +37,111 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 477,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 459,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GlobalSuppressions.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\GlobalSuppressions.cs",
-              "RelativeDocumentMoniker": "..\\Data\\GlobalSuppressions.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\GlobalSuppressions.cs",
-              "RelativeToolTip": "..\\Data\\GlobalSuppressions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Models\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\HomeViewModel.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Models\\HomeViewModel.cs",
+              "RelativeToolTip": "Models\\HomeViewModel.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAA2wBAAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:54:40.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Context.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Context.cs",
-              "RelativeDocumentMoniker": "..\\Data\\Context.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Context.cs",
-              "RelativeToolTip": "..\\Data\\Context.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:52:53.589Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:52:34.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BudgetRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\BudgetRepository.cs",
-              "RelativeDocumentMoniker": "..\\Data\\Repositories\\BudgetRepository.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\BudgetRepository.cs",
-              "RelativeToolTip": "..\\Data\\Repositories\\BudgetRepository.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAvwCEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:52:25.29Z",
+              "WhenOpened": "2024-03-22T01:48:04.844Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "HistoryRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\HistoryRepository.cs",
-              "RelativeDocumentMoniker": "..\\Data\\Repositories\\HistoryRepository.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\HistoryRepository.cs",
-              "RelativeToolTip": "..\\Data\\Repositories\\HistoryRepository.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAIA4wBoAAAAgAAAA",
+              "Title": "Context.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Context.cs",
+              "RelativeDocumentMoniker": "..\\Data\\Context.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Context.cs",
+              "RelativeToolTip": "..\\Data\\Context.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwFYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:52:23.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StatisticsRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\StatisticsRepository.cs",
-              "RelativeDocumentMoniker": "..\\Data\\Repositories\\StatisticsRepository.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\StatisticsRepository.cs",
-              "RelativeToolTip": "..\\Data\\Repositories\\StatisticsRepository.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAnwEQAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:52:20.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TransactionRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\TransactionRepository.cs",
-              "RelativeDocumentMoniker": "..\\Data\\Repositories\\TransactionRepository.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\TransactionRepository.cs",
-              "RelativeToolTip": "..\\Data\\Repositories\\TransactionRepository.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAewBgAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:52:17.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\Data\\Repositories\\UserRepository.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "..\\Data\\Repositories\\UserRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAMwAwAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:51:46.273Z",
+              "WhenOpened": "2024-03-22T01:31:20.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\TransactionService.cs",
+              "RelativeDocumentMoniker": "..\\Business\\TransactionService.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Business\\TransactionService.cs",
+              "RelativeToolTip": "..\\Business\\TransactionService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-20T17:35:26.25Z",
+              "WhenOpened": "2024-03-22T00:54:49.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAEAtwD0AAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-21T23:52:31.874Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Logic.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\Logic.cs",
-              "RelativeDocumentMoniker": "..\\Business\\Logic.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Business\\Logic.cs",
-              "RelativeToolTip": "..\\Business\\Logic.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "History.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Models\\History.cs",
+              "RelativeDocumentMoniker": "..\\Data\\Models\\History.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Models\\History.cs",
+              "RelativeToolTip": "..\\Data\\Models\\History.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA6wA0AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-21T23:43:58.824Z",
+              "WhenOpened": "2024-03-22T02:19:08.791Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Data.csproj",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj",
-              "RelativeDocumentMoniker": "..\\Data\\Data.csproj",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj",
-              "RelativeToolTip": "..\\Data\\Data.csproj",
+              "DocumentIndex": 7,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "..\\Data\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Data\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "..\\Data\\Repositories\\CategoryRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-03-21T18:45:02.543Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:33:24.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "transactionForm.js",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\transactionForm.js",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",
+              "RelativeToolTip": "wwwroot\\js\\transactionForm.js",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAUwAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-03-22T01:02:30.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwBsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-22T00:02:08.381Z",
               "EditorCaption": ""
             }
           ]

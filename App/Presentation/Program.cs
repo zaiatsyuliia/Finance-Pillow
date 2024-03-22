@@ -1,3 +1,5 @@
+using Business.Services;
+using Business;
 using Data;
 using Data.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -23,7 +25,17 @@ builder.Services.AddDbContext<Context>(options =>
     options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
 // Repository registration
+// Register repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserBudgetRepository, UserBudgetRepository>();
+builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
+builder.Services.AddScoped<IHistoryRepository, HistoryRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+// Register services
+builder.Services.AddScoped<BudgetService>();
+builder.Services.AddScoped<TransactionService>();
+builder.Services.AddScoped<CategoryService>();
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(configuration)

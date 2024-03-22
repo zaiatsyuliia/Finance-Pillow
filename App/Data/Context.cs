@@ -114,11 +114,11 @@ public partial class Context : DbContext
 
         modelBuilder.Entity<ExpenseCategory>(entity =>
         {
-            entity.HasKey(e => e.IdCategoryExpense).HasName("expense_category_pkey");
+            entity.HasKey(e => e.IdCategory).HasName("expense_category_pkey");
 
             entity.ToTable("expense_category");
 
-            entity.Property(e => e.IdCategoryExpense).HasColumnName("id_category_expense");
+            entity.Property(e => e.IdCategory).HasColumnName("id_category_expense");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
                 .HasColumnName("name");
@@ -249,11 +249,11 @@ public partial class Context : DbContext
 
         modelBuilder.Entity<IncomeCategory>(entity =>
         {
-            entity.HasKey(e => e.IdCategoryIncome).HasName("income_category_pkey");
+            entity.HasKey(e => e.IdCategory).HasName("income_category_pkey");
 
             entity.ToTable("income_category");
 
-            entity.Property(e => e.IdCategoryIncome).HasColumnName("id_category_income");
+            entity.Property(e => e.IdCategory).HasColumnName("id_category_income");
             entity.Property(e => e.Name)
                 .HasMaxLength(255)
                 .HasColumnName("name");

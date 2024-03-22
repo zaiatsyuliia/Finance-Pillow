@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3P7jgvza/uBpLeikbNxI/2IX+CodF04TdsNtahWzrPQ=",
+  "Hash": "//oTb4u3fSiPC8fqhSPgS47Tkm59HkHyNuxFHnvGa6M=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "js/transactionForm.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\transactionForm.js"
     },
     {
       "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

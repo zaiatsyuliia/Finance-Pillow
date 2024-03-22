@@ -25,16 +25,6 @@ namespace Business.Services
             return await _userBudgetRepository.GetUserBudgetAsync(userId);
         }
 
-        public async Task AddExpenseAsync(int userId, int categoryId, DateTime time, double sum)
-        {
-            await _transactionRepository.AddExpenseAsync(userId, categoryId, time, sum);
-        }
-
-        public async Task AddIncomeAsync(int userId, int categoryId, DateTime time, double sum)
-        {
-            await _transactionRepository.AddIncomeAsync(userId, categoryId, time, sum);
-        }
-
         public async Task<List<History>> GetUserHistoryAsync(int userId)
         {
             return await _historyRepository.GetUserHistoryAsync(userId);

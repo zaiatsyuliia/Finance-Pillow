@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",
+      "PackagePath": "staticwebassets\\js\\transactionForm.js"
+    },
+    {
       "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

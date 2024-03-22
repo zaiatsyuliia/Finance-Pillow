@@ -1,11 +1,63 @@
-﻿@using Data.Models
+﻿@model Presentation.Models.HomeViewModel
 
-@model IEnumerable<User>
+<div>
+    <h2>Budget: @Model.UserBudget</h2>
+</div>
 
-@foreach (var user in Model)
-{
-    <div>
-        <strong>@user.Login</strong>
-        <p>@user.IdUser</p>
-    </div>
-}
+<div>
+    <h2>Add Transaction</h2>
+    <form id="transactionForm" asp-action="AddTransaction" method="post">
+        <div>
+            <label for="type">Type:</label>
+            <select name="Type" id="type">
+                <option value="" selected>Select Type</option>
+                <option value="Income">Income</option>
+                <option value="Expense">Expense</option>
+            </select>
+        </div>
+        <div>
+            <label for="categoryId">Category:</label>
+            <select name="CategoryId" id="categoryId">
+                <option value="" selected>Select Category</option>
+                @foreach (var category in Model.IncomeCategories)
+                {
+                    <option value="@category.IdCategory" >@category.Name</option>
+                }
+            </select>
+        </div>
+        <div>
+            <label for="sum">Sum:</label>
+            <input type="number" name="Sum" id="sum" step="1" required>
+        </div>
+        <button type="submit">Add Transaction</button>
+    </form>
+</div>
+
+<div>
+    <h2>Transaction History</h2>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Category</th>
+            <th>Sum</th>
+            <th>Time</th>
+        </tr>
+        @foreach (var transaction in Model.UserHistory)
+        {
+            <tr>
+                <td>@transaction.TransactionType</td>
+                <td>@transaction.Category</td>
+                <td>@transaction.Sum</td>
+                <td>@transaction.Time</td>
+            </tr>
+        }
+    </table>
+</div>
+
+
+<script>
+    var incomeCategories = @Html.Raw(Json.Serialize(Model.IncomeCategories));
+    var expenseCategories = @Html.Raw(Json.Serialize(Model.ExpenseCategories));
+</script>
+
+<script src="~/js/transactionForm.js"></script>
