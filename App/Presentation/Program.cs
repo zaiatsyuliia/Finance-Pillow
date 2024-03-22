@@ -19,7 +19,7 @@ var configuration = new ConfigurationBuilder()
 builder.Services.AddSingleton(configuration);
 
 // Database context configuration
-builder.Services.AddDbContext<MyContext>(options =>
+builder.Services.AddDbContext<Context>(options =>
     options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
 // Repository registration

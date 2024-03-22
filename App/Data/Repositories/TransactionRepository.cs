@@ -1,10 +1,10 @@
-﻿using Data.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Data.Models;
+using Microsoft.EntityFrameworkCore;
 namespace Data.Repositories;
 
 public interface ITransactionRepository
@@ -15,9 +15,9 @@ public interface ITransactionRepository
 
 public class TransactionRepository : ITransactionRepository
 {
-    private readonly MyContext _context;
+    private readonly Context _context;
 
-    public TransactionRepository(MyContext context)
+    public TransactionRepository(Context context)
     {
         _context = context;
     }

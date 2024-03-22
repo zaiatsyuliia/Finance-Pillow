@@ -13,4 +13,3 @@ D:\Projects\FinancePillow\App\Data\obj\Debug\net8.0\ref\Data.dll
 D:\Projects\FinancePillow\App\Data\bin\Debug\net8.0\Data.runtimeconfig.json
 D:\Projects\FinancePillow\App\Data\obj\Debug\net8.0\Data.genruntimeconfig.cache
 D:\Projects\FinancePillow\App\Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
-D:\Projects\FinancePillow\App\Data\bin\Debug\net8.0\appsettings.json

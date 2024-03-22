@@ -14,4 +14,3 @@ D:\Projects\FinancePillow\App\Business\obj\Debug\net8.0\Business.dll
 D:\Projects\FinancePillow\App\Business\obj\Debug\net8.0\refint\Business.dll
 D:\Projects\FinancePillow\App\Business\obj\Debug\net8.0\Business.pdb
 D:\Projects\FinancePillow\App\Business\obj\Debug\net8.0\ref\Business.dll
-D:\Projects\FinancePillow\App\Business\bin\Debug\net8.0\appsettings.json

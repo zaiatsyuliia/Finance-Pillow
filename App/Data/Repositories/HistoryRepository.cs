@@ -10,22 +10,22 @@ namespace Data.Repositories;
 
 public interface IHistoryRepository
 {
-    Task<List<HistoryEntry>> GetUserHistoryAsync(int userId);
+    Task<List<History>> GetUserHistoryAsync(int userId);
 }
 
 public class HistoryRepository : IHistoryRepository
 {
-    private readonly MyContext _context;
+    private readonly Context _context;
 
-    public HistoryRepository(MyContext context)
+    public HistoryRepository(Context context)
     {
         _context = context;
     }
 
-    public async Task<List<HistoryEntry>> GetUserHistoryAsync(int userId)
+    public async Task<List<History>> GetUserHistoryAsync(int userId)
     {
-        var userHistory = await _context.History
-            .Where(h => h.UserId == userId)
+        var userHistory = await _context.Histories
+            .Where(h => h.IdUser == userId)
             .OrderByDescending(h => h.Time)
             .ToListAsync();
 

@@ -15,9 +15,9 @@ public interface IUserBudgetRepository
 
 public class UserBudgetRepository : IUserBudgetRepository
 {
-    private readonly MyContext _context;
+    private readonly Context _context;
 
-    public UserBudgetRepository(MyContext context)
+    public UserBudgetRepository(Context context)
     {
         _context = context;
     }
@@ -32,4 +32,3 @@ public class UserBudgetRepository : IUserBudgetRepository
         return userBudget;
     }
 }
-
