@@ -1746,19 +1746,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bluel\\.nuget\\packages\\": {}
+    "C:\\Users\\HP ENVY x360\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\FinancePillow\\App\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\bluel\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\obj\\",
+      "projectPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Presentation\\Presentation.csproj",
+      "packagesPath": "C:\\Users\\HP ENVY x360\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bluel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP ENVY x360\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1772,11 +1772,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj": {
-              "projectPath": "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj"
+            "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Business\\Business.csproj": {
+              "projectPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Business\\Business.csproj"
             },
-            "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj": {
-              "projectPath": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj"
+            "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Data\\Data.csproj"
             }
           }
         }
