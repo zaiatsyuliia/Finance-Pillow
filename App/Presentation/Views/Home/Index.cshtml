@@ -1,10 +1,12 @@
 ﻿@model Presentation.Models.HomeViewModel
 
+<link rel="stylesheet" href="~/css/homeStyle.css" />
+
 <div>
     <h2>Budget: @Model.UserBudget</h2>
 </div>
 
-<div>
+<div id="addTransactionDiv">
     <h2>Add Transaction</h2>
     <form id="transactionForm" asp-action="AddTransaction" method="post">
         <div>
@@ -21,7 +23,7 @@
                 <option value="" selected>Select Category</option>
                 @foreach (var category in Model.IncomeCategories)
                 {
-                    <option value="@category.IdCategory" >@category.Name</option>
+                    <option value="@category.IdCategory">@category.Name</option>
                 }
             </select>
         </div>
@@ -33,7 +35,7 @@
     </form>
 </div>
 
-<div>
+<div id="transactionHistoryDiv">
     <h2>Transaction History</h2>
     <table>
         <tr>
@@ -44,7 +46,7 @@
         </tr>
         @foreach (var transaction in Model.UserHistory)
         {
-            <tr>
+            <tr class="@transaction.TransactionType.ToLower()">
                 <td>@transaction.TransactionType</td>
                 <td>@transaction.Category</td>
                 <td>@transaction.Sum</td>
