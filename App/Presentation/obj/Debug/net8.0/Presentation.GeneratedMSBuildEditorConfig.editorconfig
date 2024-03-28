@@ -9,43 +9,47 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Presentation
 build_property.RootNamespace = Presentation
-build_property.ProjectDir = C:\Users\HP ENVY x360\Source\Repos\Finance-Pillow\App\Presentation\
+build_property.ProjectDir = D:\Projects\FinancePillow\App\Presentation\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\HP ENVY x360\Source\Repos\Finance-Pillow\App\Presentation
+build_property.MSBuildProjectDirectory = D:\Projects\FinancePillow\App\Presentation
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/HP ENVY x360/Source/Repos/Finance-Pillow/App/Presentation/Views/Home/Expenses.cshtml]
+[D:/Projects/FinancePillow/App/Presentation/Views/Home/Expenses.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFeHBlbnNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP ENVY x360/Source/Repos/Finance-Pillow/App/Presentation/Views/Home/Index.cshtml]
+[D:/Projects/FinancePillow/App/Presentation/Views/Home/Incomes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmNvbWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/FinancePillow/App/Presentation/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP ENVY x360/Source/Repos/Finance-Pillow/App/Presentation/Views/Home/Privacy.cshtml]
+[D:/Projects/FinancePillow/App/Presentation/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP ENVY x360/Source/Repos/Finance-Pillow/App/Presentation/Views/Shared/Error.cshtml]
+[D:/Projects/FinancePillow/App/Presentation/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP ENVY x360/Source/Repos/Finance-Pillow/App/Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Projects/FinancePillow/App/Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP ENVY x360/Source/Repos/Finance-Pillow/App/Presentation/Views/_ViewImports.cshtml]
+[D:/Projects/FinancePillow/App/Presentation/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP ENVY x360/Source/Repos/Finance-Pillow/App/Presentation/Views/_ViewStart.cshtml]
+[D:/Projects/FinancePillow/App/Presentation/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/HP ENVY x360/Source/Repos/Finance-Pillow/App/Presentation/Views/Shared/_Layout.cshtml]
+[D:/Projects/FinancePillow/App/Presentation/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fhvjq1vla1

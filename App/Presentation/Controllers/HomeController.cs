@@ -1,11 +1,10 @@
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using Business;
-using Business.Services;
-using Data.Models;
+using Business.Service;
 using Microsoft.AspNetCore.Mvc;
 using Presentation.Models;
+using Business.DTO;
 
 namespace Presentation.Controllers
 {
@@ -37,8 +36,8 @@ namespace Presentation.Controllers
 
             var model = new HomeViewModel
             {
-                UserBudget = userBudget?.ToString("C") ?? "Budget not available",
-                UserHistory = userHistory,
+                Budget = userBudget,
+                History = userHistory,
                 ExpenseCategories = expenseCategories,
                 IncomeCategories = incomeCategories
             };
@@ -50,21 +49,23 @@ namespace Presentation.Controllers
         public async Task<IActionResult> AddTransaction(TransactionViewModel model)
         {
             var userId = 1;
-            // Log model values to the console
-            Console.WriteLine($"UserId: {userId}");
-            Console.WriteLine($"Type: {model.Type}");
-            Console.WriteLine($"CategoryId: {model.CategoryId}");
-            Console.WriteLine($"Sum: {model.Sum}");
 
             if (ModelState.IsValid)
             {
+                var transactionDto = new TransactionDto
+                {
+                    Type = model.Type,
+                    CategoryId = model.CategoryId,
+                    Sum = model.Sum
+                };
+
                 if (model.Type == "Expense")
                 {
-                    await _transactionService.AddExpenseAsync(userId, model.CategoryId, model.Sum);
+                    await _transactionService.AddExpenseAsync(userId, transactionDto);
                 }
                 else if (model.Type == "Income")
                 {
-                    await _transactionService.AddIncomeAsync(userId, model.CategoryId, model.Sum);
+                    await _transactionService.AddIncomeAsync(userId, transactionDto);
                 }
                 else
                 {
@@ -88,7 +89,31 @@ namespace Presentation.Controllers
             var yearMonthly = await _statisticsService.GetExpenseYearMonthlyAsync(userId);
             var yearTotal = await _statisticsService.GetExpenseYearTotalAsync(userId);
 
-            var model = new ExpensesViewModel
+            var model = new StatisticsViewModel
+            {
+                MonthDaily = monthDaily,
+                MonthTotal = monthTotal,
+                SixMonthsMonthly = sixMonthsMonthly,
+                SixMonthsTotal = sixMonthsTotal,
+                YearMonthly = yearMonthly,
+                YearTotal = yearTotal
+            };
+
+            return View(model);
+        }
+
+        public async Task<IActionResult> Incomes()
+        {
+            var userId = 1; // Replace with actual user ID
+
+            var monthDaily = await _statisticsService.GetIncomeMonthDailyAsync(userId);
+            var monthTotal = await _statisticsService.GetIncomeMonthTotalAsync(userId);
+            var sixMonthsMonthly = await _statisticsService.GetIncome6MonthsMonthlyAsync(userId);
+            var sixMonthsTotal = await _statisticsService.GetIncome6MonthsTotalAsync(userId);
+            var yearMonthly = await _statisticsService.GetIncomeYearMonthlyAsync(userId);
+            var yearTotal = await _statisticsService.GetIncomeYearTotalAsync(userId);
+
+            var model = new StatisticsViewModel
             {
                 MonthDaily = monthDaily,
                 MonthTotal = monthTotal,

@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="~/css/homeStyle.css" />
 
 <div>
-    <h2>Budget: @Model.UserBudget</h2>
+    <h2>Budget: @Model.Budget.Sum</h2>
 </div>
 
 <div id="addTransactionDiv">
@@ -12,15 +12,13 @@
         <div>
             <label for="type">Type:</label>
             <select name="Type" id="type">
-                <option value="" selected>Select Type</option>
-                <option value="Income">Income</option>
+                <option value="Income" selected>Income</option>
                 <option value="Expense">Expense</option>
             </select>
         </div>
         <div>
             <label for="categoryId">Category:</label>
             <select name="CategoryId" id="categoryId">
-                <option value="" selected>Select Category</option>
                 @foreach (var category in Model.IncomeCategories)
                 {
                     <option value="@category.IdCategory">@category.Name</option>
@@ -44,13 +42,13 @@
             <th>Sum</th>
             <th>Time</th>
         </tr>
-        @foreach (var transaction in Model.UserHistory)
+        @foreach (var transaction in Model.History)
         {
             <tr class="@transaction.TransactionType.ToLower()">
                 <td>@transaction.TransactionType</td>
                 <td>@transaction.Category</td>
                 <td>@transaction.Sum</td>
-                <td>@transaction.Time</td>
+                <td>@transaction.Date.ToString("dd.MM.yyyy")</td>
             </tr>
         }
     </table>

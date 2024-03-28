@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
+using System.Transactions;
 using Data.Models;
 using Data.Repositories;
+using Business.DTO;
 
-namespace Business.Services;
+namespace Business.Service;
 
 public class TransactionService
 {
@@ -14,17 +16,17 @@ public class TransactionService
         _transactionRepository = transactionRepository;
     }
 
-    public async Task AddExpenseAsync(int userId, int categoryId, double sum)
+    public async Task AddExpenseAsync(int userId, TransactionDto dto)
     {
         DateTime currentTime = DateTime.Now;
 
-        await _transactionRepository.AddExpenseAsync(userId, categoryId, currentTime, sum);
+        await _transactionRepository.AddExpenseAsync(userId, dto.CategoryId, currentTime, dto.Sum);
     }
 
-    public async Task AddIncomeAsync(int userId, int categoryId, double sum)
+    public async Task AddIncomeAsync(int userId, TransactionDto dto)
     {
         DateTime currentTime = DateTime.Now;
 
-        await _transactionRepository.AddIncomeAsync(userId, categoryId, currentTime, sum);
+        await _transactionRepository.AddIncomeAsync(userId, dto.CategoryId, currentTime, dto.Sum);
     }
 }

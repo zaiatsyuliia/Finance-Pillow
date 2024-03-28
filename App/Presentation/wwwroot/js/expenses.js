@@ -1,10 +1,4 @@
 ﻿console.log('Expense script loaded.');
-// expenses.js
-
-// Function to draw a column chart for monthly expenses
-console.log('Month Daily:', monthDaily);
-console.log('Six Month Monthly:', sixMonthMonthly);
-console.log('Year Monthly:', yearMonthly);
 
 google.charts.load('current', { packages: ['corechart'] });
 google.charts.setOnLoadCallback(function () {

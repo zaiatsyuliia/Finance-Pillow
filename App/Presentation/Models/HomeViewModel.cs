@@ -1,16 +1,17 @@
 ﻿using Data.Models;
+using Business.DTO;
 
 namespace Presentation.Models;
 
 public class HomeViewModel
 {
-    public string UserBudget { get; set; }
+    public BudgetDto Budget { get; set; }
 
-    public List<History> UserHistory { get; set; }
+    public List<HistoryDto> History { get; set; }
 
-    public List<ExpenseCategory> ExpenseCategories { get; set; }
+    public List<CategoryDto> ExpenseCategories { get; set; }
 
-    public List<IncomeCategory> IncomeCategories { get; set; }
+    public List<CategoryDto> IncomeCategories { get; set; }
 }
 
 public class TransactionViewModel

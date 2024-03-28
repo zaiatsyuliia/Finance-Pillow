@@ -9,6 +9,7 @@
       "Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.3",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.3",
           "Microsoft.EntityFrameworkCore.Design": "8.0.3",
           "Npgsql": "8.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2",

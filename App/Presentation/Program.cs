@@ -1,10 +1,9 @@
-using Business.Services;
-using Business;
 using Data;
 using Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Data.Models;
+using Business.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 

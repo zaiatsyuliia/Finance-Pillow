@@ -1,28 +1,235 @@
-﻿@model Presentation.Models.ExpensesViewModel
+﻿@model Presentation.Models.StatisticsViewModel
 <title>@ViewData["Title"]</title>
 
-<div id="month" style="width: 900px; height: 300px;">
-
-
-</div>
-<div id="monthtotal" style="width: 900px; height: 300px;">
-</div>
-<div id="6month" style="width: 900px; height: 300px;">
-
-</div>
-<div id="6monthtotal" style="width: 900px; height: 300px;">
+<div id="dualChart" style="display: flex; justify-content: space-between;">
+    <div id="columnChartForMonthDaily" style="width: 60%; height: 500px;"></div>
+    <div id="pieChartForMonthTotal" style="width: 45%; height: 500px;"></div>
 </div>
 
-<div id="year" style="width: 900px; height: 300px;">
-</div>
-<div id="yearttotal" style="width: 900px; height: 300px;">
+<div id="dualChart1" style="display: flex; justify-content: space-between;">
+    <div id="columnChartForSixMonthsMonthly" style="width: 60%; height: 500px;"></div>
+    <div id="pieChartForSixMonthsTotal" style="width: 45%; height: 500px;"></div>
 </div>
 
-<script>
-    var monthDaily = @Html.Raw(Json.Serialize(Model.MonthDaily));
-    var sixMonthMonthly = @Html.Raw(Json.Serialize(Model.SixMonthsMonthly));
-    var yearMonthly = @Html.Raw(Json.Serialize(Model.YearMonthly));
-</script>
+<div id="dualChart2" style="display: flex; justify-content: space-between;">
+    <div id="columnChartForYearMonthly" style="width: 60%; height: 500px;"></div>
+    <div id="pieChartForYearTotal" style="width: 45%; height: 500px;"></div>
+</div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="~/js/expenses.js"></script> <!-- Reference your JavaScript file -->
+
+<script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+        drawColumnChartForMonthDaily();
+        drawPieChartForMonthTotal();
+        drawColumnChartForSixMonthsMonthly();
+        drawPieChartForSixMonthsTotal();
+        drawColumnChartForYearMonthly();
+        drawPieChartForYearTotal();
+    }
+
+    function drawColumnChartForMonthDaily() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'Day');
+
+        var categories = Array.from(new Set(@Html.Raw(Json.Serialize(Model.MonthDaily.Select(e => e.CategoryName)))));
+
+        categories.forEach(function (category) {
+            data.addColumn('number', category);
+        });
+
+        var expenses = @Html.Raw(Json.Serialize(Model.MonthDaily));
+
+        var groupedExpenses = {};
+        expenses.forEach(function (expense) {
+            var day = new Date(expense.day).toDateString();
+            if (!groupedExpenses[day]) {
+                groupedExpenses[day] = {};
+                categories.forEach(function (category) {
+                    groupedExpenses[day][category] = 0;
+                });
+            }
+            groupedExpenses[day][expense.categoryName] += expense.totalSum;
+        });
+
+        for (var day in groupedExpenses) {
+            var row = [new Date(day)];
+            categories.forEach(function (category) {
+                row.push(groupedExpenses[day][category]);
+            });
+            data.addRow(row);
+        }
+
+        var options = {
+            title: 'Expense Month Daily',
+            hAxis: {
+                title: 'Day',
+                format: 'dd MMM yyyy'
+            },
+            vAxis: {
+                title: 'Total Expense'
+            },
+            isStacked: true
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('columnChartForMonthDaily'));
+        chart.draw(data, options);
+    }
+
+    function drawPieChartForMonthTotal() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Category');
+        data.addColumn('number', 'Total Sum');
+
+        var expenses = @Html.Raw(Json.Serialize(Model.MonthTotal));
+
+        expenses.forEach(function (expense) {
+            data.addRow([expense.categoryName, expense.totalSum]);
+        });
+
+        var options = {
+            title: 'Expense Month Total by Category',
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('pieChartForMonthTotal'));
+        chart.draw(data, options);
+    }
+
+    function drawColumnChartForSixMonthsMonthly() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'Month');
+
+        var categories = Array.from(new Set(@Html.Raw(Json.Serialize(Model.SixMonthsMonthly.Select(e => e.CategoryName)))));
+
+        categories.forEach(function (category) {
+            data.addColumn('number', category);
+        });
+
+        var expenses = @Html.Raw(Json.Serialize(Model.SixMonthsMonthly));
+
+        var groupedExpenses = {};
+        expenses.forEach(function (expense) {
+            var month = new Date(expense.month).toDateString();
+            if (!groupedExpenses[month]) {
+                groupedExpenses[month] = {};
+                categories.forEach(function (category) {
+                    groupedExpenses[month][category] = 0;
+                });
+            }
+            groupedExpenses[month][expense.categoryName] += expense.totalSum;
+        });
+
+        for (var month in groupedExpenses) {
+            var row = [new Date(month)];
+            categories.forEach(function (category) {
+                row.push(groupedExpenses[month][category]);
+            });
+            data.addRow(row);
+        }
+
+        var options = {
+            title: 'Expense 6 Months Monthly',
+            hAxis: {
+                title: 'Month',
+                format: 'MMM yyyy'
+            },
+            vAxis: {
+                title: 'Total Expense'
+            },
+            isStacked: true
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('columnChartForSixMonthsMonthly'));
+        chart.draw(data, options);
+    }
+
+    function drawPieChartForSixMonthsTotal() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Category');
+        data.addColumn('number', 'Total Sum');
+
+        var expenses = @Html.Raw(Json.Serialize(Model.SixMonthsTotal));
+
+        expenses.forEach(function (expense) {
+            data.addRow([expense.categoryName, expense.totalSum]);
+        });
+
+        var options = {
+            title: 'Expense 6 Months Total by Category',
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('pieChartForSixMonthsTotal'));
+        chart.draw(data, options);
+    }
+
+    function drawColumnChartForYearMonthly() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('date', 'Month');
+
+        var categories = Array.from(new Set(@Html.Raw(Json.Serialize(Model.YearMonthly.Select(e => e.CategoryName)))));
+
+        categories.forEach(function (category) {
+            data.addColumn('number', category);
+        });
+
+        var expenses = @Html.Raw(Json.Serialize(Model.YearMonthly));
+
+        var groupedExpenses = {};
+        expenses.forEach(function (expense) {
+            var month = new Date(expense.month).toDateString();
+            if (!groupedExpenses[month]) {
+                groupedExpenses[month] = {};
+                categories.forEach(function (category) {
+                    groupedExpenses[month][category] = 0;
+                });
+            }
+            groupedExpenses[month][expense.categoryName] += expense.totalSum;
+        });
+
+        for (var month in groupedExpenses) {
+            var row = [new Date(month)];
+            categories.forEach(function (category) {
+                row.push(groupedExpenses[month][category]);
+            });
+            data.addRow(row);
+        }
+
+        var options = {
+            title: 'Expense Year Monthly',
+            hAxis: {
+                title: 'Month',
+                format: 'MMM yyyy'
+            },
+            vAxis: {
+                title: 'Total Expense'
+            },
+            isStacked: true
+        };
+
+        var chart = new google.visualization.ColumnChart(document.getElementById('columnChartForYearMonthly'));
+        chart.draw(data, options);
+    }
+
+    function drawPieChartForYearTotal() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Category');
+        data.addColumn('number', 'Total Sum');
+
+        var expenses = @Html.Raw(Json.Serialize(Model.YearTotal));
+
+        expenses.forEach(function (expense) {
+            data.addRow([expense.categoryName, expense.totalSum]);
+        });
+
+        var options = {
+            title: 'Expense Year Total by Category',
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('pieChartForYearTotal'));
+        chart.draw(data, options);
+    }
+
+</script>

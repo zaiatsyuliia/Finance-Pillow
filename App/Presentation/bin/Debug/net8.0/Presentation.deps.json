@@ -10,6 +10,7 @@
         "dependencies": {
           "Business": "1.0.0",
           "Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.3",
           "Microsoft.EntityFrameworkCore.Relational": "8.0.3",
           "Npgsql": "8.0.2",
           "Serilog": "3.1.1",
@@ -312,7 +313,8 @@
       "System.Threading.Channels/8.0.0": {},
       "Business/1.0.0": {
         "dependencies": {
-          "Data": "1.0.0"
+          "Data": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.3"
         },
         "runtime": {
           "Business.dll": {}
@@ -321,6 +323,7 @@
       "Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.3",
+          "Microsoft.EntityFrameworkCore.Analyzers": "8.0.3",
           "Npgsql": "8.0.2",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.2"
         },
