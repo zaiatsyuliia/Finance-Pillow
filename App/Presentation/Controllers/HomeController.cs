@@ -14,12 +14,17 @@ namespace Presentation.Controllers
         private readonly BudgetService _budgetService;
         private readonly TransactionService _transactionService;
         private readonly CategoryService _categoryService;
+        private readonly StatisticsService _statisticsService;
 
-        public HomeController(BudgetService budgetService, TransactionService transactionService, CategoryService categoryService)
+        public HomeController(BudgetService budgetService,
+               TransactionService transactionService,
+               CategoryService categoryService,
+               StatisticsService statisticsService)
         {
             _budgetService = budgetService;
             _transactionService = transactionService;
             _categoryService = categoryService;
+            _statisticsService = statisticsService;
         }
 
         public async Task<IActionResult> Index()
@@ -72,10 +77,35 @@ namespace Presentation.Controllers
             return View("Index", model);
         }
 
+        public async Task<IActionResult> Expenses()
+        {
+            var userId = 1; // Replace with actual user ID
+
+            var monthDaily = await _statisticsService.GetExpenseMonthDailyAsync(userId);
+            var monthTotal = await _statisticsService.GetExpenseMonthTotalAsync(userId);
+            var sixMonthsMonthly = await _statisticsService.GetExpense6MonthsMonthlyAsync(userId);
+            var sixMonthsTotal = await _statisticsService.GetExpense6MonthsTotalAsync(userId);
+            var yearMonthly = await _statisticsService.GetExpenseYearMonthlyAsync(userId);
+            var yearTotal = await _statisticsService.GetExpenseYearTotalAsync(userId);
+
+            var model = new ExpensesViewModel
+            {
+                MonthDaily = monthDaily,
+                MonthTotal = monthTotal,
+                SixMonthsMonthly = sixMonthsMonthly,
+                SixMonthsTotal = sixMonthsTotal,
+                YearMonthly = yearMonthly,
+                YearTotal = yearTotal
+            };
+
+            return View(model);
+        }
+
         public IActionResult Privacy()
         {
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

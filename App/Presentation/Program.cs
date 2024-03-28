@@ -4,6 +4,7 @@ using Data;
 using Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
+using Data.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,11 +32,14 @@ builder.Services.AddScoped<IUserBudgetRepository, UserBudgetRepository>();
 builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 builder.Services.AddScoped<IHistoryRepository, HistoryRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IStatisticsRepository, StatisticsRepository>();
 
 // Register services
 builder.Services.AddScoped<BudgetService>();
 builder.Services.AddScoped<TransactionService>();
 builder.Services.AddScoped<CategoryService>();
+builder.Services.AddScoped<StatisticsService>();
+
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(configuration)

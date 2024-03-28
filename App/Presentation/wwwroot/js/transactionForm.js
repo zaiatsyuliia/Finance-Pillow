@@ -1,6 +1,7 @@
 ﻿console.log('Transaction form script loaded.');
 console.log('Income Categories:', incomeCategories);
 console.log('Expense Categories:', expenseCategories);
+
 document.getElementById('type').addEventListener('change', function () {
     var type = this.value;
     var categories = [];

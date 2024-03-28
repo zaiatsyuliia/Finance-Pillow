@@ -1,0 +1,28 @@
+﻿@model Presentation.Models.ExpensesViewModel
+<title>@ViewData["Title"]</title>
+
+<div id="month" style="width: 900px; height: 300px;">
+
+
+</div>
+<div id="monthtotal" style="width: 900px; height: 300px;">
+</div>
+<div id="6month" style="width: 900px; height: 300px;">
+
+</div>
+<div id="6monthtotal" style="width: 900px; height: 300px;">
+</div>
+
+<div id="year" style="width: 900px; height: 300px;">
+</div>
+<div id="yearttotal" style="width: 900px; height: 300px;">
+</div>
+
+<script>
+    var monthDaily = @Html.Raw(Json.Serialize(Model.MonthDaily));
+    var sixMonthMonthly = @Html.Raw(Json.Serialize(Model.SixMonthsMonthly));
+    var yearMonthly = @Html.Raw(Json.Serialize(Model.YearMonthly));
+</script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="~/js/expenses.js"></script> <!-- Reference your JavaScript file -->

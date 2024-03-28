@@ -1,12 +1,10 @@
 ﻿@model Presentation.Models.HomeViewModel
 
-<link rel="stylesheet" href="~/css/homeStyle.css" />
-
-<div id="budgetDiv">
+<div>
     <h2>Budget: @Model.UserBudget</h2>
 </div>
 
-<div id="addTransactionDiv">
+<div>
     <h2>Add Transaction</h2>
     <form id="transactionForm" asp-action="AddTransaction" method="post">
         <div>
@@ -23,7 +21,7 @@
                 <option value="" selected>Select Category</option>
                 @foreach (var category in Model.IncomeCategories)
                 {
-                    <option value="@category.IdCategory">@category.Name</option>
+                    <option value="@category.IdCategory" >@category.Name</option>
                 }
             </select>
         </div>
@@ -35,7 +33,7 @@
     </form>
 </div>
 
-<div id="transactionHistoryDiv">
+<div>
     <h2>Transaction History</h2>
     <table>
         <tr>
@@ -46,7 +44,7 @@
         </tr>
         @foreach (var transaction in Model.UserHistory)
         {
-            <tr class="@transaction.TransactionType.ToLower()">
+            <tr>
                 <td>@transaction.TransactionType</td>
                 <td>@transaction.Category</td>
                 <td>@transaction.Sum</td>
@@ -60,5 +58,4 @@
     var incomeCategories = @Html.Raw(Json.Serialize(Model.IncomeCategories));
     var expenseCategories = @Html.Raw(Json.Serialize(Model.ExpenseCategories));
 </script>
-
 <script src="~/js/transactionForm.js"></script>
