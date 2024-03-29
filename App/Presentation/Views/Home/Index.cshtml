@@ -2,6 +2,12 @@
 
 <link rel="stylesheet" href="~/css/homeStyle.css" />
 
+<div id="exitButtonDiv">
+    <form id="logoutForm" asp-action="Logout" method="post">
+        <button type="submit">Exit</button>
+    </form>
+</div>
+
 <div>
     <h2>Budget: @Model.Budget.Sum</h2>
 </div>

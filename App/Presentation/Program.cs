@@ -41,6 +41,15 @@ builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<StatisticsService>();
 builder.Services.AddScoped<UserService>();
 
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
+    {
+        options.Cookie.Name = "YourAppName.Cookie";
+        options.LoginPath = "/Home/LoginPage"; // the path to your login page
+    });
+
+
+
 //builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 //        .AddEntityFrameworkStores<ApplicationDbContext>()
 //        .AddDefaultTokenProviders();
@@ -86,6 +95,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

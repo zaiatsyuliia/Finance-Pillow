@@ -15,9 +15,8 @@ namespace Business.Services
 
         public async Task<bool> LoginAsync(string login, string password)
         {
-            // Check if the user exists in the database
             var user = await _userRepository.GetUserByLoginAsync(login);
-            
+
             if (user == null)
             {
                 return false; // User not found
@@ -45,14 +44,21 @@ namespace Business.Services
         public async Task<UserDto> GetByLogin(string login)
         {
             var user = await _userRepository.GetUserByLoginAsync(login);
+
+            if (user == null)
+            {
+                return null;
+            }
+
             UserDto dto = new UserDto
             {
                 IdUser = user.IdUser,
                 Login = user.Login,
-                Password = user.Password
+                Password = user.Password // Note: You may want to avoid sending the password back to the client
             };
 
             return dto;
         }
     }
+
 }

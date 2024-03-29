@@ -8,6 +8,7 @@ using Business.DTO;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
 using Data.Models;
+using System.Security.Claims;
 
 namespace Presentation.Controllers
 {
@@ -33,29 +34,39 @@ namespace Presentation.Controllers
             _userService = userService;
         }
 
-        public async Task<IActionResult> Index(int userId)
+        public async Task<IActionResult> Index()
         {
-            Console.WriteLine(userId);
-            var userBudget = await _budgetService.GetUserBudgetAsync(userId);
-            var userHistory = await _budgetService.GetUserHistoryAsync(userId);
-            var expenseCategories = await _categoryService.GetExpenseCategoriesAsync();
-            var incomeCategories = await _categoryService.GetIncomeCategoriesAsync();
-
-            var model = new HomeViewModel
+            // Отримуємо userId з TempData
+            if (TempData["UserId"] is int userId)
             {
-                Budget = userBudget,
-                History = userHistory,
-                ExpenseCategories = expenseCategories,
-                IncomeCategories = incomeCategories
-            };
+                Console.WriteLine($"Logged in user ID: {userId}");
 
-            return View(model);
+                var userBudget = await _budgetService.GetUserBudgetAsync(userId);
+                var userHistory = await _budgetService.GetUserHistoryAsync(userId);
+                var expenseCategories = await _categoryService.GetExpenseCategoriesAsync();
+                var incomeCategories = await _categoryService.GetIncomeCategoriesAsync();
+
+                var model = new HomeViewModel
+                {
+                    Budget = userBudget,
+                    History = userHistory,
+                    ExpenseCategories = expenseCategories,
+                    IncomeCategories = incomeCategories
+                };
+
+                return View(model);
+            }
+            else
+            {
+                // Якщо userId відсутній, перенаправляємо користувача на сторінку входу
+                return RedirectToAction(nameof(LoginPage));
+            }
         }
 
         [HttpPost]
         public async Task<IActionResult> AddTransaction(TransactionViewModel model)
         {
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && (TempData["UserId"] is int userId))
             {
                 var transactionDto = new TransactionDto
                 {
@@ -109,105 +120,119 @@ namespace Presentation.Controllers
 
         public async Task<IActionResult> Incomes()
         {
-            var monthDaily = await _statisticsService.GetIncomeMonthDailyAsync(userId);
-            var monthTotal = await _statisticsService.GetIncomeMonthTotalAsync(userId);
-            var sixMonthsMonthly = await _statisticsService.GetIncome6MonthsMonthlyAsync(userId);
-            var sixMonthsTotal = await _statisticsService.GetIncome6MonthsTotalAsync(userId);
-            var yearMonthly = await _statisticsService.GetIncomeYearMonthlyAsync(userId);
-            var yearTotal = await _statisticsService.GetIncomeYearTotalAsync(userId);
-            var categories = await _categoryService.GetIncomeCategoriesAsync();
-
-            var model = new StatisticsViewModel
+            if (TempData["UserId"] is int userId)
             {
-                MonthDaily = monthDaily,
-                MonthTotal = monthTotal,
-                SixMonthsMonthly = sixMonthsMonthly,
-                SixMonthsTotal = sixMonthsTotal,
-                YearMonthly = yearMonthly,
-                YearTotal = yearTotal,
-                Categories = categories,
-            };
+                var monthDaily = await _statisticsService.GetIncomeMonthDailyAsync(userId);
+                var monthTotal = await _statisticsService.GetIncomeMonthTotalAsync(userId);
+                var sixMonthsMonthly = await _statisticsService.GetIncome6MonthsMonthlyAsync(userId);
+                var sixMonthsTotal = await _statisticsService.GetIncome6MonthsTotalAsync(userId);
+                var yearMonthly = await _statisticsService.GetIncomeYearMonthlyAsync(userId);
+                var yearTotal = await _statisticsService.GetIncomeYearTotalAsync(userId);
+                var categories = await _categoryService.GetIncomeCategoriesAsync();
 
+                var model = new StatisticsViewModel
+                {
+                    MonthDaily = monthDaily,
+                    MonthTotal = monthTotal,
+                    SixMonthsMonthly = sixMonthsMonthly,
+                    SixMonthsTotal = sixMonthsTotal,
+                    YearMonthly = yearMonthly,
+                    YearTotal = yearTotal,
+                    Categories = categories,
+                };
             return View(model);
+            }
         }
 
         public async Task<IActionResult> LoginPage(LoginViewModel model)
-        { 
+        {
 
             return View(model);
         }
-        
+
+        public async Task<IActionResult> RegisterPage(RegisterViewModel model)
+        {
+
+            return View(model);
+        }
+
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            Console.WriteLine(model.Login, model.Password);
-            Console.WriteLine(ModelState.IsValid);
             if (ModelState.IsValid)
             {
-                // Call the UserService to attempt login
                 var result = await _userService.LoginAsync(model.Login, model.Password);
-                
-                Console.WriteLine(result);
 
                 if (result)
                 {
-                    // Login successful, redirect to the home page
                     var user = await _userService.GetByLogin(model.Login);
-                    Console.WriteLine(user.IdUser);
                     userId = user.IdUser;
-                    Console.WriteLine(userId);
+
+                    var claims = new List<Claim>
+                    {
+                        //new Claim(ClaimTypes.Name, user.Login),
+                        //new Claim(ClaimTypes.NameIdentifier, user.IdUser.ToString())
+                        //// Додаткові клейми, якщо потрібно
+                    };
+
+                    //var claimsIdentity = new ClaimsIdentity(
+                    //    claims, CookieAuthenticationDefaults.AuthenticationScheme);
+
+                    //var authProperties = new AuthenticationProperties
+                    //{
+                    //    // Додаткові властивості аутентифікації
+                    //};
+
+                    //await HttpContext.SignInAsync(
+                    //    CookieAuthenticationDefaults.AuthenticationScheme,
+                    //    new ClaimsPrincipal(claimsIdentity),
+                    //    authProperties);
+
+                    TempData["UserId"] = userId;
                     return RedirectToAction(nameof(Index));
                 }
                 else
                 {
-                    // Login failed, add an error message to the ModelState
                     ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                 }
             }
 
-            // If login failed, return the login view with validation errors
             return View("LoginPage", model);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Register(LoginRegisterViewModel model)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        // Call the UserService to attempt registration
-        //        var result = await _userService.RegisterAsync(model.RegisterLogin, model.RegisterPassword);
-
-        //        if (result)
-        //        {
-        //            var user = await _userService.GetByLogin(model.RegisterLogin);
-        //            userId = user.IdUser;
-
-        //            return RedirectToAction(nameof(Index));
-        //        }
-        //        else
-        //        {
-        //            // Registration failed, add an error message to the ModelState
-        //            ModelState.AddModelError(string.Empty, "Registration failed. Please try again.");
-        //        }
-        //    }
-
-        //    return View("LoginPage", model);
-        //}
-
         [HttpPost]
-        public async Task<IActionResult> Logout()
+        public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            // Call ASP.NET Core's built-in sign out functionality
-            userId = 0; // magic number
+            if (ModelState.IsValid)
+            {
+                if (model.Password != model.ConfirmPassword)
+                {
+                    ModelState.AddModelError(string.Empty, "Passwords do not match.");
+                    return View(model);
+                }
 
-            // Redirect the user to the login page or any other page
-            return RedirectToAction("LoginPage");
+                var result = await _userService.RegisterAsync(model.Login, model.Password);
+                var user = await _userService.GetByLogin(model.Login);
+                userId = user.IdUser;
+
+                if (result)
+                {
+                    TempData["UserId"] = userId;
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Registration failed.");
+                }
+            }
+
+            return View("RegisterPage", model);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public async Task<IActionResult> Logout()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction(nameof(LoginPage));
         }
     }
 }
