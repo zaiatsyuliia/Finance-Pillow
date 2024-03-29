@@ -1,9 +1,10 @@
 using Data;
 using Data.Repositories;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Serilog;
-using Data.Models;
-using Business.Service;
+using Business.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -38,7 +39,30 @@ builder.Services.AddScoped<BudgetService>();
 builder.Services.AddScoped<TransactionService>();
 builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<StatisticsService>();
+builder.Services.AddScoped<UserService>();
 
+//builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+//        .AddEntityFrameworkStores<ApplicationDbContext>()
+//        .AddDefaultTokenProviders();
+//// Configure ASP.NET Core Identity
+//builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+//{
+//    options.SignIn.RequireConfirmedAccount = false;
+//})
+//.AddEntityFrameworkStores<Context>()
+//.AddDefaultUI()
+//.AddDefaultTokenProviders();
+
+
+//// Configure authentication
+//builder.Services.ConfigureApplicationCookie(options =>
+//{
+//    options.Cookie.HttpOnly = true;
+//    options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
+//    options.LoginPath = "/Home/Login"; // Adjust as needed
+//    options.LogoutPath = "/Home/Logout"; // Adjust as needed
+//    options.AccessDeniedPath = "/Home/AccessDenied"; // Adjust as needed
+//});
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(configuration)
@@ -66,6 +90,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=LoginPage}/{id?}");
 
 app.Run();

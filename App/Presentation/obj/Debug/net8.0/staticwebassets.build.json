@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yb4EjxiVh+/DCquWuIpRGixYVAOcNLiwVzHrFkZdc9I=",
+  "Hash": "8INlGidELg5ASmSd2N0ExT2U3U1Cz9QSi8azYpXcK7I=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -112,25 +112,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\expenses.js",
-      "SourceId": "Presentation",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
-      "BasePath": "_content/Presentation",
-      "RelativePath": "js/expenses.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\expenses.js"
-    },
-    {
       "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\site.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
@@ -148,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\statistics.js",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "js/statistics.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\statistics.js"
     },
     {
       "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",

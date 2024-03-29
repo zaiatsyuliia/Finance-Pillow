@@ -17,12 +17,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\expenses.js",
-      "PackagePath": "staticwebassets\\js\\expenses.js"
-    },
-    {
       "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\statistics.js",
+      "PackagePath": "staticwebassets\\js\\statistics.js"
     },
     {
       "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",
