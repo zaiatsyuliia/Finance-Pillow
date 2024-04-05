@@ -8,10 +8,10 @@ namespace Business.Services
 {
     public class BudgetService
     {
-        private readonly IUserBudgetRepository _userBudgetRepository;
+        private readonly IBudgetRepository _userBudgetRepository;
         private readonly IHistoryRepository _historyRepository;
 
-        public BudgetService(IUserBudgetRepository userBudgetRepository, IHistoryRepository historyRepository)
+        public BudgetService(IBudgetRepository userBudgetRepository, IHistoryRepository historyRepository)
         {
             _userBudgetRepository = userBudgetRepository;
             _historyRepository = historyRepository;
@@ -33,6 +33,20 @@ namespace Business.Services
                 Date = h.Time.HasValue ? h.Time.Value.Date : DateTime.MinValue, // Extract only the date part
                 Sum = h.Sum ?? 0
             }).ToList();
+        }
+
+        public async Task<LimitDTO> GetLimitAsync(int userId)
+        {
+            // Call repository method to retrieve data
+            var limit = await _userBudgetRepository.GetExpenseMonthLimitComparisonAsync(userId);
+
+            // Map the retrieved data to DTOs
+            return new LimitDTO
+            {
+                TotalSum = limit.TotalSum,
+                UserLimit = limit.UserLimit,
+                LimitStatus = limit.LimitStatus
+            };
         }
     }
 }

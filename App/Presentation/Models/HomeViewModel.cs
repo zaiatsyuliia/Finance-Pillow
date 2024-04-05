@@ -12,6 +12,8 @@ public class HomeViewModel
     public List<CategoryDto> ExpenseCategories { get; set; }
 
     public List<CategoryDto> IncomeCategories { get; set; }
+
+    public LimitDTO Limit { get; set; }
 }
 
 public class TransactionViewModel
@@ -20,5 +22,5 @@ public class TransactionViewModel
 
     public int CategoryId { get; set; }
 
-    public double Sum { get; set; }
+    public int Sum { get; set; }
 }

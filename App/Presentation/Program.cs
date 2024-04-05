@@ -28,7 +28,7 @@ builder.Services.AddDbContext<Context>(options =>
 // Repository registration
 // Register repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserBudgetRepository, UserBudgetRepository>();
+builder.Services.AddScoped<IBudgetRepository, BudgetRepository>();
 builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 builder.Services.AddScoped<IHistoryRepository, HistoryRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
@@ -40,6 +40,7 @@ builder.Services.AddScoped<TransactionService>();
 builder.Services.AddScoped<CategoryService>();
 builder.Services.AddScoped<StatisticsService>();
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<CreditService>();
 
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
@@ -47,31 +48,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.Cookie.Name = "YourAppName.Cookie";
         options.LoginPath = "/Home/LoginPage"; // the path to your login page
     });
-
-
-
-//builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-//        .AddEntityFrameworkStores<ApplicationDbContext>()
-//        .AddDefaultTokenProviders();
-//// Configure ASP.NET Core Identity
-//builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-//{
-//    options.SignIn.RequireConfirmedAccount = false;
-//})
-//.AddEntityFrameworkStores<Context>()
-//.AddDefaultUI()
-//.AddDefaultTokenProviders();
-
-
-//// Configure authentication
-//builder.Services.ConfigureApplicationCookie(options =>
-//{
-//    options.Cookie.HttpOnly = true;
-//    options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
-//    options.LoginPath = "/Home/Login"; // Adjust as needed
-//    options.LogoutPath = "/Home/Logout"; // Adjust as needed
-//    options.AccessDeniedPath = "/Home/AccessDenied"; // Adjust as needed
-//});
 
 Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(configuration)

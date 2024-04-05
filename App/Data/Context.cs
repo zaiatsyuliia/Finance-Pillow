@@ -18,6 +18,8 @@ public partial class Context : DbContext
 
     public virtual DbSet<Expense> Expenses { get; set; }
 
+    public virtual DbSet<ExpenseMonthLimitComparison> ExpenseMonthLimitComparisons { get; set; }
+
     public virtual DbSet<Expense6MonthsMonthly> Expense6MonthsMonthlies { get; set; }
 
     public virtual DbSet<Expense6MonthsTotal> Expense6MonthsTotals { get; set; }
@@ -330,6 +332,8 @@ public partial class Context : DbContext
             entity.Property(e => e.Password)
                 .HasMaxLength(255)
                 .HasColumnName("password");
+            entity.Property(e => e.Limit)
+            .HasColumnName("limit");
         });
 
         modelBuilder.Entity<UserBudget>(entity =>
@@ -340,6 +344,18 @@ public partial class Context : DbContext
 
             entity.Property(e => e.Budget).HasColumnName("budget");
             entity.Property(e => e.IdUser).HasColumnName("id_user");
+        });
+
+        modelBuilder.Entity<ExpenseMonthLimitComparison>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("expense_month_limit_comparison");
+
+            entity.Property(e => e.IdUser).HasColumnName("id_user");
+            entity.Property(e => e.TotalSum).HasColumnName("total_sum");
+            entity.Property(e => e.UserLimit).HasColumnName("user_limit");
+            entity.Property(e => e.LimitStatus).HasColumnName("limit_status");
         });
 
         OnModelCreatingPartial(modelBuilder);

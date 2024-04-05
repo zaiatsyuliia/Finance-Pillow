@@ -1,0 +1,44 @@
+﻿
+<title>Кредитний калькулятор</title>
+<link rel="stylesheet" href="~/css/creditStyle.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    function calculate() {
+        var term = parseInt($("#term").val());
+        var amount = parseFloat($("#amount").val());
+        var rate = parseFloat($("#rate").val());
+
+        $.ajax({
+            url: '/Home/CalculateCredit',
+            type: 'POST',
+            data: {
+                term: term,
+                amount: amount,
+                rate: rate
+            },
+            success: function (response) {
+                $("#monthlyPayment").text(response.monthlyPayment.toFixed(2));
+                $("#totalPayment").text(response.totalPayment.toFixed(2));
+                $("#totalInterest").text(response.totalInterest.toFixed(2));
+            }
+        });
+    }
+</script>
+
+
+<h2>Кредитний калькулятор</h2>
+<label for="term">Термін кредитування (місяці): </label>
+<input type="number" id="term"><br><br>
+
+<label for="amount">Сума кредиту (грн): </label>
+<input type="number" id="amount"><br><br>
+
+<label for="rate">Відсоткова ставка (% річних): </label>
+<input type="number" id="rate"><br><br>
+
+<button onclick="calculate()">Розрахувати</button><br><br>
+
+<h3>Результати</h3>
+<p>Щомісячний платіж: <span id="monthlyPayment">0.00</span> грн</p>
+<p>Загальна сума виплати: <span id="totalPayment">0.00</span> грн</p>
+<p>Відсотки: <span id="totalInterest">0.00</span> грн</p>

@@ -1,22 +1,81 @@
-html {
-  font-size: 14px;
+﻿html {
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+
+/* ����� ���� */
+.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0; /* ������ ����� �� ������� ���� */
+}
+
+
+    .dark-theme .navbar {
+        background-color: #333333;
+        border-bottom: 1px solid #444; /* �������� ������ ��� ������� */
+    }
+
+    /* ������ �� �������� �������� */
+    .dark-theme .btn,
+    .dark-theme .btn-link.nav-link {
+        background-color: #258cfb; /* �������� ����� ���� */
+        color: #ffffff; /* ����� ����� */
+        border-color: #258cfb; /* ��� ����� �������� ����� ���� ��� ����� */
+    }
+
+
+
+    /* ������� ������� ������ ��� ���������, �������� � ��� ��� */
+    /* ������� ������� ������ ��� ���������, �������� � ��� ��� */
+    .dark-theme h1,
+    .dark-theme h2,
+    .dark-theme h3,
+    .dark-theme h4,
+    .dark-theme h5,
+    .dark-theme h6,
+    .dark-theme .nav-link {
+        color: #ffffff; /* ����� ����� ��� ��������� � �������� */
+    }
+
+    /* ������ ��������� ��� ����� ���� */
+    .dark-theme a {
+        color: #58a6ff; /* �������� ����� ���� ��� �������� */
+        text-decoration: underline; /* ϳ���������� ��� �������� */
+    }
+
+        .dark-theme a:hover {
+            color: #88c2ff; /* ������� ����� ���� ��� ��������� */
+        }
+
+    /* ������� ����� ������� ��� ����� �������� */
+    .dark-theme footer {
+        background-color: #1a1a1a;
+        color: #b0b0b0; /* ������ ����� ��� ������ */
+    }
+
+    /* Գ�� ��� ������ ��� ����� � ������ ��� */
+    .dark-theme .btn:focus,
+    .dark-theme .btn:active:focus,
+    .dark-theme .btn-link.nav-link:focus,
+    .dark-theme .form-control:focus,
+    .dark-theme .form-check-input:focus {
+        box-shadow: 0 0 0 0.1rem #258cfb, 0 0 0 0.25rem #258cfb; /* ���� ��� �������� */
+    }

@@ -1,34 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data.Repositories;
-
-public interface IUserBudgetRepository
+namespace Data.Repositories
 {
-    Task<double?> GetUserBudgetAsync(int userId);
-}
-
-public class UserBudgetRepository : IUserBudgetRepository
-{
-    private readonly Context _context;
-
-    public UserBudgetRepository(Context context)
+    public interface IBudgetRepository
     {
-        _context = context;
+        Task<double?> GetUserBudgetAsync(int userId);
+        Task<ExpenseMonthLimitComparison> GetExpenseMonthLimitComparisonAsync(int userId);
     }
 
-    public async Task<double?> GetUserBudgetAsync(int userId)
+    public class BudgetRepository : IBudgetRepository
     {
-        var userBudget = await _context.UserBudgets
-                .Where(u => u.IdUser == userId)
-                .Select(u => u.Budget)
-                .FirstOrDefaultAsync();
+        private readonly Context _context;
 
-        return userBudget;
+        public BudgetRepository(Context context)
+        {
+            _context = context;
+        }
+
+        public async Task<double?> GetUserBudgetAsync(int userId)
+        {
+            var userBudget = await _context.UserBudgets
+                    .Where(u => u.IdUser == userId)
+                    .Select(u => u.Budget)
+                    .FirstOrDefaultAsync();
+
+            return userBudget;
+        }
+
+        public async Task<ExpenseMonthLimitComparison> GetExpenseMonthLimitComparisonAsync(int userId)
+        {
+            return await _context.ExpenseMonthLimitComparisons
+                .FirstOrDefaultAsync(e => e.IdUser == userId);
+        }
     }
 }
