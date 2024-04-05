@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets\\css\\creditStyle.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\homeStyle.css",
-      "PackagePath": "staticwebassets\\css\\homeStyle.css"
+      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\darkTheme.css",
+      "PackagePath": "staticwebassets\\css\\darkTheme.css"
+    },
+    {
+      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\lightTheme.css",
+      "PackagePath": "staticwebassets\\css\\lightTheme.css"
+    },
+    {
+      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\logregStyle.css",
+      "PackagePath": "staticwebassets\\css\\logregStyle.css"
     },
     {
       "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\site.css",

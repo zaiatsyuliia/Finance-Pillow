@@ -15,7 +15,7 @@ namespace Business.Services
 
         public async Task<bool> LoginAsync(string login, string password)
         {
-            var user = await _userRepository.GetUserByLoginAsync(login);
+            var user = await _userRepository.GetByLoginAsync(login);
 
             if (user == null)
             {
@@ -29,7 +29,7 @@ namespace Business.Services
         public async Task<bool> RegisterAsync(string login, string password)
         {
             // Check if the user already exists in the database
-            var existingUser = await _userRepository.GetUserByLoginAsync(login);
+            var existingUser = await _userRepository.GetByLoginAsync(login);
 
             if (existingUser != null)
             {
@@ -43,7 +43,7 @@ namespace Business.Services
 
         public async Task<UserDto> GetByLogin(string login)
         {
-            var user = await _userRepository.GetUserByLoginAsync(login);
+            var user = await _userRepository.GetByLoginAsync(login);
 
             if (user == null)
             {
@@ -54,10 +54,60 @@ namespace Business.Services
             {
                 IdUser = user.IdUser,
                 Login = user.Login,
-                Password = user.Password // Note: You may want to avoid sending the password back to the client
+                Password = user.Password, // Note: You may want to avoid sending the password back to the client
+                Limit = user.Limit
             };
 
             return dto;
+        }
+
+        public async Task<UserDto> GetByUserId(int userId)
+        {
+            var user = await _userRepository.GetByUserIdAsync(userId);
+
+            if (user == null)
+            {
+                return null;
+            }
+
+            UserDto dto = new UserDto
+            {
+                IdUser = user.IdUser,
+                Login = user.Login,
+                Password = user.Password, // Note: You may want to avoid sending the password back to the client
+                Limit = user.Limit
+            };
+
+            return dto;
+        }
+
+        public async Task<bool> ChangeSettings(UserDto userDto)
+        {
+            var user = await _userRepository.GetByUserIdAsync(userDto.IdUser);
+
+            if (user == null)
+            {
+                return false; // User not found
+            }
+
+            // Update the user's settings
+            if (userDto.Login != null)
+            {
+                user.Login = userDto.Login;
+            }
+            if (userDto.Password != null)
+            {
+                user.Password = userDto.Password;
+            }
+            if (userDto.Limit != null)
+            {
+                user.Limit = userDto.Limit;
+            }
+
+            // Save changes to the database
+            await _userRepository.SaveChangesAsync();
+
+            return true; // Settings updated successfully
         }
     }
 

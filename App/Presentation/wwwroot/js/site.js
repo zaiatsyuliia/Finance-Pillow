@@ -1,6 +1,14 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const themeToggleBtn = document.getElementById('themeToggleBtn');
+const body = document.body;
+const theme = localStorage.getItem('theme');
 
-// Write your JavaScript code.
+// Check if a theme is stored in local storage
+if (theme) {
+    body.classList.add(theme);
+}
 
-
+themeToggleBtn.addEventListener('click', function () {
+    body.classList.toggle('dark');
+    // Save the current theme selection to local storage
+    localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+});

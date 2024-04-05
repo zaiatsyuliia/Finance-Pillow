@@ -504,3 +504,5 @@ D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\Microsoft.AspNetCore
 D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
 D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\wwwroot\css\darkTheme.css

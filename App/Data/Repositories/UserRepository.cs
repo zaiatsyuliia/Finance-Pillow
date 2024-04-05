@@ -6,9 +6,13 @@ namespace Data.Repositories
 {
     public interface IUserRepository
     {
-        Task<User> GetUserByLoginAsync(string login);
-        Task<User> GetByIdAsync(int id);
+        Task<User> GetByLoginAsync(string login);
+
+        Task<User> GetByUserIdAsync(int id);
+
         Task AddUserAsync(string login, string password);
+
+        Task SaveChangesAsync();
     }
 
     public class UserRepository : IUserRepository
@@ -20,12 +24,12 @@ namespace Data.Repositories
             _context = context;
         }
 
-        public async Task<User> GetUserByLoginAsync(string login)
+        public async Task<User> GetByLoginAsync(string login)
         {
             return await _context.Users.FirstOrDefaultAsync(u => u.Login == login);
         }
 
-        public async Task<User> GetByIdAsync(int id)
+        public async Task<User> GetByUserIdAsync(int id)
         {
             return await _context.Users.FindAsync(id);
         }
@@ -34,6 +38,11 @@ namespace Data.Repositories
         {
             var user = new User { Login = login, Password = password }; // Replace User with your actual user entity class
             await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task SaveChangesAsync()
+        {
             await _context.SaveChangesAsync();
         }
     }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.CodeAnalysis.Scripting;
+using System.ComponentModel.DataAnnotations;
 
 namespace Presentation.Models;
 
@@ -15,4 +16,9 @@ public class RegisterViewModel
     [DataType(DataType.Password)]
     [Compare("Password", ErrorMessage = "Passwords do not match.")]
     public string ConfirmPassword { get; set; }
+
+    public string HashedPassword()
+    {
+        return BCrypt.Net.BCrypt.HashPassword(Password);
+    }
 }

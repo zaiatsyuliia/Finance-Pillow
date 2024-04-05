@@ -1,21 +1,6 @@
-﻿body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
+﻿
 
-h2 {
-    color: #007bff;
-    margin-bottom: 20px;
-}
-
-label {
-    display: inline-block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-input[type="number"] {
+input{
     width: 200px;
     padding: 5px;
     margin-bottom: 10px;
@@ -25,27 +10,8 @@ input[type="number"] {
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-h3 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 10px;
-}
-
-span {
-    font-weight: bold;
-    color: #007bff;
 }

@@ -1,4 +1,5 @@
-﻿html {
+﻿/* General styles */
+html {
     font-size: 14px;
 }
 
@@ -8,7 +9,11 @@
     }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -21,61 +26,126 @@ body {
     margin-bottom: 60px;
 }
 
-/* ����� ���� */
-.dark-theme {
-    background-color: #121212;
-    color: #e0e0e0; /* ������ ����� �� ������� ���� */
+.warning-message {
+    background-color: red;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.home-div {
+    background-color: #f9f9f9;
+    padding: 25px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 18px;
+}
+
+select,
+input {
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 18px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+select:focus {
+    outline: none;
+}
+
+.home-div select,
+.home-div input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.home-div select:focus,
+.home-div input:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 18px;
 }
 
 
-    .dark-theme .navbar {
-        background-color: #333333;
-        border-bottom: 1px solid #444; /* �������� ������ ��� ������� */
-    }
 
-    /* ������ �� �������� �������� */
-    .dark-theme .btn,
-    .dark-theme .btn-link.nav-link {
-        background-color: #258cfb; /* �������� ����� ���� */
-        color: #ffffff; /* ����� ����� */
-        border-color: #258cfb; /* ��� ����� �������� ����� ���� ��� ����� */
-    }
+.logout-form {
+    display: inline-block;
+}
+
+.logout-div {
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
 
 
+span {
+    font-weight: bold;
+    color: #007bff;
+}
 
-    /* ������� ������� ������ ��� ���������, �������� � ��� ��� */
-    /* ������� ������� ������ ��� ���������, �������� � ��� ��� */
-    .dark-theme h1,
-    .dark-theme h2,
-    .dark-theme h3,
-    .dark-theme h4,
-    .dark-theme h5,
-    .dark-theme h6,
-    .dark-theme .nav-link {
-        color: #ffffff; /* ����� ����� ��� ��������� � �������� */
-    }
-
-    /* ������ ��������� ��� ����� ���� */
-    .dark-theme a {
-        color: #58a6ff; /* �������� ����� ���� ��� �������� */
-        text-decoration: underline; /* ϳ���������� ��� �������� */
-    }
-
-        .dark-theme a:hover {
-            color: #88c2ff; /* ������� ����� ���� ��� ��������� */
-        }
-
-    /* ������� ����� ������� ��� ����� �������� */
-    .dark-theme footer {
-        background-color: #1a1a1a;
-        color: #b0b0b0; /* ������ ����� ��� ������ */
-    }
-
-    /* Գ�� ��� ������ ��� ����� � ������ ��� */
-    .dark-theme .btn:focus,
-    .dark-theme .btn:active:focus,
-    .dark-theme .btn-link.nav-link:focus,
-    .dark-theme .form-control:focus,
-    .dark-theme .form-check-input:focus {
-        box-shadow: 0 0 0 0.1rem #258cfb, 0 0 0 0.25rem #258cfb; /* ���� ��� �������� */
-    }

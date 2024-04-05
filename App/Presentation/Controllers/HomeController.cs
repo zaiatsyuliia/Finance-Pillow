@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Business.Services;
@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Authentication;
 using Data.Models;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
+using Microsoft.CodeAnalysis.Scripting;
 
 namespace Presentation.Controllers;
 
@@ -181,11 +182,10 @@ public class HomeController : Controller
     {
         if (ModelState.IsValid)
         {
-            var result = await _userService.LoginAsync(model.Login, model.Password);
+            var user = await _userService.GetByLogin(model.Login);
 
-            if (result)
+            if (user != null && BCrypt.Net.BCrypt.Verify(model.Password, user.Password))
             {
-                var user = await _userService.GetByLogin(model.Login);
                 var userId = user.IdUser;
 
                 // Create a cookie containing the userId
@@ -212,6 +212,7 @@ public class HomeController : Controller
         return View("LoginPage", model);
     }
 
+
     [HttpPost]
     public async Task<IActionResult> Register(RegisterViewModel model)
     {
@@ -223,7 +224,10 @@ public class HomeController : Controller
                 return View(model);
             }
 
-            var result = await _userService.RegisterAsync(model.Login, model.Password);
+            // Захешування пароля перед збереженням
+            string hashedPassword = model.HashedPassword();
+
+            var result = await _userService.RegisterAsync(model.Login, hashedPassword);
             var user = await _userService.GetByLogin(model.Login);
 
             if (result && user != null)
@@ -279,6 +283,77 @@ public class HomeController : Controller
             return View(model);
         }
 
+        return View(model);
+    }
+
+    public async Task<IActionResult> Settings()
+    {
+        if (Request.Cookies.TryGetValue("UserId", out string userIdString) && int.TryParse(userIdString, out int userId))
+        {
+            // Retrieve user data from the database using the user ID
+            var user = await _userService.GetByUserId(userId);
+
+            // Check if the user exists
+            if (user != null)
+            {
+                // Map the user data to the SettingsViewModel
+                var viewModel = new UserViewModel
+                {
+                    Login = user.Login,
+                    // Password should not be sent back to the view
+                    Limit = user.Limit
+                };
+
+                // Pass the viewModel to the view
+                return View(viewModel);
+            }
+        }
+
+        // If user ID cookie doesn't exist or user not found, redirect to login page
+        return RedirectToAction(nameof(Login));
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> SettingsPost(UserViewModel model)
+    {
+        if (ModelState.IsValid)
+        {
+            // Retrieve user ID from the cookie
+            if (Request.Cookies.TryGetValue("UserId", out string userIdString) && int.TryParse(userIdString, out int userId))
+            {
+                // Retrieve user data from the database using the user ID
+                var user = await _userService.GetByUserId(userId);
+
+                // Check if the user exists
+                if (user != null)
+                {
+                    if (model.Login != null)
+                    {
+                        user.Login = model.Login;
+                    }
+                    if (model.Password != null)
+                    {
+                        user.Password = BCrypt.Net.BCrypt.HashPassword(model.Password);
+                    }
+                    if (model.Limit != null)
+                    {
+                        user.Limit = model.Limit ?? 9999999;
+                    }
+
+                    // Update user in the database
+                    await _userService.ChangeSettings(user);
+
+                    // Redirect to settings page with a success message
+                    TempData["SuccessMessage"] = "Settings updated successfully.";
+                    return RedirectToAction(nameof(Settings));
+                }
+            }
+
+            // If user ID cookie doesn't exist or user not found, redirect to login page
+            return RedirectToAction(nameof(Login));
+        }
+
+        // If model state is not valid, return the settings view with errors
         return View(model);
     }
 

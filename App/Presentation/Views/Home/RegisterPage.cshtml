@@ -1,9 +1,12 @@
 ﻿@model RegisterViewModel
 
-<h2>Register</h2>
+<link rel="stylesheet" href="~/css/logregStyle.css" />
+
+@{
+    Layout = null;
+}
 
 <div class="register-form">
-    <h3>Register</h3>
     <form asp-controller="Home" asp-action="Register" method="post">
         <div>
             <label asp-for="Login"></label>

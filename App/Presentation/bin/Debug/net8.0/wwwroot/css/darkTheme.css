@@ -1,0 +1,91 @@
+﻿/* Dark theme styles */
+.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+    .dark .navbar {
+        background-color: #333333;
+        border-bottom: 1px solid #444;
+    }
+
+    .dark .btn,
+    .dark .btn-link.nav-link {
+        background-color: #258cfb;
+        color: #fff;
+        border-color: #258cfb;
+    }
+
+    .dark h1,
+    .dark h2,
+    .dark h3,
+    .dark h4,
+    .dark h5,
+    .dark h6,
+    .dark .nav-link {
+        color: #fff;
+    }
+
+    .dark a {
+        color: #58a6ff;
+    }
+
+        .dark a:hover {
+            color: #88c2ff;
+        }
+
+    .dark footer {
+        background-color: #1a1a1a;
+        color: #b0b0b0;
+    }
+
+    .dark .btn:focus,
+    .dark .btn:active:focus,
+    .dark .btn-link.nav-link:focus,
+    .dark .form-control:focus,
+    .dark .form-check-input:focus {
+        box-shadow: 0 0 0 0.1rem #258cfb, 0 0 0 0.25rem #258cfb;
+    }
+
+    .dark button {
+        background-color: #58a6ff;
+    }
+
+        .dark button:hover {
+            background-color: #0056b3;
+        }
+
+    .dark .home-div {
+        background-color: #333333;
+        color: #e0e0e0;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        border-bottom: 3px solid #58a6ff;
+    }
+
+    .dark label {
+        color: #58a6ff;
+    }
+
+    .dark select,
+    .dark input {
+        background-color: #444444;
+        color: #e0e0e0;
+        border: 2px solid #58a6ff;
+    }
+
+    .dark th {
+        background-color: #0056b3; /* Dark blue */
+        color: #fff;
+    }
+
+    .dark tr:hover {
+        background-color: #333333; /* Dark gray */
+    }
+
+    .dark tr.income {
+        background-color: rgba(0, 128, 0, 0.3); /* Dark green */
+    }
+
+    .dark tr.expense {
+        background-color: rgba(255, 105, 97, 0.3); /* Dark red */
+    }

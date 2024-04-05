@@ -1,27 +1,23 @@
-﻿@model Presentation.Models.SettingsViewModel
+﻿@model Presentation.Models.UserViewModel
 
 <div class="container">
     <!-- <h1 class="title">Finance Pillow</h1> -->
-    <form asp-action="YourAction" asp-controller="YourController" method="post">
-        <div class="input-group">
-            <label for="username">Псевдонім</label>
-            <input type="text" id="username" name="username" class="input" value="@Model.Username" />
+    <form asp-action="SettingsPost" asp-controller="Home" method="post">
+        <div>
+            <label for="login">Login</label>
+            <input type="text" name="login" value="@Model.Login" />
         </div>
-        <div class="input-group">
-            <label for="email">Емейл</label>
-            <input type="text" id="email" name="email" class="input" value="@Model.Email" />
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" class="input" value="@Model.Password" />
         </div>
-        <div class="input-group">
-            <label for="password">Пароль</label>
-            <input type="password" id="password" name="password" class="input" value="@Model.Password" />
+        <div>
+            <label for="limit">Limit</label>
+            <input type="number" name="limit" value="@Model.Limit" />
         </div>
-        <div class="input-group">
-            <label for="limit">Ліміт</label>
-            <input type="number" id="limit" name="limit" class="input" value="@Model.Limit" />
-        </div>
-        <div class="button-group">
-            <button type="submit" class="button">Зберегти</button>
-            <button type="reset" class="button">Скасувати</button>
+        <div>
+            <button type="submit" class="button">Save</button>
+            <button type="reset" class="button">Cancel</button>
         </div>
     </form>
 </div>

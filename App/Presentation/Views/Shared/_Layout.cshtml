@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Presentation</title>
+    <title>@ViewData["Title"] - FinancePillow</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/homeStyle.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/lightTheme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/darkTheme.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Presentation.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -32,7 +33,10 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="CreditPage">Credit</a>
                         </li>
-                        <button id="themeToggleBtn" class="btn btn-primary">Змінити тему</button>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Settings">Settings</a>
+                        </li>
+                        <button id="themeToggleBtn" class="btn btn-primary">Change Theme</button>
 
                     </ul>
                 </div>
@@ -53,32 +57,6 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            // Перевірка поточної теми
-            let currentTheme = localStorage.getItem('theme') || 'light';
-            applyTheme(currentTheme);
-
-            // Оголошення функції для зміни теми
-            function applyTheme(theme) {
-                if (theme === 'dark') {
-                    document.body.classList.add('dark-theme');
-                } else {
-                    document.body.classList.remove('dark-theme');
-                }
-                localStorage.setItem('theme', theme);
-            }
-
-            // Обробник події для кнопки
-            document.getElementById('themeToggleBtn').addEventListener('click', () => {
-                if (document.body.classList.contains('dark-theme')) {
-                    applyTheme('light');
-                } else {
-                    applyTheme('dark');
-                }
-            });
-        });
-    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
