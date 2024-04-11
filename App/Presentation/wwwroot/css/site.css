@@ -24,6 +24,7 @@ html {
 
 body {
     margin-bottom: 60px;
+    padding-top: 100px;
 }
 
 .home-div {
@@ -168,4 +169,36 @@ span {
 .navbar-brand {
     color: #58a6ff;
     font-size: 24px;
+}
+
+.navbar{
+    background-color: #fff;
+}
+
+.convertedAmount {
+    padding: 15px;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+    .convertedAmount p {
+        margin: 5px 0;
+    }
+
+.amount {
+    color: #007bff;
+}
+
+.currency {
+    color: #333;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
 }

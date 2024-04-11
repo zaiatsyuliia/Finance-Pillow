@@ -1,0 +1,78 @@
+﻿<title>Кредитний калькулятор</title>
+<link rel="stylesheet" href="~/css/site.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    async function fetchExchangeRates() {
+        const response = await fetch(`https://api.exchangerate-api.com/v4/latest/UAH`);
+        const data = await response.json();
+
+        return data.rates;
+    }
+
+    async function convertCurrency() {
+        const uahAmount = parseFloat($("#amount").val());
+        const selectedCurrency = $("#currency").val();
+        const exchangeRates = await fetchExchangeRates();
+
+        let convertedAmount = '';
+
+        if (selectedCurrency) {
+            convertedAmount = (uahAmount * exchangeRates[selectedCurrency]).toFixed(2);
+            $(".convertedAmount").html(`<p><span class="amount">${convertedAmount}</span> <span class="currency">${selectedCurrency}</span></p>`);
+        } else {
+            let convertedAmounts = '<div class="row">';
+
+            let count = 0;
+            for (const currency in exchangeRates) {
+                if (exchangeRates.hasOwnProperty(currency) && !['RUB', 'BYN'].includes(currency)) {
+                    const amount = (uahAmount * exchangeRates[currency]).toFixed(2);
+                    convertedAmounts += `<div class="column"><p><span class="amount">${amount}</span> <span class="currency">${currency}</span></p></div>`;
+                    count++;
+
+                    if (count % 4 === 0) {
+                        convertedAmounts += '</div><div class="row">';
+                    }
+                }
+            }
+
+            convertedAmounts += '</div>';
+            convertedAmount = convertedAmounts;
+            $(".convertedAmount").html(convertedAmount);
+        }
+    }
+</script>
+
+<h2>Валютний курс</h2>
+<label for="amount">Сума (грн): </label>
+<input type="number" id="amount" oninput="convertCurrency()">
+<br>
+<br>
+
+<label for="currency">Конвертація в:</label>
+<select id="currency" onchange="convertCurrency()">
+    <option value="">Всі доступні валюти</option>
+</select>
+<br>
+<br>
+
+<h3>Конвертовані суми</h3>
+<div class="convertedAmount"></div>
+
+<script>
+    async function populateCurrencyList() {
+        const exchangeRates = await fetchExchangeRates();
+        const currencySelect = $("#currency");
+
+        for (const currency in exchangeRates) {
+            if (exchangeRates.hasOwnProperty(currency) && !['RUB', 'BYN'].includes(currency)) {
+                currencySelect.append(`<option value="${currency}">${currency}</option>`);
+            }
+        }
+    }
+
+    $(document).ready(function () {
+        populateCurrencyList();
+    });
+</script>

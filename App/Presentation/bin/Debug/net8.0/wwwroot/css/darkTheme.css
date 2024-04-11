@@ -26,6 +26,10 @@
         color: #fff;
     }
 
+    .dark p{
+        color: #fff;
+    }
+
     .dark a {
         color: #58a6ff;
     }
@@ -89,8 +93,20 @@
     .dark tr.expense {
         background-color: rgba(255, 105, 97, 0.3); /* Dark red */
     }
+    
+    .dark .convertedAmount {
+        padding: 15px;
+        background-color: #121212;
+        font-size: 20px;
+    }
 
+    .dark .convertedAmount p {
+        margin: 5px 0;
+    }
 
-.dark .navbar-brand {
-    color: white;
-}
+    .dark .currency {
+        color: #fff;
+        font-weight: bold;
+    }
+
+ }

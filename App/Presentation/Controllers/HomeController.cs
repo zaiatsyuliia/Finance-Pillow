@@ -286,6 +286,11 @@ public class HomeController : Controller
         return View(model);
     }
 
+    public async Task<IActionResult> CurrencyPage()
+    {
+        return View();
+    }
+
     public async Task<IActionResult> Settings()
     {
         if (Request.Cookies.TryGetValue("UserId", out string userIdString) && int.TryParse(userIdString, out int userId))

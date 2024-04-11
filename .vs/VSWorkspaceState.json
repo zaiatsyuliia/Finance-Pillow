@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\App",
+    "\\App\\Presentation",
+    "\\App\\Presentation\\wwwroot",
+    "\\App\\Presentation\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Presentation.sln",
+  "SelectedNode": "\\App\\Presentation\\wwwroot\\css\\site.css",
   "PreviewInSolutionExplorer": false
 }
