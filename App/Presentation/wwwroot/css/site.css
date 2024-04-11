@@ -26,14 +26,6 @@ body {
     margin-bottom: 60px;
 }
 
-.warning-message {
-    background-color: red;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
-    font-size: 18px;
-}
-
 .home-div {
     background-color: #f9f9f9;
     padding: 25px 20px;
@@ -58,6 +50,7 @@ button {
     cursor: pointer;
     font-size: 18px;
     transition: 0.3s;
+    margin: 15px 0;
 }
 
 button:hover {
@@ -110,7 +103,7 @@ td {
     padding: 15px;
     border-bottom: 1px solid #ddd;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -140,7 +133,7 @@ h3 {
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 
@@ -149,3 +142,30 @@ span {
     color: #007bff;
 }
 
+.right-nav {
+    margin-left: auto; /* Розміщує елементи з правого боку */
+}
+
+#themeToggleBtn,
+.logout-form button {
+    margin-left: 10px; /* Відступ від лівого краю */
+}
+
+.warning-message {
+    background-color: rgb(255, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.wtext {
+        color: #fff;
+    }
+
+.navbar-brand {
+    color: #58a6ff;
+    font-size: 24px;
+}

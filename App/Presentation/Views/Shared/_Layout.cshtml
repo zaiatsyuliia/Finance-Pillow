@@ -12,9 +12,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Presentation</a>
+                <p class="navbar-brand" asp-area="" >FinancePillow</p>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -22,22 +22,31 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Expenses">Expenses</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Expenses">Expenses</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Incomes">Incomes</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Incomes">Incomes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="CreditPage">Credit</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreditPage">Credit</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Settings">Settings</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Settings">Settings</a>
                         </li>
-                        <button id="themeToggleBtn" class="btn btn-primary">Change Theme</button>
+                    </ul>
 
+                    <ul class="navbar-nav flex-grow-2">
+                        <li class="nav-item right-nav">
+                            <button id="themeToggleBtn" class="btn btn-primary">Change Theme</button>
+                        </li>
+                        <li class="nav-item right-nav">
+                            <form class="logout-form" asp-action="Logout" method="post">
+                                <button id="themeToggleBtn" class="btn btn-primary" type="submit">Exit</button>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -2,12 +2,6 @@
 
 <link rel="stylesheet" href="~/css/homeStyle.css" />
 
-<div class="logout-div">
-    <form class="logout-form" asp-action="Logout" method="post">
-        <button type="submit">Exit</button>
-    </form>
-</div>
-
 <div>
     <h2>Budget: @Model.Budget.Sum</h2>
 </div>
@@ -15,7 +9,7 @@
 @if (Model.Limit != null && Model.Limit.LimitStatus)
 {
     <div class="warning-message">
-        <p>Limit: @Model.Limit.UserLimit - Total Expenses: @Model.Limit.TotalSum - You have exceeded your limit!!!</p>
+        <p class="wtext">Limit: @Model.Limit.UserLimit - Total Expenses: @Model.Limit.TotalSum - You have exceeded your limit!!!</p>
     </div>
 }
 

@@ -506,3 +506,5 @@ D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\Microsoft.Extensions
 D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\BCrypt.Net-Next.dll
 D:\Projects\FinancePillow\App\Presentation\bin\Debug\net8.0\wwwroot\css\darkTheme.css
+C:\Users\HP ENVY x360\Source\Repos\Finance-Pillow\App\Presentation\bin\Debug\net8.0\wwwroot\css\darkTheme.css
+C:\Users\HP ENVY x360\Source\Repos\Finance-Pillow\App\Presentation\bin\Debug\net8.0\BCrypt.Net-Next.dll

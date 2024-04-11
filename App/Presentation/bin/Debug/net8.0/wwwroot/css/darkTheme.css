@@ -89,3 +89,8 @@
     .dark tr.expense {
         background-color: rgba(255, 105, 97, 0.3); /* Dark red */
     }
+
+
+.dark .navbar-brand {
+    color: white;
+}
