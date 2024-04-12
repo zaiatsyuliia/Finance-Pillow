@@ -1,31 +1,47 @@
 ﻿@model Presentation.Models.HomeViewModel
 
-<link rel="stylesheet" href="~/css/homeStyle.css" />
+<div class="home-div">
+    <h2 data-lang="en">Budget: @Model.Budget</h2>
+    <h2 data-lang="uk" style="display: none;">Бюджет: @Model.Budget</h2>
 
-<div>
-    <h2>Budget: @Model.Budget.Sum</h2>
+    @if (Model.IncomeLimit != null && Model.IncomeLimit.LimitStatus)
+    {
+        <div class="limit-warning-income limit-warning" data-lang="en">
+            <p>Limit: @Model.IncomeLimit.UserLimit - Total Income: @Model.IncomeLimit.TotalSum - Your income has exceeded limit!!!</p>
+        </div>
+        <div class="limit-warning-income limit-warning" data-lang="uk" style="display: none;">
+            <p>Ліміт: @Model.IncomeLimit.UserLimit - Загальні Доходи: @Model.IncomeLimit.TotalSum - Ви перевищили ліміт!!!</p>
+        </div>
+    }
+
+    @if (Model.ExpenseLimit != null && Model.ExpenseLimit.LimitStatus)
+    {
+        <div class="limit-warning-expense limit-warning" data-lang="uk">
+            <p>Ліміт: @Model.ExpenseLimit.UserLimit - Загальні витрати: @Model.ExpenseLimit.TotalSum - Ви перевищили ліміт!!!</p>
+        </div>
+        <div class="limit-warning-expense limit-warning" data-lang="en" style="display: none;">
+            <p>Limit: @Model.ExpenseLimit.UserLimit - Total Expenses: @Model.ExpenseLimit.TotalSum - You have exceeded your limit!!!</p>
+        </div>
+    }
 </div>
 
-@if (Model.Limit != null && Model.Limit.LimitStatus)
-{
-    <div class="warning-message">
-        <p class="wtext">Limit: @Model.Limit.UserLimit - Total Expenses: @Model.Limit.TotalSum - You have exceeded your limit!!!</p>
-    </div>
-}
-
-
 <div class="home-div">
-    <h2>Add Transaction</h2>
+    <h2 data-lang="uk">Додати транзакцію</h2>
+    <h2 data-lang="en" style="display: none;">Add Transaction</h2>
     <form id="transactionForm" asp-action="AddTransaction" method="post">
         <div>
-            <label for="type">Type:</label>
+            <label for="type" data-lang="en">Type:</label>
+            <label for="type" data-lang="uk" style="display: none;">Тип:</label>
             <select name="Type" id="type">
-                <option value="Income" selected>Income</option>
-                <option value="Expense">Expense</option>
+                <option value="Income" selected data-lang="en">Income</option>
+                <option value="Expense" data-lang="en">Expense</option>
+                <option value="Income" data-lang="uk" style="display: none;">Дохід</option>
+                <option value="Expense" data-lang="uk" style="display: none;">Витрата</option>
             </select>
         </div>
         <div>
-            <label for="categoryId">Category:</label>
+            <label for="categoryId" data-lang="en">Category:</label>
+            <label for="categoryId" data-lang="uk" style="display: none;">Категорія:</label>
             <select name="CategoryId" id="categoryId">
                 @foreach (var category in Model.IncomeCategories)
                 {
@@ -34,10 +50,12 @@
             </select>
         </div>
         <div>
-            <label for="sum">Sum:</label>
+            <label for="sum" data-lang="en">Sum:</label>
+            <label for="sum" data-lang="uk" style="display: none;">Сума:</label>
             <input type="number" name="Sum" id="sum" step="1" required>
         </div>
-        <button type="submit">Add Transaction</button>
+        <button type="submit" data-lang="en">Add Transaction</button>
+        <button type="submit" data-lang="uk" style="display: none;">Додати транзакцію</button>
     </form>
 </div>
 
@@ -45,10 +63,14 @@
     <h2>Transaction History</h2>
     <table>
         <tr>
-            <th>Type</th>
-            <th>Category</th>
-            <th>Sum</th>
-            <th>Time</th>
+            <th data-lang="en">Type</th>
+            <th data-lang="en">Category</th>
+            <th data-lang="en">Sum</th>
+            <th data-lang="en">Time</th>
+            <th data-lang="uk" style="display: none;">Тип</th>
+            <th data-lang="uk" style="display: none;">Категорія</th>
+            <th data-lang="uk" style="display: none;">Сума</th>
+            <th data-lang="uk" style="display: none;">Час</th>
         </tr>
         @foreach (var transaction in Model.History)
         {

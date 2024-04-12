@@ -8,7 +8,10 @@ namespace Data.Repositories
     public interface IBudgetRepository
     {
         Task<double?> GetUserBudgetAsync(int userId);
+
         Task<ExpenseMonthLimitComparison> GetExpenseMonthLimitComparisonAsync(int userId);
+
+        Task<IncomeMonthLimitComparison> GetIncomeMonthLimitComparisonAsync(int userId);
     }
 
     public class BudgetRepository : IBudgetRepository
@@ -32,7 +35,13 @@ namespace Data.Repositories
 
         public async Task<ExpenseMonthLimitComparison> GetExpenseMonthLimitComparisonAsync(int userId)
         {
-            return await _context.ExpenseMonthLimitComparisons
+            return await _context.ExpenseMonthLimitComparison
+                .FirstOrDefaultAsync(e => e.IdUser == userId);
+        }
+
+        public async Task<IncomeMonthLimitComparison> GetIncomeMonthLimitComparisonAsync(int userId)
+        {
+            return await _context.IncomeMonthLimitComparison
                 .FirstOrDefaultAsync(e => e.IdUser == userId);
         }
     }

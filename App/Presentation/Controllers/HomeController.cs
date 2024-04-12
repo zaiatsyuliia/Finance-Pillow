@@ -48,7 +48,8 @@ public class HomeController : Controller
             var userHistory = await _budgetService.GetUserHistoryAsync(userId);
             var expenseCategories = await _categoryService.GetExpenseCategoriesAsync();
             var incomeCategories = await _categoryService.GetIncomeCategoriesAsync();
-            var limit = await _budgetService.GetLimitAsync(userId);
+            var expenseLimit = await _budgetService.GetExpenseLimitAsync(userId);
+            var incomeLimit = await _budgetService.GetIncomeLimitAsync(userId);
 
             var model = new HomeViewModel
             {
@@ -56,7 +57,8 @@ public class HomeController : Controller
                 History = userHistory,
                 ExpenseCategories = expenseCategories,
                 IncomeCategories = incomeCategories,
-                Limit = limit // Add the LimitDTO to the model
+                ExpenseLimit = expenseLimit, // Add the LimitDTO to the model
+                IncomeLimit = incomeLimit,
             };
 
             return View(model);
@@ -306,7 +308,8 @@ public class HomeController : Controller
                 {
                     Login = user.Login,
                     // Password should not be sent back to the view
-                    Limit = user.Limit
+                    ExpenseLimit = user.ExpenseLimit,
+                    IncomeLimit = user.IncomeLimit
                 };
 
                 // Pass the viewModel to the view
@@ -340,11 +343,14 @@ public class HomeController : Controller
                     {
                         user.Password = BCrypt.Net.BCrypt.HashPassword(model.Password);
                     }
-                    if (model.Limit != null)
+                    if (model.ExpenseLimit != null)
                     {
-                        user.Limit = model.Limit ?? 9999999;
+                        user.ExpenseLimit = model.ExpenseLimit ?? 999999999;
                     }
-
+                    if (model.IncomeLimit != null)
+                    {
+                        user.IncomeLimit = model.IncomeLimit ?? 999999999;
+                    }
                     // Update user in the database
                     await _userService.ChangeSettings(user);
 

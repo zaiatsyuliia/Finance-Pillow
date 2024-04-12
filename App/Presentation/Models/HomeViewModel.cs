@@ -5,7 +5,7 @@ namespace Presentation.Models;
 
 public class HomeViewModel
 {
-    public BudgetDto Budget { get; set; }
+    public double Budget { get; set; }
 
     public List<HistoryDto> History { get; set; }
 
@@ -13,7 +13,10 @@ public class HomeViewModel
 
     public List<CategoryDto> IncomeCategories { get; set; }
 
-    public LimitDTO Limit { get; set; }
+    public LimitDTO ExpenseLimit { get; set; }
+
+    public LimitDTO IncomeLimit { get; set; }
+
 }
 
 public class TransactionViewModel

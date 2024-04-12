@@ -11,10 +11,36 @@ public class CreditService
 {
     public CreditDto CalculateCredit(int term, decimal amount, decimal rate)
     {
-        var monthlyRate = rate / 100 / 12;
+        // Early return for edge cases:
+        // If term is zero, or if amount is zero or negative, no valid loan calculation can be done.
+        if (term <= 0 || amount <= 0)
+        {
+            return new CreditDto
+            {
+                MonthlyPayment = 0,
+                TotalPayment = 0,
+                TotalInterest = 0
+            };
+        }
 
-        // Перевірка на ділення на нуль
-        if (Math.Abs(1 - Math.Pow(1 + (double)monthlyRate, -term)) < 0.000001)
+        var monthlyRate = rate / 100 / 12;
+        decimal monthlyPayment;
+
+        // Handling the zero rate scenario where the interest does not influence the monthly payments.
+        if (rate == 0)
+        {
+            monthlyPayment = amount / term;
+            return new CreditDto
+            {
+                MonthlyPayment = Math.Round(monthlyPayment, 2),
+                TotalPayment = Math.Round(amount, 2),
+                TotalInterest = 0
+            };
+        }
+
+        // Calculate the denominator for the credit formula to avoid division by zero issues.
+        var denominator = Math.Pow(1 + (double)monthlyRate, -term);
+        if (Math.Abs(1 - denominator) < 0.000001)
         {
             return new CreditDto
             {
@@ -24,8 +50,7 @@ public class CreditService
             };
         }
 
-        var monthlyPayment = (amount * monthlyRate) / (decimal)(1 - Math.Pow(1 + (double)monthlyRate, -term));
-
+        monthlyPayment = (amount * monthlyRate) / (decimal)(1 - denominator);
         var totalPayment = monthlyPayment * term;
         var totalInterest = totalPayment - amount;
 

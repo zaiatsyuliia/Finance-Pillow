@@ -14,43 +14,71 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3 fixed-top">
             <div class="container-fluid">
-                <p class="navbar-brand" asp-area="" >FinancePillow</p>
+                <p class="navbar-brand" asp-area="">FinancePillow</p>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        <li class="nav-item" data-lang="uk" style="display: none;>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Головна</a>
+                        </li>
+                        <li class="nav-item" data-lang="en"">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-lang="uk" style="display: none;>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Expenses">Витрати</a>
+                        </li>
+                        <li class="nav-item" data-lang="en" >
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Expenses">Expenses</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-lang="uk" style="display: none;>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Incomes">Доходи</a>
+                        </li>
+                        <li class="nav-item" data-lang="en">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Incomes">Incomes</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-lang="uk" style="display: none;">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreditPage">Кредит</a>
+                        </li>
+                        <li class="nav-item" data-lang="en">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CreditPage">Credit</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-lang="uk" style="display: none;">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CurrencyPage">Валюта</a>
+                        </li>
+                        <li class="nav-item" data-lang="en">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CurrencyPage">Currency</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-lang="uk" style="display: none;">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Settings">Налаштування</a>
+                        </li>
+                        <li class="nav-item" data-lang="en" >
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Settings">Settings</a>
                         </li>
                     </ul>
 
                     <ul class="navbar-nav flex-grow-2">
-                        <li class="nav-item right-nav">
-                            <button id="themeToggleBtn" class="btn btn-primary">Change Theme</button>
+                        <li class="nav-item right-nav" data-lang="uk">
+                            <button class="btn btn-primary theme-toggle-btn">Змінити тему</button>
                         </li>
-                        <li class="nav-item right-nav">
+                        <li class="nav-item right-nav" data-lang="en" style="display: none;">
+                            <button class="btn btn-primary theme-toggle-btn">Change Theme</button>
+                        </li>
+
+                        <li class="nav-item right-nav" data-lang="uk">
+                            <form class="logout-form" asp-action="Logout" method="post">
+                                <button id="themeToggleBtn" class="btn btn-primary" type="submit">Вихід</button>
+                            </form>
+                        </li>
+                        <li class="nav-item right-nav" data-lang="en" style="display: none;">
                             <form class="logout-form" asp-action="Logout" method="post">
                                 <button id="themeToggleBtn" class="btn btn-primary" type="submit">Exit</button>
                             </form>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </nav>
@@ -62,10 +90,17 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - Presentation - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="container d-flex justify-content-between align-items-center">
+            &copy; 2024 - FinancePillow
+            <div>
+                <select id="languageSelect" class="form-select float-end">
+                    <option value="uk">Українська</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

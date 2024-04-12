@@ -6,6 +6,8 @@
 
         public string? Password { get; set; }
 
-        public int? Limit { get; set; }
+        public int? ExpenseLimit { get; set; }
+
+        public int? IncomeLimit { get; set; }
     }
 }

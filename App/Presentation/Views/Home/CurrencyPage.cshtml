@@ -44,21 +44,30 @@
     }
 </script>
 
-<h2>Валютний курс</h2>
-<label for="amount">Сума (грн): </label>
-<input type="number" id="amount" oninput="convertCurrency()">
-<br>
-<br>
+<div class="home-div">
+    <h2 data-lang="en">Currency Exchange Rate</h2>
+    <h2 data-lang="uk" style="display: none;">Валютний курс</h2>
 
-<label for="currency">Конвертація в:</label>
-<select id="currency" onchange="convertCurrency()">
-    <option value="">Всі доступні валюти</option>
-</select>
-<br>
-<br>
+    <label for="amount" data-lang="en">Amount (UAH): </label>
+    <label for="amount" data-lang="uk" style="display: none;">Сума (грн): </label>
+    <input type="number" id="amount" oninput="convertCurrency()">
 
-<h3>Конвертовані суми</h3>
-<div class="convertedAmount"></div>
+    <label for="currency" data-lang="en">Convert to:</label>
+    <label for="currency" data-lang="uk" style="display: none;">Конвертація в:</label>
+    <select id="currency" onchange="convertCurrency()">
+        <option value="" data-lang="en">All available currencies</option>
+        <option value="" data-lang="uk" style="display: none;">Всі доступні валюти</option>
+    </select>
+</div>
+
+
+<div class="home-div">
+    <h3 data-lang="en">Converted amounts</h3>
+    <h3 data-lang="uk" style="display: none;">Конвертовані суми</h3>
+    <div class="convertedAmount div-bg">
+
+    </div>
+</div>
 
 <script>
     async function populateCurrencyList() {

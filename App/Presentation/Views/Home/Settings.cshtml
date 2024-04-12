@@ -1,23 +1,34 @@
 ﻿@model Presentation.Models.UserViewModel
 
-<div class="container">
-    <!-- <h1 class="title">Finance Pillow</h1> -->
+<div class="home-div">
+    <label for="login" data-lang="en">Account Settings</label>
+    <label for="login" data-lang="uk" style="display: none;">Налаштування акаунту</label>
     <form asp-action="SettingsPost" asp-controller="Home" method="post">
         <div>
-            <label for="login">Login</label>
+            <label for="login" data-lang="en">Login</label>
+            <label for="login" data-lang="uk" style="display: none;">Логін</label>
             <input type="text" name="login" value="@Model.Login" />
         </div>
         <div>
-            <label for="password">Password</label>
+            <label for="password" data-lang="en">Password</label>
+            <label for="password" data-lang="uk" style="display: none;">Пароль</label>
             <input type="password" name="password" class="input" value="@Model.Password" />
         </div>
         <div>
-            <label for="limit">Limit</label>
-            <input type="number" name="limit" value="@Model.Limit" />
+            <label for="incomeLimit" data-lang="en">Income Limit</label>
+            <label for="incomeLimit" data-lang="uk" style="display: none;">Ліміт на доходи</label>
+            <input type="number" name="incomeLimit" value="@Model.IncomeLimit" />
         </div>
         <div>
-            <button type="submit" class="button">Save</button>
-            <button type="reset" class="button">Cancel</button>
+            <label for="incomeLimit" data-lang="en">Expense Limit</label>
+            <label for="incomeLimit" data-lang="uk" style="display: none;">Ліміт на витрати</label>
+            <input type="number" name="expenseLimit" value="@Model.ExpenseLimit" />
+        </div>
+        <div>
+            <button type="submit" class="button" data-lang="en">Save</button>
+            <button type="submit" class="button" data-lang="uk" style="display: none;">Зберегти</button>
+            <button type="reset" class="button" data-lang="en">Cancel</button>
+            <button type="reset" class="button" data-lang="uk" style="display: none;">Скасувати</button>
         </div>
     </form>
 </div>

@@ -15,5 +15,7 @@ public partial class User
 
     public virtual ICollection<Income> Incomes { get; set; } = new List<Income>();
 
-    public int Limit { get; set; } = int.MaxValue;
+    public int ExpenseLimit { get; set; } = int.MaxValue;
+
+    public int IncomeLimit { get; set; } = int.MaxValue;
 }

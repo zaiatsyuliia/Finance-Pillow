@@ -17,10 +17,9 @@ namespace Business.Services
             _historyRepository = historyRepository;
         }
 
-        public async Task<BudgetDto> GetUserBudgetAsync(int userId)
+        public async Task<double> GetUserBudgetAsync(int userId)
         {
-            double? budget = await _userBudgetRepository.GetUserBudgetAsync(userId);
-            return new BudgetDto { Sum = budget };
+            return await _userBudgetRepository.GetUserBudgetAsync(userId) ?? 0;
         }
 
         public async Task<List<HistoryDto>> GetUserHistoryAsync(int userId)
@@ -35,12 +34,21 @@ namespace Business.Services
             }).ToList();
         }
 
-        public async Task<LimitDTO> GetLimitAsync(int userId)
+        public async Task<LimitDTO> GetExpenseLimitAsync(int userId)
         {
-            // Call repository method to retrieve data
             var limit = await _userBudgetRepository.GetExpenseMonthLimitComparisonAsync(userId);
 
-            // Map the retrieved data to DTOs
+            return new LimitDTO
+            {
+                TotalSum = limit.TotalSum,
+                UserLimit = limit.UserLimit,
+                LimitStatus = limit.LimitStatus
+            };
+        }
+        public async Task<LimitDTO> GetIncomeLimitAsync(int userId)
+        {
+            var limit = await _userBudgetRepository.GetIncomeMonthLimitComparisonAsync(userId);
+
             return new LimitDTO
             {
                 TotalSum = limit.TotalSum,

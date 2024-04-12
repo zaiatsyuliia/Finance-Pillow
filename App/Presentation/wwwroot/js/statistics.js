@@ -10,6 +10,22 @@ function drawChart() {
     drawPieChartForYearTotal();
 }
 
+function getChartOptions(basicOptions) {
+    var isDark = document.body.classList.contains('dark');
+
+    // Define color settings for dark theme
+    var darkThemeOptions = {
+        backgroundColor: '#333',
+        titleTextStyle: { color: '#fff' },
+        legend: { textStyle: { color: '#fff' } },
+        hAxis: { textStyle: { color: '#fff' }, titleTextStyle: { color: '#fff' } },
+        vAxis: { textStyle: { color: '#fff' }, titleTextStyle: { color: '#fff' } }
+    };
+
+    // Merge basic options with theme-specific adjustments
+    return isDark ? { ...basicOptions, ...darkThemeOptions } : basicOptions;
+}
+
 function drawColumnChartForMonthDaily() {
     var data = new google.visualization.DataTable();
     data.addColumn('date', 'Day');
@@ -37,17 +53,15 @@ function drawColumnChartForMonthDaily() {
         data.addRow(row);
     }
 
-    var options = {
-        title: 'Month Daily',
+    var basicOptions = {
         hAxis: {
-            title: 'Day',
             format: 'dd MMM yyyy'
-        },
-        vAxis: {
-            title: 'Total'
         },
         isStacked: true
     };
+
+
+    var options = getChartOptions(basicOptions);
 
     var chart = new google.visualization.ColumnChart(document.getElementById('columnChartForMonthDaily'));
     chart.draw(data, options);
@@ -62,9 +76,10 @@ function drawPieChartForMonthTotal() {
         data.addRow([entry.categoryName, entry.totalSum]);
     });
 
-    var options = {
-        title: 'Month Total by Category',
+    var basicOptions = {
     };
+
+    var options = getChartOptions(basicOptions);
 
     var chart = new google.visualization.PieChart(document.getElementById('pieChartForMonthTotal'));
     chart.draw(data, options);
@@ -98,17 +113,14 @@ function drawColumnChartForSixMonthsMonthly() {
         data.addRow(row);
     }
 
-    var options = {
-        title: '6 Months Monthly',
+    var basicOptions = {
         hAxis: {
-            title: 'Month',
             format: 'MMM yyyy'
-        },
-        vAxis: {
-            title: 'Total'
         },
         isStacked: true
     };
+
+    var options = getChartOptions(basicOptions);
 
     var chart = new google.visualization.ColumnChart(document.getElementById('columnChartForSixMonthsMonthly'));
     chart.draw(data, options);
@@ -123,9 +135,10 @@ function drawPieChartForSixMonthsTotal() {
         data.addRow([entry.categoryName, entry.totalSum]);
     });
 
-    var options = {
-        title: '6 Months Total by Category',
+    var basicOptions = {
     };
+
+    var options = getChartOptions(basicOptions);
 
     var chart = new google.visualization.PieChart(document.getElementById('pieChartForSixMonthsTotal'));
     chart.draw(data, options);
@@ -159,17 +172,14 @@ function drawColumnChartForYearMonthly() {
         data.addRow(row);
     }
 
-    var options = {
-        title: 'Year Monthly',
+    var basicOptions = {
         hAxis: {
-            title: 'Month',
             format: 'MMM yyyy'
-        },
-        vAxis: {
-            title: 'Total'
         },
         isStacked: true
     };
+
+    var options = getChartOptions(basicOptions);
 
     var chart = new google.visualization.ColumnChart(document.getElementById('columnChartForYearMonthly'));
     chart.draw(data, options);
@@ -184,9 +194,10 @@ function drawPieChartForYearTotal() {
         data.addRow([entry.categoryName, entry.totalSum]);
     });
 
-    var options = {
-        title: 'Year Total by Category',
+    var basicOptions = {
     };
+
+    var options = getChartOptions(basicOptions);
 
     var chart = new google.visualization.PieChart(document.getElementById('pieChartForYearTotal'));
     chart.draw(data, options);

@@ -11,5 +11,6 @@ public class UserDto
     public int IdUser { get; set; }
     public string Login { get; set; }
     public string Password { get; set; }
-    public int Limit { get; set; }
+    public int ExpenseLimit { get; set; }
+    public int IncomeLimit { get; set; }
 }

@@ -1,4 +1,9 @@
 ﻿/* Light theme styles */
+
+body {
+    background-color: #f4f4f4;
+}
+
 h1,
 h2,
 h3,
@@ -15,50 +20,32 @@ button {
     color: #fff;
 }
 
-    button:hover {
-        background-color: #0056b3;
-    }
+button:hover {
+    background-color: #0056b3;
+}
 
 a {
     color: #58a6ff;
 }
 
-    a:hover {
-        color: #88c2ff;
-    }
+a:hover {
+    color: #88c2ff;
+}
 
 .home-div {
-    background-color: #f9f9f9;
+    background-color: #fff;
     color: #333;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-bottom: 3px solid #007BFF;
-}
-
-label {
-    color: #58a6ff;
 }
 
 select,
 input {
     background-color: #fff;
     color: #333;
-    border: 2px solid #58a6ff;
 }
 
-th {
-    background-color: #007BFF;
-    color: #fff;
-}
 
-tr:hover {
-    background-color: #f0f0f0; /* Light gray */
+.navbar {
+    background-color: #fff;
 }
-
-tr.income {
-    background-color: rgba(144, 238, 144, 0.3); /* Light green */
-}
-
-tr.expense {
-    background-color: rgba(255, 192, 203, 0.3); /* Light pink */
-}
-

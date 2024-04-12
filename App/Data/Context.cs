@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿namespace Data;
+
 using Data.Models;
 using Microsoft.EntityFrameworkCore;
-
-namespace Data;
 
 public partial class Context : DbContext
 {
@@ -18,7 +16,7 @@ public partial class Context : DbContext
 
     public virtual DbSet<Expense> Expenses { get; set; }
 
-    public virtual DbSet<ExpenseMonthLimitComparison> ExpenseMonthLimitComparisons { get; set; }
+    public virtual DbSet<ExpenseMonthLimitComparison> ExpenseMonthLimitComparison { get; set; }
 
     public virtual DbSet<Expense6MonthsMonthly> Expense6MonthsMonthlies { get; set; }
 
@@ -37,6 +35,8 @@ public partial class Context : DbContext
     public virtual DbSet<History> Histories { get; set; }
 
     public virtual DbSet<Income> Incomes { get; set; }
+
+    public virtual DbSet<IncomeMonthLimitComparison> IncomeMonthLimitComparison { get; set; }
 
     public virtual DbSet<Income6MonthsMonthly> Income6MonthsMonthlies { get; set; }
 
@@ -332,8 +332,10 @@ public partial class Context : DbContext
             entity.Property(e => e.Password)
                 .HasMaxLength(255)
                 .HasColumnName("password");
-            entity.Property(e => e.Limit)
-            .HasColumnName("limit");
+            entity.Property(e => e.ExpenseLimit)
+            .HasColumnName("expense_limit");
+            entity.Property(e => e.IncomeLimit)
+            .HasColumnName("income_limit");
         });
 
         modelBuilder.Entity<UserBudget>(entity =>
@@ -351,6 +353,18 @@ public partial class Context : DbContext
             entity
                 .HasNoKey()
                 .ToView("expense_month_limit_comparison");
+
+            entity.Property(e => e.IdUser).HasColumnName("id_user");
+            entity.Property(e => e.TotalSum).HasColumnName("total_sum");
+            entity.Property(e => e.UserLimit).HasColumnName("user_limit");
+            entity.Property(e => e.LimitStatus).HasColumnName("limit_status");
+        });
+
+        modelBuilder.Entity<IncomeMonthLimitComparison>(entity =>
+        {
+            entity
+                .HasNoKey()
+                .ToView("income_month_limit_comparison");
 
             entity.Property(e => e.IdUser).HasColumnName("id_user");
             entity.Property(e => e.TotalSum).HasColumnName("total_sum");

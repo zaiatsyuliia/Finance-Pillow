@@ -1,19 +1,36 @@
 ﻿@model Presentation.Models.StatisticsViewModel
 <title>@ViewData["Title"]</title>
 
-<div style="display: flex; justify-content: space-between;">
-    <div id="columnChartForMonthDaily" style="width: 60%; height: 500px;"></div>
-    <div id="pieChartForMonthTotal" style="width: 45%; height: 500px;"></div>
+<div class="home-div">
+    <h2 data-lang="en">Expense Statistics</h2>
+    <h2 data-lang="uk" style="display: none;">Статистика Витрат</h2>
 </div>
 
-<div style="display: flex; justify-content: space-between;">
-    <div id="columnChartForSixMonthsMonthly" style="width: 60%; height: 500px;"></div>
-    <div id="pieChartForSixMonthsTotal" style="width: 45%; height: 500px;"></div>
+<div class="home-div">
+    <h2 data-lang="en">Month</h2>
+    <h2 data-lang="uk">За місяць</h2>
+    <div class="statistics-div">
+        <div id="columnChartForMonthDaily" style="width: 60%; height: 500px;"></div>
+        <div id="pieChartForMonthTotal" style="width: 45%; height: 500px;"></div>
+    </div>
 </div>
 
-<div style="display: flex; justify-content: space-between;">
-    <div id="columnChartForYearMonthly" style="width: 60%; height: 500px;"></div>
-    <div id="pieChartForYearTotal" style="width: 45%; height: 500px;"></div>
+<div class="home-div">
+    <h2 data-lang="en">6 Month</h2>
+    <h2 data-lang="uk">За 6 місяців</h2>
+    <div class="statistics-div">
+        <div id="columnChartForSixMonthsMonthly" style="width: 60%; height: 500px;"></div>
+        <div id="pieChartForSixMonthsTotal" style="width: 45%; height: 500px;"></div>
+    </div>
+</div>
+
+<div class="home-div">
+    <h2 data-lang="en">Year</h2>
+    <h2 data-lang="uk">За рік</h2>
+    <div class="statistics-div">
+        <div id="columnChartForYearMonthly" style="width: 60%; height: 500px;"></div>
+        <div id="pieChartForYearTotal" style="width: 45%; height: 500px;"></div>
+    </div>
 </div>
 
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>

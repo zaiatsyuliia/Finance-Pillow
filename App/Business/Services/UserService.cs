@@ -55,7 +55,8 @@ namespace Business.Services
                 IdUser = user.IdUser,
                 Login = user.Login,
                 Password = user.Password, // Note: You may want to avoid sending the password back to the client
-                Limit = user.Limit
+                ExpenseLimit = user.ExpenseLimit,
+                IncomeLimit = user.IncomeLimit
             };
 
             return dto;
@@ -75,7 +76,8 @@ namespace Business.Services
                 IdUser = user.IdUser,
                 Login = user.Login,
                 Password = user.Password, // Note: You may want to avoid sending the password back to the client
-                Limit = user.Limit
+                ExpenseLimit = user.ExpenseLimit,
+                IncomeLimit = user.IncomeLimit
             };
 
             return dto;
@@ -99,9 +101,13 @@ namespace Business.Services
             {
                 user.Password = userDto.Password;
             }
-            if (userDto.Limit != null)
+            if (userDto.ExpenseLimit != null)
             {
-                user.Limit = userDto.Limit;
+                user.ExpenseLimit = userDto.ExpenseLimit;
+            }
+            if (userDto.IncomeLimit != null)
+            {
+                user.IncomeLimit = userDto.IncomeLimit;
             }
 
             // Save changes to the database

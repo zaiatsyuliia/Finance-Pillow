@@ -1,6 +1,5 @@
 ﻿
 <title>Кредитний калькулятор</title>
-<link rel="stylesheet" href="~/css/creditStyle.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
@@ -26,20 +25,34 @@
     }
 </script>
 
+<div class="home-div">
+    <h2 data-lang="en">Loan Calculator</h2>
+    <h2 data-lang="uk" style="display: none;">Кредитний калькулятор</h2>
 
-<h2>Кредитний калькулятор</h2>
-<label for="term">Термін кредитування (місяці): </label>
-<input type="number" id="term"><br><br>
+    <label for="term" data-lang="en">Loan Term (months): </label>
+    <label for="term" data-lang="uk" style="display: none;">Термін кредитування (місяці): </label>
+    <input type="number" id="term"><br><br>
 
-<label for="amount">Сума кредиту (грн): </label>
-<input type="number" id="amount"><br><br>
+    <label for="amount" data-lang="en">Loan Amount (UAH): </label>
+    <label for="amount" data-lang="uk" style=" display: none;">Сума кредиту (грн): </label>
+    <input type="number" id="amount"><br><br>
 
-<label for="rate">Відсоткова ставка (% річних): </label>
-<input type="number" id="rate"><br><br>
+    <label for="rate" data-lang="en">Interest Rate (annual %): </label>
+    <label for="rate" data-lang="uk" style="display: none;">Відсоткова ставка (% річних): </label>
+    <input type="number" id="rate"><br><br>
 
-<button onclick="calculate()">Розрахувати</button><br><br>
+    <button onclick="calculate('en')" data-lang="en">Calculate</button>
+    <button onclick="calculate('uk')" data-lang="uk" style="display: none;">Розрахувати</button>
+</div>
 
-<h3>Результати</h3>
-<p>Щомісячний платіж: <span id="monthlyPayment">0.00</span> грн</p>
-<p>Загальна сума виплати: <span id="totalPayment">0.00</span> грн</p>
-<p>Відсотки: <span id="totalInterest">0.00</span> грн</p>
+<div class="home-div">
+    <p data-lang="en">Monthly Payment: <span id="monthlyPayment_en">0.00</span> UAH</p>
+    <p data-lang="uk" style="display: none;">Щомісячний платіж: <span id="monthlyPayment_uk">0.00</span> грн</p>
+
+    <p data-lang="en">Total Payment: <span id="totalPayment_en">0.00</span> UAH</p>
+    <p data-lang="uk" style="display: none;">Загальна сума виплати: <span id="totalPayment_uk">0.00</span> грн</p>
+
+    <p data-lang="en">Interest: <span id="totalInterest_en">0.00</span> UAH</p>
+    <p data-lang="uk" style="display: none;">Відсотки: <span id="totalInterest_uk">0.00</span> грн</p>
+</div>
+
