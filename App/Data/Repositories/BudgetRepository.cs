@@ -12,6 +12,10 @@ namespace Data.Repositories
         Task<ExpenseMonthLimitComparison> GetExpenseMonthLimitComparisonAsync(int userId);
 
         Task<IncomeMonthLimitComparison> GetIncomeMonthLimitComparisonAsync(int userId);
+
+        Task DeleteIncomeAsync(int idIncome);
+
+        Task DeleteExpenseAsync(int idExpense);
     }
 
     public class BudgetRepository : IBudgetRepository
@@ -43,6 +47,26 @@ namespace Data.Repositories
         {
             return await _context.IncomeMonthLimitComparison
                 .FirstOrDefaultAsync(e => e.IdUser == userId);
+        }
+
+        public async Task DeleteIncomeAsync(int idIncome)
+        {
+            var income = await _context.Incomes.FindAsync(idIncome);
+            if (income != null)
+            {
+                _context.Incomes.Remove(income);
+                await _context.SaveChangesAsync();
+            }
+        }
+
+        public async Task DeleteExpenseAsync(int idExpense)
+        {
+            var expense = await _context.Expenses.FindAsync(idExpense);
+            if (expense != null)
+            {
+                _context.Expenses.Remove(expense);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }

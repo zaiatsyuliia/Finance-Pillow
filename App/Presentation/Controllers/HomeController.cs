@@ -70,7 +70,6 @@ public class HomeController : Controller
         }
     }
 
-
     [HttpPost]
     public async Task<IActionResult> AddTransaction(TransactionViewModel model)
     {
@@ -83,23 +82,28 @@ public class HomeController : Controller
                 Sum = model.Sum
             };
 
-            if (model.Type == "Expense")
-            {
-                await _transactionService.AddExpenseAsync(userId, transactionDto);
-            }
-            else if (model.Type == "Income")
-            {
-                await _transactionService.AddIncomeAsync(userId, transactionDto);
-            }
-            else
-            {
-                return BadRequest("Invalid transaction type.");
-            }
+            await _transactionService.AddTransactionAsync(userId, transactionDto);
 
             return RedirectToAction(nameof(Index));
         }
 
         return View("Index", model);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> DeleteTransaction(string type, int transactionId)
+    {
+        if (Request.Cookies.TryGetValue("UserId", out string userIdString) && int.TryParse(userIdString, out int userId))
+        {
+            await _budgetService.DeleteTransactionAsync(type, transactionId);
+            TempData["Message"] = "Transaction deleted successfully.";
+            return RedirectToAction(nameof(Index));
+        }
+        else
+        {
+            TempData["Error"] = "Unable to delete transaction. User not recognized.";
+            return RedirectToAction(nameof(LoginPage));
+        }
     }
 
     public async Task<IActionResult> Expenses()
@@ -165,7 +169,6 @@ public class HomeController : Controller
             return RedirectToAction(nameof(LoginPage));
         }
     }
-
 
     public async Task<IActionResult> LoginPage(LoginViewModel model)
     {

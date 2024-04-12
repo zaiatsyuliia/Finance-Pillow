@@ -50,5 +50,4 @@ public class TransactionRepository : ITransactionRepository
         await _context.SaveChangesAsync();
     }
 
-    public
 }

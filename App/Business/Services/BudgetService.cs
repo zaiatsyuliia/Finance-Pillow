@@ -28,6 +28,7 @@ namespace Business.Services
             return historyList.Select(h => new HistoryDto
             {
                 TransactionType = h.TransactionType,
+                IdTransaction = h.IdTransaction ?? 0,
                 Category = h.Category,
                 Date = h.Time.HasValue ? h.Time.Value.Date : DateTime.MinValue, // Extract only the date part
                 Sum = h.Sum ?? 0
@@ -55,6 +56,22 @@ namespace Business.Services
                 UserLimit = limit.UserLimit,
                 LimitStatus = limit.LimitStatus
             };
+        }
+
+        public async Task DeleteTransactionAsync(string type, int transactionId)
+        {
+            if (type.Equals("income", StringComparison.OrdinalIgnoreCase))
+            {
+                await _userBudgetRepository.DeleteIncomeAsync(transactionId);
+            }
+            else if (type.Equals("expense", StringComparison.OrdinalIgnoreCase))
+            {
+                await _userBudgetRepository.DeleteExpenseAsync(transactionId);
+            }
+            else
+            {
+                throw new ArgumentException("Invalid transaction type specified.");
+            }
         }
     }
 }

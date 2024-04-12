@@ -16,17 +16,15 @@ public class TransactionService
         _transactionRepository = transactionRepository;
     }
 
-    public async Task AddExpenseAsync(int userId, TransactionDto dto)
+    public async Task AddTransactionAsync(int userId, TransactionDto dto)
     {
         DateTime currentTime = DateTime.Now;
-
-        await _transactionRepository.AddExpenseAsync(userId, dto.CategoryId, currentTime, dto.Sum);
-    }
-
-    public async Task AddIncomeAsync(int userId, TransactionDto dto)
-    {
-        DateTime currentTime = DateTime.Now;
-
-        await _transactionRepository.AddIncomeAsync(userId, dto.CategoryId, currentTime, dto.Sum);
+        if (dto.Type == "expense")
+        {
+            await _transactionRepository.AddExpenseAsync(userId, dto.CategoryId, currentTime, dto.Sum);
+        }
+        else { 
+            await _transactionRepository.AddIncomeAsync(userId, dto.CategoryId, currentTime, dto.Sum);
+        }
     }
 }
