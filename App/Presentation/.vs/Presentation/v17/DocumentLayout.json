@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\currencypage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\currencypage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 475,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,13 +102,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAwCUAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-12T00:22:44.938Z",
               "EditorCaption": ""
@@ -128,7 +128,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "CurrencyPage.cshtml",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\CurrencyPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\CurrencyPage.cshtml",
@@ -141,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Settings.cshtml",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Settings.cshtml",
