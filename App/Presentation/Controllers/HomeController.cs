@@ -263,10 +263,16 @@ public class HomeController : Controller
         return View("RegisterPage", model);
     }
 
+
     public async Task<IActionResult> CalculateCredit(int term, decimal amount, decimal rate)
     {
+        Console.WriteLine(term);
+        Console.WriteLine(amount);
+        Console.WriteLine(rate);
         var creditDto = _creditService.CalculateCredit(term, amount, rate);
-
+        Console.WriteLine(creditDto.MonthlyPayment);
+        Console.WriteLine(creditDto.TotalPayment);
+        Console.WriteLine(creditDto.TotalInterest);
         return Json(new
         {
             monthlyPayment = creditDto.MonthlyPayment,

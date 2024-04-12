@@ -5,6 +5,7 @@ using Xunit;
 using Business.Services;
 using Data.Repositories;
 using Business.DTO;
+using Data.Models;
 
 namespace Testing;
 
@@ -19,12 +20,13 @@ public class TransactionServiceTests
         var userId = 1;
         var transactionDto = new TransactionDto
         {
+            Type = "expense",
             CategoryId = 10,
             Sum = 100.00
         };
 
         // Act
-        await service.AddExpenseAsync(userId, transactionDto);
+        await service.AddTransactionAsync(userId, transactionDto);
 
         // Assert
         mockRepo.Verify(repo => repo.AddExpenseAsync(userId, transactionDto.CategoryId, It.IsAny<DateTime>(), transactionDto.Sum), Times.Once());
@@ -39,12 +41,13 @@ public class TransactionServiceTests
         var userId = 1;
         var transactionDto = new TransactionDto
         {
+            Type = "income",
             CategoryId = 20,
             Sum = 200.00
         };
 
         // Act
-        await service.AddIncomeAsync(userId, transactionDto);
+        await service.AddTransactionAsync(userId, transactionDto);
 
         // Assert
         mockRepo.Verify(repo => repo.AddIncomeAsync(userId, transactionDto.CategoryId, It.IsAny<DateTime>(), transactionDto.Sum), Times.Once());
