@@ -3,16 +3,19 @@
   "WorkspaceRootPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F55545C-4064-43C8-A94E-3345B35A6A68}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\currencypage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\currencypage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\creditpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\creditpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7F55545C-4064-43C8-A94E-3345B35A6A68}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\dto\\historydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -27,9 +30,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F55545C-4064-43C8-A94E-3345B35A6A68}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FECCB39-CCE2-4738-8ED8-8DA527D9E42D}|..\\Data\\Data.csproj|d:\\projects\\financepillow\\app\\data\\repositories\\transactionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -50,21 +50,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 475,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CurrencyPage.cshtml",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\CurrencyPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\CurrencyPage.cshtml",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\CurrencyPage.cshtml",
-              "RelativeToolTip": "Views\\Home\\CurrencyPage.cshtml",
-              "ViewState": "AQIAADkAAACA/v///38pwEEAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T14:35:50.73Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -75,7 +62,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "CurrencyPage.cshtml",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\CurrencyPage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\CurrencyPage.cshtml",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\CurrencyPage.cshtml",
+              "RelativeToolTip": "Views\\Home\\CurrencyPage.cshtml",
+              "ViewState": "AQIAADkAAACA/v///38pwEMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T14:35:50.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CreditPage.cshtml",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\CreditPage.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\CreditPage.cshtml",
@@ -88,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Settings.cshtml",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Settings.cshtml",
@@ -101,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "HistoryDto.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\DTO\\HistoryDto.cs",
               "RelativeDocumentMoniker": "..\\Business\\DTO\\HistoryDto.cs",
@@ -114,25 +114,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "BudgetService.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\BudgetService.cs",
               "RelativeDocumentMoniker": "..\\Business\\Services\\BudgetService.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\BudgetService.cs",
               "RelativeToolTip": "..\\Business\\Services\\BudgetService.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAUwEoAAAAJAAAA",
+              "ViewState": "AQIAADgAAAAAzszMzMwMwEcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T12:30:36.528Z"
+              "WhenOpened": "2024-04-12T12:30:36.528Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAMBAAAA9JmZmZkZwAkBAAAAAAAA",
+              "ViewState": "AQIAAAYBAAAAIM3MzMz0vxcBAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-12T12:23:47.067Z",
               "EditorCaption": ""
@@ -151,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "History.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Data\\Models\\History.cs",
               "RelativeDocumentMoniker": "..\\Data\\Models\\History.cs",
@@ -188,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
