@@ -7,6 +7,8 @@ public partial class History
 {
     public string? TransactionType { get; set; }
 
+    public int? IdTransaction { get; set; }
+
     public int? IdUser { get; set; }
 
     public string? Category { get; set; }

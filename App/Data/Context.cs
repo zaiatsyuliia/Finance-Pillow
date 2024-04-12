@@ -197,6 +197,7 @@ public partial class Context : DbContext
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("time");
             entity.Property(e => e.TransactionType).HasColumnName("transaction_type");
+            entity.Property(e => e.IdTransaction).HasColumnName("id_transaction");
         });
 
         modelBuilder.Entity<Income>(entity =>

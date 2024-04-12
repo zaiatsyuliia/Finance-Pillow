@@ -49,4 +49,6 @@ public class TransactionRepository : ITransactionRepository
         _context.Incomes.Add(income);
         await _context.SaveChangesAsync();
     }
+
+    public
 }
