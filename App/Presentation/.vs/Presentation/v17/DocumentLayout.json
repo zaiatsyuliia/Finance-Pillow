@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\currencypage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\currencypage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\wwwroot\\css\\darktheme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:wwwroot\\css\\darktheme.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\loginpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\loginpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{3D8F77FF-A71D-48A1-9C73-3562CBD13606}|Presentation.csproj|solutionrelative:views\\home\\registerpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,114 +30,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 475,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AQIAAIoAAAAAAAAAAAAAAJsAAAABAAAA",
+              "DocumentIndex": 1,
+              "Title": "darkTheme.css",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\darkTheme.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\darkTheme.css",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\darkTheme.css",
+              "RelativeToolTip": "wwwroot\\css\\darkTheme.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-12T01:19:46.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "site.js",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AQIAACsAAAAAAAAAAAAuwEsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-12T00:57:10.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAADoAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T00:54:08.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginPage.cshtml",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\LoginPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\LoginPage.cshtml",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\LoginPage.cshtml",
-              "RelativeToolTip": "Views\\Home\\LoginPage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T00:22:45.657Z",
+              "WhenOpened": "2024-04-12T01:33:14.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAOAAAA",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T00:22:44.938Z",
+              "WhenOpened": "2024-04-12T01:28:43.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RegisterPage.cshtml",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\RegisterPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\RegisterPage.cshtml",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\RegisterPage.cshtml",
-              "RelativeToolTip": "Views\\Home\\RegisterPage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T00:22:46.287Z",
+              "DocumentIndex": 4,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AQIAACQAAAAAAAAAAAA0wEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-12T01:26:33.764Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CurrencyPage.cshtml",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\CurrencyPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\CurrencyPage.cshtml",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\CurrencyPage.cshtml",
-              "RelativeToolTip": "Views\\Home\\CurrencyPage.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAAEEAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T00:22:42.57Z",
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAALoAAAAAAAAAAAAAAIEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-12T01:26:28.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Settings.cshtml",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Settings.cshtml",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
-              "RelativeToolTip": "Views\\Home\\Settings.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABRAAAA",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T00:17:17.05Z",
+              "WhenOpened": "2024-04-12T01:25:42.553Z",
               "EditorCaption": ""
             }
           ]

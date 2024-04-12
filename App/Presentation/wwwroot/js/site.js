@@ -1,5 +1,4 @@
 ﻿themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
-
 const body = document.body;
 const theme = localStorage.getItem('theme');
 const languageSelect = document.getElementById('languageSelect');
@@ -16,7 +15,7 @@ if (selectedLanguage) {
     languageSelect.value = selectedLanguage;
 }
 
-
+// Theme toggle button event listener
 themeToggleBtns.forEach(btn => {
     btn.addEventListener('click', function () {
         body.classList.toggle('dark');
@@ -25,8 +24,7 @@ themeToggleBtns.forEach(btn => {
     });
 });
 
-
-
+// Language select change event listener
 languageSelect.addEventListener('change', function () {
     const selectedLang = languageSelect.value;
     changeLanguage(selectedLang);
@@ -53,6 +51,7 @@ function changeLanguage(lang) {
         }
     });
 
+    // Show buttons with the selected language
     const buttons = document.querySelectorAll('.button');
     buttons.forEach(button => {
         if (button.getAttribute('data-lang') === lang) {
@@ -64,8 +63,8 @@ function changeLanguage(lang) {
 }
 
 function updateSelectedOption(lang) {
-    const typeSelect = document.getElementById('type');
-    const options = typeSelect.querySelectorAll('option');
+    const currencySelect = document.getElementById('currency');
+    const options = currencySelect.querySelectorAll('option');
 
     options.forEach(option => {
         option.selected = false;

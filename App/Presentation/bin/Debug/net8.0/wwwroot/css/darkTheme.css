@@ -6,13 +6,7 @@
 
 .dark .navbar {
     background-color: #333333;
-}
-
-.dark .btn,
-.dark .btn-link.nav-link {
-    background-color: #258cfb;
-    color: #fff;
-    border-color: #258cfb;
+    border-bottom: 0px;
 }
 
 .dark h1,
@@ -40,14 +34,6 @@
 .dark footer {
     background-color: #1a1a1a;
     color: #b0b0b0;
-}
-
-.dark .btn:focus,
-.dark .btn:active:focus,
-.dark .btn-link.nav-link:focus,
-.dark .form-control:focus,
-.dark .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem #258cfb, 0 0 0 0.25rem #258cfb;
 }
 
 .dark button {
@@ -87,4 +73,9 @@
 .dark .currency {
     color: #fff;
     font-weight: bold;
+}
+
+.dark .navbar-brand {
+    color: #58a6ff;
+    font-size: 24px;
 }
