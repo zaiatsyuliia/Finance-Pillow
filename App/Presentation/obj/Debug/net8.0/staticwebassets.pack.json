@@ -1,272 +1,428 @@
 {
   "Files": [
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Presentation.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Presentation.bundle.scp.css"
-    },
-    {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\creditStyle.css",
-      "PackagePath": "staticwebassets\\css\\creditStyle.css"
-    },
-    {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\darkTheme.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\css\\darkTheme.css",
       "PackagePath": "staticwebassets\\css\\darkTheme.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\lightTheme.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\css\\lightTheme.css",
       "PackagePath": "staticwebassets\\css\\lightTheme.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\logregStyle.css",
-      "PackagePath": "staticwebassets\\css\\logregStyle.css"
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\css\\logReg.css",
+      "PackagePath": "staticwebassets\\css\\logReg.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\site.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\favicon.ico",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\site.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman0.png",
+      "PackagePath": "staticwebassets\\images\\hangman0.png"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman1.png",
+      "PackagePath": "staticwebassets\\images\\hangman1.png"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman2.png",
+      "PackagePath": "staticwebassets\\images\\hangman2.png"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman3.png",
+      "PackagePath": "staticwebassets\\images\\hangman3.png"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman4.png",
+      "PackagePath": "staticwebassets\\images\\hangman4.png"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman5.png",
+      "PackagePath": "staticwebassets\\images\\hangman5.png"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman6.png",
+      "PackagePath": "staticwebassets\\images\\hangman6.png"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\credit.js",
+      "PackagePath": "staticwebassets\\js\\credit.js"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\currency.js",
+      "PackagePath": "staticwebassets\\js\\currency.js"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\game.js",
+      "PackagePath": "staticwebassets\\js\\game.js"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\hangman.js",
+      "PackagePath": "staticwebassets\\js\\hangman.js"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\music.js",
+      "PackagePath": "staticwebassets\\js\\music.js"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\statistics.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\statistics.js",
       "PackagePath": "staticwebassets\\js\\statistics.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\transactionForm.js",
       "PackagePath": "staticwebassets\\js\\transactionForm.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\A Melody to Break the Curse.mp3",
+      "PackagePath": "staticwebassets\\music\\A Melody to Break the Curse.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Alls Well.mp3",
+      "PackagePath": "staticwebassets\\music\\Alls Well.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Aria Math.mp3",
+      "PackagePath": "staticwebassets\\music\\Aria Math.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Blood and Wine.mp3",
+      "PackagePath": "staticwebassets\\music\\Blood and Wine.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Civilisations Lost.mp3",
+      "PackagePath": "staticwebassets\\music\\Civilisations Lost.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Crisis City.mp3",
+      "PackagePath": "staticwebassets\\music\\Crisis City.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Dad Battle.mp3",
+      "PackagePath": "staticwebassets\\music\\Dad Battle.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Dearest Hue.mp3",
+      "PackagePath": "staticwebassets\\music\\Dearest Hue.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Farewell.mp3",
+      "PackagePath": "staticwebassets\\music\\Farewell.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Final Fortress.mp3",
+      "PackagePath": "staticwebassets\\music\\Final Fortress.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Karasu.mp3",
+      "PackagePath": "staticwebassets\\music\\Karasu.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Kingdom Valley.mp3",
+      "PackagePath": "staticwebassets\\music\\Kingdom Valley.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Kronos Island.mp3",
+      "PackagePath": "staticwebassets\\music\\Kronos Island.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Living Mice.mp3",
+      "PackagePath": "staticwebassets\\music\\Living Mice.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\M.I.L.F.mp3",
+      "PackagePath": "staticwebassets\\music\\M.I.L.F.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Out of time.mp3",
+      "PackagePath": "staticwebassets\\music\\Out of time.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Phantom's Legacy.mp3",
+      "PackagePath": "staticwebassets\\music\\Phantom's Legacy.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Restoring the Light, Facing the Dark.mp3",
+      "PackagePath": "staticwebassets\\music\\Restoring the Light, Facing the Dark.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Resurrections.mp3",
+      "PackagePath": "staticwebassets\\music\\Resurrections.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Sand Ruins.mp3",
+      "PackagePath": "staticwebassets\\music\\Sand Ruins.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Sealed Ground.mp3",
+      "PackagePath": "staticwebassets\\music\\Sealed Ground.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Seaside Hill.mp3",
+      "PackagePath": "staticwebassets\\music\\Seaside Hill.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Splash Canyon.mp3",
+      "PackagePath": "staticwebassets\\music\\Splash Canyon.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Sweden.mp3",
+      "PackagePath": "staticwebassets\\music\\Sweden.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Through the Valleys.mp3",
+      "PackagePath": "staticwebassets\\music\\Through the Valleys.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Un-gravitify.mp3",
+      "PackagePath": "staticwebassets\\music\\Un-gravitify.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Walking The Walk.mp3",
+      "PackagePath": "staticwebassets\\music\\Walking The Walk.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Windy Hill.mp3",
+      "PackagePath": "staticwebassets\\music\\Windy Hill.mp3"
+    },
+    {
+      "Id": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Windy and Ripply.mp3",
+      "PackagePath": "staticwebassets\\music\\Windy and Ripply.mp3"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,0 +1,29 @@
+﻿<title>Кредитний калькулятор</title>
+
+<div class="home-div">
+    <h1 data-lang="en">Currency Exchange Rate</h1>
+    <h1 data-lang="uk" style="display: none;">Валютний курс</h1>
+
+    <label for="amount" data-lang="en">Amount (UAH): </label>
+    <label for="amount" data-lang="uk" style="display: none;">Сума (грн): </label>
+    <input type="number" id="amount" oninput="convertCurrency()">
+
+    <label for="currency" data-lang="en">Convert to:</label>
+    <label for="currency" data-lang="uk" style="display: none;">Конвертація в:</label>
+    <select id="currency" onchange="convertCurrency()">
+        <option value="" data-lang="en">All available currencies</option>
+        <option value="" data-lang="uk" style="display: none;">Всі доступні валюти</option>
+    </select>
+</div>
+
+<div class="home-div">
+    <h1 data-lang="en">Converted amounts</h1>
+    <h1 data-lang="uk" style="display: none;">Конвертовані суми</h1>
+    <div class="convertedAmount div-bg">
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="~/js/currency.js"></script>

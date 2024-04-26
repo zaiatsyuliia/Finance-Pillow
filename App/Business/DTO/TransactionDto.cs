@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Business.DTO;
 
-namespace Business.DTO
+public enum TransactionType
 {
-    public class TransactionDto
-    {
-        public string Type { get; set; }
-        public int CategoryId { get; set; }
-        public double Sum { get; set; }
-    }
+    Expense,
+    Income
+}
+
+public class TransactionDto
+{
+    public TransactionType Type { get; set; }
+    public int CategoryId { get; set; }
+    public double Sum { get; set; }
 }

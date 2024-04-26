@@ -9,121 +9,121 @@ namespace Data.Repositories;
 
 public interface IStatisticsRepository
 {
-    Task<List<ExpenseMonthDaily>> GetExpenseMonthDailyAsync(int userId);
+    Task<List<ExpenseMonthDaily>> GetExpenseMonthDailyAsync(string userId);
 
-    Task<List<ExpenseMonthTotal>> GetExpenseMonthTotalAsync(int userId);
+    Task<List<ExpenseMonthTotal>> GetExpenseMonthTotalAsync(string userId);
 
-    Task<List<Expense6MonthsMonthly>> GetExpense6MonthsMonthlyAsync(int userId);
+    Task<List<Expense6MonthsMonthly>> GetExpense6MonthsMonthlyAsync(string userId);
 
-    Task<List<Expense6MonthsTotal>> GetExpense6MonthsTotalAsync(int userId);
+    Task<List<Expense6MonthsTotal>> GetExpense6MonthsTotalAsync(string userId);
 
-    Task<List<ExpenseYearMonthly>> GetExpenseYearMonthlyAsync(int userId);
+    Task<List<ExpenseYearMonthly>> GetExpenseYearMonthlyAsync(string userId);
 
-    Task<List<ExpenseYearTotal>> GetExpenseYearTotalAsync(int userId);
+    Task<List<ExpenseYearTotal>> GetExpenseYearTotalAsync(string userId);
 
-    Task<List<IncomeMonthDaily>> GetIncomeMonthDailyAsync(int userId);
+    Task<List<IncomeMonthDaily>> GetIncomeMonthDailyAsync(string userId);
 
-    Task<List<IncomeMonthTotal>> GetIncomeMonthTotalAsync(int userId);
+    Task<List<IncomeMonthTotal>> GetIncomeMonthTotalAsync(string userId);
 
-    Task<List<Income6MonthsMonthly>> GetIncome6MonthsMonthlyAsync(int userId);
+    Task<List<Income6MonthsMonthly>> GetIncome6MonthsMonthlyAsync(string userId);
 
-    Task<List<Income6MonthsTotal>> GetIncome6MonthsTotalAsync(int userId);
+    Task<List<Income6MonthsTotal>> GetIncome6MonthsTotalAsync(string userId);
 
-    Task<List<IncomeYearMonthly>> GetIncomeYearMonthlyAsync(int userId);
+    Task<List<IncomeYearMonthly>> GetIncomeYearMonthlyAsync(string userId);
 
-    Task<List<IncomeYearTotal>> GetIncomeYearTotalAsync(int userId);
+    Task<List<IncomeYearTotal>> GetIncomeYearTotalAsync(string userId);
 }
 
 public class StatisticsRepository : IStatisticsRepository
 {
-    private readonly Context _context;
+    private readonly FPDbContext _context;
 
-    public StatisticsRepository(Context context)
+    public StatisticsRepository(FPDbContext context)
     {
         _context = context;
     }
 
-    public async Task<List<ExpenseMonthDaily>> GetExpenseMonthDailyAsync(int userId)
+    public async Task<List<ExpenseMonthDaily>> GetExpenseMonthDailyAsync(string userId)
     {
         return await _context.ExpenseMonthDailies
-            .Where(e => e.IdUser == userId)
+            .Where(e => e.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<ExpenseMonthTotal>> GetExpenseMonthTotalAsync(int userId)
+    public async Task<List<ExpenseMonthTotal>> GetExpenseMonthTotalAsync(string userId)
     {
         return await _context.ExpenseMonthTotals
-            .Where(e => e.IdUser == userId)
+            .Where(e => e.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<Expense6MonthsMonthly>> GetExpense6MonthsMonthlyAsync(int userId)
+    public async Task<List<Expense6MonthsMonthly>> GetExpense6MonthsMonthlyAsync(string userId)
     {
         return await _context.Expense6MonthsMonthlies
-            .Where(e => e.IdUser == userId)
+            .Where(e => e.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<Expense6MonthsTotal>> GetExpense6MonthsTotalAsync(int userId)
+    public async Task<List<Expense6MonthsTotal>> GetExpense6MonthsTotalAsync(string userId)
     {
         return await _context.Expense6MonthsTotals
-            .Where(e => e.IdUser == userId)
+            .Where(e => e.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<ExpenseYearMonthly>> GetExpenseYearMonthlyAsync(int userId)
+    public async Task<List<ExpenseYearMonthly>> GetExpenseYearMonthlyAsync(string userId)
     {
         return await _context.ExpenseYearMonthlies
-            .Where(e => e.IdUser == userId)
+            .Where(e => e.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<ExpenseYearTotal>> GetExpenseYearTotalAsync(int userId)
+    public async Task<List<ExpenseYearTotal>> GetExpenseYearTotalAsync(string userId)
     {
         return await _context.ExpenseYearTotals
-            .Where(e => e.IdUser == userId)
+            .Where(e => e.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<IncomeMonthDaily>> GetIncomeMonthDailyAsync(int userId)
+    public async Task<List<IncomeMonthDaily>> GetIncomeMonthDailyAsync(string userId)
     {
         return await _context.IncomeMonthDailies
-            .Where(i => i.IdUser == userId)
+            .Where(i => i.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<IncomeMonthTotal>> GetIncomeMonthTotalAsync(int userId)
+    public async Task<List<IncomeMonthTotal>> GetIncomeMonthTotalAsync(string userId)
     {
         return await _context.IncomeMonthTotals
-            .Where(i => i.IdUser == userId)
+            .Where(i => i.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<Income6MonthsMonthly>> GetIncome6MonthsMonthlyAsync(int userId)
+    public async Task<List<Income6MonthsMonthly>> GetIncome6MonthsMonthlyAsync(string userId)
     {
         return await _context.Income6MonthsMonthlies
-            .Where(i => i.IdUser == userId)
+            .Where(i => i.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<Income6MonthsTotal>> GetIncome6MonthsTotalAsync(int userId)
+    public async Task<List<Income6MonthsTotal>> GetIncome6MonthsTotalAsync(string userId)
     {
         return await _context.Income6MonthsTotals
-            .Where(i => i.IdUser == userId)
+            .Where(i => i.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<IncomeYearMonthly>> GetIncomeYearMonthlyAsync(int userId)
+    public async Task<List<IncomeYearMonthly>> GetIncomeYearMonthlyAsync(string userId)
     {
         return await _context.IncomeYearMonthlies
-            .Where(i => i.IdUser == userId)
+            .Where(i => i.UserId == userId)
             .ToListAsync();
     }
 
-    public async Task<List<IncomeYearTotal>> GetIncomeYearTotalAsync(int userId)
+    public async Task<List<IncomeYearTotal>> GetIncomeYearTotalAsync(string userId)
     {
         return await _context.IncomeYearTotals
-            .Where(i => i.IdUser == userId)
+            .Where(i => i.UserId == userId)
             .ToListAsync();
     }
 }

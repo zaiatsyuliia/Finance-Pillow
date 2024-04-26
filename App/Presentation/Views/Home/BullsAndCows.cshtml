@@ -1,0 +1,80 @@
+﻿<h1 data-lang="en">Bulls and Cows Game</h1>
+<h1 data-lang="uk" style="display: none;">Гра "Бики та корови"</h1>
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="width: 48%;">
+        <label for="numberLength" data-lang="en">Choose number length (4-10):</label>
+        <label for="numberLength" data-lang="uk" style="display: none;">Вибери довжину числа (4-10):</label>
+
+        <select id="numberLength">
+            @for (int i = 4; i <= 10; i++)
+            {
+                <option value="@i">@i</option>
+            }
+        </select>
+
+        <button onclick="startGame()" data-lang="en">Start Game</button>
+        <button onclick="startGameuk()" data-lang="uk" style="display: none;">Почати гру</button>
+
+        <div id="gameArea" style="display: none;">
+            <input type="text" id="userGuess" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+            <button onclick="checkGuess()" data-lang="en">Check</button>
+            <button onclick="checkGuessuk()" data-lang="uk" style="display: none;">Перевірити</button>
+
+            <p data-lang="en">Attempts left:</p>
+            <p data-lang="uk" style="display: none;">Спроб залишилось:</p>
+            <span id="attempts">10</span>
+
+            <p data-lang="en">Results:</p>
+            <p data-lang="uk" style="display: none;">Результати:</p>
+            <div id="resultsList"></div>
+        </div>
+    </div>
+
+    <div style="width: 48%;">
+        <h2 data-lang="en">Rules:</h2>
+        <h2 data-lang="uk" style="display: none;">Правила:</h2>
+
+        <p data-lang="en">You need to guess a randomly generated number in the least number of attempts.</p>
+        <p data-lang="uk" style="display: none;">Вам потрібно вгадати випадково згенероване число за найменшу кількість спроб.</p>
+
+        <p data-lang="en">The number consists of unique digits from 4 to 10, depending on the length chosen by the player.</p>
+        <p data-lang="uk" style="display: none;">Номер складається з унікальних цифр від 4 до 10, залежно від довжини, обраної гравцем.</p>
+
+        <ul>
+            <li data-lang="en">The player chooses the length of the number from 4 to 10 digits, and also that the numbers are not repeated.</li>
+            <li data-lang="uk" style="display: none;">Гравець вибирає довжину числа від 4 до 10 цифр, а також щоб числа не повторювалися.</li>
+
+            <li data-lang="en">The player enters his number in the input field and presses the "Check" button.</li>
+            <li data-lang="uk" style="display: none;">Гравець вводить свій номер у поле введення і натискає кнопку «Перевірити».</li>
+
+            <li data-lang="en">After each entered number, the game informs the player about the number of "bulls" and "cows" in the entered number:</li>
+            <li data-lang="uk" style="display: none;">Після кожного введеного числа гра повідомляє гравця про кількість "биків" та "корів" у введеному числі:</li>
+            
+            <ul>
+                <li data-lang="en">Bull (B): the figure is guessed in its correct place.</li>
+                <li data-lang="uk" style="display: none;">Бик (Б): цифра вгадана на своєму правильному місці.</li>
+
+                <li data-lang="en">Cow (C): The number is guessed, but not in its correct place.</li>
+                <li data-lang="uk" style="display: none;">Корова (К): цифра вгадана, але не на своєму правильному місці.</li>
+            </ul>
+
+            <li data-lang="en">The game continues until the player guesses all the numbers in the maximum number of attempts (10).</li>
+            <li data-lang="uk" style="display: none;">Гра триває, доки гравець не вгадає всі цифри за максимальну кількість спроб (10).</li>
+
+            <li data-lang="en">A player wins when he guesses all the numbers in the fewest number of tries.</li>
+            <li data-lang="uk" style="display: none;">Гравець перемагає, коли він вгадує всі цифри за меншу кількість спроб.</li>
+        </ul>
+        <p data-lang="en">Good luck!</p>
+        <p data-lang="uk" style="display: none;">Щасти!</p>
+    </div>
+</div>
+
+<div id="overlay" onclick="hideAlert()">
+    <div id="overlay-content">
+        <p id="overlay-message"></p>
+    </div>
+</div>
+
+<script src="~/js/game.js"></script>

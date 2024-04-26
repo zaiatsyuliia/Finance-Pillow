@@ -1,34 +1,53 @@
-﻿@model Presentation.Models.UserViewModel
+﻿@model Presentation.Models.SettingsViewModel
 
 <div class="home-div">
-    <h2 data-lang="en">Account Settings</h2>
-    <h2 data-lang="uk" style="display: none;">Налаштування акаунту</h2>
-    <form asp-action="SettingsPost" asp-controller="Home" method="post">
+    <h1 data-lang="en">Account Settings</h1>
+    <h1 data-lang="uk" style="display: none;">Налаштування акаунту</h1>
+
+    <form asp-action="Settings" method="post">
+        <input type="hidden" name="UserId" value="@Model.UserId" />
+
         <div>
-            <label for="login" data-lang="en">Login</label>
-            <label for="login" data-lang="uk" style="display: none;">Логін</label>
-            <input type="text" name="login" value="@Model.Login" />
+            <label for="userName" data-lang="en">User Name:</label>
+            <label for="userName" data-lang="uk" style="display: none;">Ім'я користувача:</label>
+            <input type="text" id="userName" name="UserName" value="@Model.UserName" />
         </div>
+
         <div>
-            <label for="password" data-lang="en">Password</label>
-            <label for="password" data-lang="uk" style="display: none;">Пароль</label>
-            <input type="password" name="password" class="input" value="@Model.Password" />
+            <label for="email" data-lang="en">Email:</label>
+            <label for="email" data-lang="uk" style="display: none;">Електронна пошта:</label>
+            <input type="email" id="email" name="Email" value="@Model.Email" />
         </div>
+
         <div>
-            <label for="incomeLimit" data-lang="en">Income Limit</label>
-            <label for="incomeLimit" data-lang="uk" style="display: none;">Ліміт на доходи</label>
-            <input type="number" name="incomeLimit" value="@Model.IncomeLimit" />
+            <label for="newPassword" data-lang="en">New Password:</label>
+            <label for="newPassword" data-lang="uk" style="display: none;">Новий пароль:</label>
+            <input type="password" id="newPassword" name="NewPassword" />
         </div>
+
         <div>
-            <label for="incomeLimit" data-lang="en">Expense Limit</label>
-            <label for="incomeLimit" data-lang="uk" style="display: none;">Ліміт на витрати</label>
-            <input type="number" name="expenseLimit" value="@Model.ExpenseLimit" />
+            <label for="confirmPassword" data-lang="en">Confirm New Password:</label>
+            <label for="confirmPassword" data-lang="uk" style="display: none;">Підтвердіть новий пароль:</label>
+            <input type="password" id="confirmPassword" name="ConfirmPassword" />
         </div>
+
         <div>
-            <button type="submit" class="button" data-lang="en">Save</button>
-            <button type="submit" class="button" data-lang="uk" style="display: none;">Зберегти</button>
-            <button type="reset" class="button" data-lang="en">Cancel</button>
-            <button type="reset" class="button" data-lang="uk" style="display: none;">Скасувати</button>
+            <label for="expenseLimit" data-lang="en">Expense Limit:</label>
+            <label for="expenseLimit" data-lang="uk" style="display: none;">Ліміт витрат:</label>
+            <input type="number" id="expenseLimit" name="ExpenseLimit" value="@Model.ExpenseLimit" />
+        </div>
+
+        <div>
+            <label for="incomeLimit" data-lang="en">Income Limit:</label>
+            <label for="incomeLimit" data-lang="uk" style="display: none;">Ліміт доходів:</label>
+            <input type="number" id="incomeLimit" name="IncomeLimit" value="@Model.IncomeLimit" />
+        </div>
+
+        <div>
+            <button type="submit" data-lang="en">Save</button>
+            <button type="submit" data-lang="uk" style="display: none;">Зберегти</button>
+            <button type="reset" data-lang="en">Cancel</button>
+            <button type="reset" data-lang="uk" style="display: none;">Скасувати</button>
         </div>
     </form>
 </div>

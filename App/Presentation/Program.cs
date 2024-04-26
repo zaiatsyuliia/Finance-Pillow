@@ -1,59 +1,48 @@
-using Data;
-using Data.Repositories;
+﻿using Microsoft.Extensions.Configuration;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Serilog;
+using Data;
 using Business.Services;
+using Data.Repositories;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Configuration from Startup.cs
-var configuration = new ConfigurationBuilder()
-    .SetBasePath(builder.Environment.ContentRootPath)
-    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
-    .AddEnvironmentVariables()
-    .Build();
+builder.Services.AddDbContext<FPDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddSingleton(configuration);
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => {
+    options.SignIn.RequireConfirmedAccount = false;
+    options.SignIn.RequireConfirmedEmail = false;
+})
+.AddRoles<IdentityRole>()
+.AddEntityFrameworkStores<FPDbContext>()
+.AddDefaultTokenProviders();
 
-// Database context configuration
-builder.Services.AddDbContext<Context>(options =>
-    options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    // Disable account lockout
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(0);
+    options.Lockout.MaxFailedAccessAttempts = 0;
+    options.Lockout.AllowedForNewUsers = false;
+});
 
-// Repository registration
-// Register repositories
-builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IBudgetRepository, BudgetRepository>();
-builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
-builder.Services.AddScoped<IHistoryRepository, HistoryRepository>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ISettingsRepository, SettingsRepository>();
 builder.Services.AddScoped<IStatisticsRepository, StatisticsRepository>();
+builder.Services.AddScoped<ITransactionRepository, TransactionRepository>();
 
 // Register services
+builder.Services.AddScoped<AccountService>();
 builder.Services.AddScoped<BudgetService>();
-builder.Services.AddScoped<TransactionService>();
 builder.Services.AddScoped<CategoryService>();
+builder.Services.AddScoped<SettingsService>();
 builder.Services.AddScoped<StatisticsService>();
-builder.Services.AddScoped<UserService>();
-builder.Services.AddScoped<CreditService>();
-
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(CookieAuthenticationDefaults.AuthenticationScheme, options =>
-    {
-        options.Cookie.Name = "YourAppName.Cookie";
-        options.LoginPath = "/Home/LoginPage"; // the path to your login page
-    });
-
-Log.Logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(configuration)
-    .CreateLogger();
-
-builder.Host.UseSerilog();
+builder.Services.AddScoped<TransactionService>();
 
 var app = builder.Build();
 
@@ -61,7 +50,6 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
@@ -71,11 +59,13 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-app.UseAuthentication();
+app.UseAuthentication(); // Помістіть UseAuthentication перед UseAuthorization
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=LoginPage}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}");
+
+app.MapRazorPages();
 
 app.Run();

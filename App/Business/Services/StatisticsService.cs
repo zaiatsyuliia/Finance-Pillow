@@ -16,7 +16,7 @@ namespace Business.Services
             _statisticsRepository = statisticsRepository;
         }
 
-        public async Task<List<StatisticsDailyDto>> GetExpenseMonthDailyAsync(int userId)
+        public async Task<List<StatisticsDailyDto>> GetExpenseMonthDailyAsync(string userId)
         {
             var expenses = await _statisticsRepository.GetExpenseMonthDailyAsync(userId);
 
@@ -35,7 +35,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsTotalDto>> GetExpenseMonthTotalAsync(int userId)
+        public async Task<List<StatisticsTotalDto>> GetExpenseMonthTotalAsync(string userId)
         {
             var expenses = await _statisticsRepository.GetExpenseMonthTotalAsync(userId);
 
@@ -53,7 +53,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsMonthlyDto>> GetExpense6MonthsMonthlyAsync(int userId)
+        public async Task<List<StatisticsMonthlyDto>> GetExpense6MonthsMonthlyAsync(string userId)
         {
             var expenses = await _statisticsRepository.GetExpense6MonthsMonthlyAsync(userId);
 
@@ -72,7 +72,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsTotalDto>> GetExpense6MonthsTotalAsync(int userId)
+        public async Task<List<StatisticsTotalDto>> GetExpense6MonthsTotalAsync(string userId)
         {
             var expenses = await _statisticsRepository.GetExpense6MonthsTotalAsync(userId);
 
@@ -90,7 +90,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsMonthlyDto>> GetExpenseYearMonthlyAsync(int userId)
+        public async Task<List<StatisticsMonthlyDto>> GetExpenseYearMonthlyAsync(string userId)
         {
             var expenses = await _statisticsRepository.GetExpenseYearMonthlyAsync(userId);
 
@@ -110,7 +110,7 @@ namespace Business.Services
 
         }
 
-        public async Task<List<StatisticsTotalDto>> GetExpenseYearTotalAsync(int userId)
+        public async Task<List<StatisticsTotalDto>> GetExpenseYearTotalAsync(string userId)
         {
             var expenses = await _statisticsRepository.GetExpenseYearTotalAsync(userId);
 
@@ -128,7 +128,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsDailyDto>> GetIncomeMonthDailyAsync(int userId)
+        public async Task<List<StatisticsDailyDto>> GetIncomeMonthDailyAsync(string userId)
         {
             var incomes = await _statisticsRepository.GetIncomeMonthDailyAsync(userId);
 
@@ -147,7 +147,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsTotalDto>> GetIncomeMonthTotalAsync(int userId)
+        public async Task<List<StatisticsTotalDto>> GetIncomeMonthTotalAsync(string userId)
         {
             var incomes = await _statisticsRepository.GetIncomeMonthTotalAsync(userId);
 
@@ -166,7 +166,7 @@ namespace Business.Services
 
         }
 
-        public async Task<List<StatisticsMonthlyDto>> GetIncome6MonthsMonthlyAsync(int userId)
+        public async Task<List<StatisticsMonthlyDto>> GetIncome6MonthsMonthlyAsync(string userId)
         {
             var incomes = await _statisticsRepository.GetIncome6MonthsMonthlyAsync(userId);
 
@@ -185,7 +185,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsTotalDto>> GetIncome6MonthsTotalAsync(int userId)
+        public async Task<List<StatisticsTotalDto>> GetIncome6MonthsTotalAsync(string userId)
         {
             var incomes = await _statisticsRepository.GetIncome6MonthsTotalAsync(userId);
 
@@ -203,7 +203,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsMonthlyDto>> GetIncomeYearMonthlyAsync(int userId)
+        public async Task<List<StatisticsMonthlyDto>> GetIncomeYearMonthlyAsync(string userId)
         {
             var incomes = await _statisticsRepository.GetIncomeYearMonthlyAsync(userId);
 
@@ -222,7 +222,7 @@ namespace Business.Services
             return dtoList;
         }
 
-        public async Task<List<StatisticsTotalDto>> GetIncomeYearTotalAsync(int userId)
+        public async Task<List<StatisticsTotalDto>> GetIncomeYearTotalAsync(string userId)
         {
             var incomes = await _statisticsRepository.GetIncomeYearTotalAsync(userId);
 

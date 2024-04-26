@@ -1,72 +1,52 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Data.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Data.Repositories
+namespace Data.Repositories;
+
+public interface IBudgetRepository
 {
-    public interface IBudgetRepository
+    Task<double?> GetUserBudgetAsync(string userId);
+
+    Task<Limit> GetLimitsAsync(string userId);
+
+    Task<List<History>> GetUserHistoryAsync(string userId);
+}
+
+public class BudgetRepository : IBudgetRepository
+{
+    private readonly FPDbContext _context;
+
+    public BudgetRepository(FPDbContext context)
     {
-        Task<double?> GetUserBudgetAsync(int userId);
-
-        Task<ExpenseMonthLimitComparison> GetExpenseMonthLimitComparisonAsync(int userId);
-
-        Task<IncomeMonthLimitComparison> GetIncomeMonthLimitComparisonAsync(int userId);
-
-        Task DeleteIncomeAsync(int idIncome);
-
-        Task DeleteExpenseAsync(int idExpense);
+        _context = context;
     }
 
-    public class BudgetRepository : IBudgetRepository
+    public async Task<double?> GetUserBudgetAsync(string userId)
     {
-        private readonly Context _context;
-
-        public BudgetRepository(Context context)
-        {
-            _context = context;
-        }
-
-        public async Task<double?> GetUserBudgetAsync(int userId)
-        {
-            var userBudget = await _context.UserBudgets
-                    .Where(u => u.IdUser == userId)
-                    .Select(u => u.Budget)
+        var userBudget = await _context.Budgets
+                    .Where(u => u.UserId == userId)
+                    .Select(u => u.Budget1)
                     .FirstOrDefaultAsync();
 
-            return userBudget;
-        }
+        return userBudget;
+    }
 
-        public async Task<ExpenseMonthLimitComparison> GetExpenseMonthLimitComparisonAsync(int userId)
-        {
-            return await _context.ExpenseMonthLimitComparison
-                .FirstOrDefaultAsync(e => e.IdUser == userId);
-        }
+    public async Task<Limit> GetLimitsAsync(string userId)
+    {
+        return await _context.Limits
+                     .FirstOrDefaultAsync(l => l.UserId == userId);
+    }
 
-        public async Task<IncomeMonthLimitComparison> GetIncomeMonthLimitComparisonAsync(int userId)
-        {
-            return await _context.IncomeMonthLimitComparison
-                .FirstOrDefaultAsync(e => e.IdUser == userId);
-        }
+    public async Task<List<History>> GetUserHistoryAsync(string userId)
+    {
+        var userHistory = await _context.Histories
+            .Where(h => h.UserId == userId)
+            .OrderByDescending(h => h.Time)
+            .ToListAsync();
 
-        public async Task DeleteIncomeAsync(int idIncome)
-        {
-            var income = await _context.Incomes.FindAsync(idIncome);
-            if (income != null)
-            {
-                _context.Incomes.Remove(income);
-                await _context.SaveChangesAsync();
-            }
-        }
-
-        public async Task DeleteExpenseAsync(int idExpense)
-        {
-            var expense = await _context.Expenses.FindAsync(idExpense);
-            if (expense != null)
-            {
-                _context.Expenses.Remove(expense);
-                await _context.SaveChangesAsync();
-            }
-        }
+        return userHistory;
     }
 }

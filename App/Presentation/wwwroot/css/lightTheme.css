@@ -4,6 +4,10 @@ body {
     background-color: #f4f4f4;
 }
 
+.navbar {
+    background-color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -16,27 +20,12 @@ p {
 }
 
 button {
-    background-color: #007BFF;
     color: #fff;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-a {
-    color: #58a6ff;
-}
-
-a:hover {
-    color: #88c2ff;
 }
 
 .home-div {
     background-color: #fff;
     color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-bottom: 3px solid #007BFF;
 }
 
 select,
@@ -45,7 +34,3 @@ input {
     color: #333;
 }
 
-
-.navbar {
-    background-color: #fff;
-}

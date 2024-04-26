@@ -1,0 +1,40 @@
+﻿<title>Кредитний калькулятор</title>
+
+<div class="home-div">
+    <h1 data-lang="en">Loan Calculator</h1>
+    <h1 data-lang="uk" style="display: none;">Кредитний калькулятор</h1>
+
+    <label for="term" data-lang="en">Loan Term (months): </label>
+    <label for="term" data-lang="uk" style="display: none;">Термін кредитування (місяці): </label>
+    <input type="number" id="term">
+
+    <label for="amount" data-lang="en">Loan Amount (UAH): </label>
+    <label for="amount" data-lang="uk" style=" display: none;">Сума кредиту (грн): </label>
+    <input type="number" id="amount">
+
+    <label for="rate" data-lang="en">Interest Rate (annual %): </label>
+    <label for="rate" data-lang="uk" style="display: none;">Відсоткова ставка (% річних): </label>
+    <input type="number" id="rate">
+
+    <button onclick="calculate()" data-lang="en">Calculate</button>
+    <button onclick="calculate()" data-lang="uk" style="display: none;">Розрахувати</button>
+</div>
+
+<div class="home-div">
+    <h1 data-lang="en">Results</h1>
+    <h1 data-lang="uk" style="display: none;">Результати</h1>
+
+    <p data-lang="en">Monthly Payment: UAH</p>
+    <p data-lang="uk" style="display: none;">Щомісячний платіж: грн</p>
+    <span id="monthlyPayment">0.00</span>
+
+    <p data-lang="en">Total Payment: UAH</p>
+    <p data-lang="uk" style="display: none;">Загальна сума виплати: грн</p>
+    <span id="totalPayment">0.00</span>
+
+    <p data-lang="en">Interest: UAH</p>
+    <p data-lang="uk" style="display: none;">Відсотки: грн</p>
+    <span id="totalInterest">0.00</span>
+</div>
+
+<script src="~/js/credit.js"></script>

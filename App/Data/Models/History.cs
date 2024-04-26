@@ -7,13 +7,13 @@ public partial class History
 {
     public string? TransactionType { get; set; }
 
-    public int? IdTransaction { get; set; }
+    public int? TransactionId { get; set; }
 
-    public int? IdUser { get; set; }
-
-    public string? Category { get; set; }
+    public string? UserId { get; set; }
 
     public DateTime? Time { get; set; }
+
+    public string? Category { get; set; }
 
     public double? Sum { get; set; }
 }

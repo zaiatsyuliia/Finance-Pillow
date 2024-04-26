@@ -5,7 +5,7 @@ namespace Data.Models;
 
 public partial class Income6MonthsTotal
 {
-    public int? IdUser { get; set; }
+    public string? UserId { get; set; }
 
     public string? CategoryName { get; set; }
 

@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity;
 
 namespace Data.Models;
 
 public partial class Expense
 {
-    public int IdExpense { get; set; }
+    public int ExpenseId { get; set; }
 
-    public int? IdUser { get; set; }
+    public string? UserId { get; set; }
 
-    public int? IdCategoryExpense { get; set; }
+    public int? ExpenseCategoryId { get; set; }
 
     public DateTime? Time { get; set; }
 
     public double Sum { get; set; }
 
-    public virtual ExpenseCategory? IdCategoryExpenseNavigation { get; set; }
+    public virtual ExpenseCategory? ExpenseCategory { get; set; }
 
-    public virtual User? IdUserNavigation { get; set; }
+    public virtual ApplicationUser User { get; set; }
 }

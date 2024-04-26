@@ -15,9 +15,9 @@ public interface ICategoryRepository
 
 public class CategoryRepository : ICategoryRepository
 {
-    private readonly Context _context;
+    private readonly FPDbContext _context;
 
-    public CategoryRepository(Context context)
+    public CategoryRepository(FPDbContext context)
     {
         _context = context;
     }

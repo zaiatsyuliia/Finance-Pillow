@@ -30,3 +30,18 @@ C:\Users\HP ENVY x360\Source\Repos\Finance-Pillow\App\Business\obj\Debug\net8.0\
 C:\Users\HP ENVY x360\Source\Repos\Finance-Pillow\App\Business\obj\Debug\net8.0\refint\Business.dll
 C:\Users\HP ENVY x360\Source\Repos\Finance-Pillow\App\Business\obj\Debug\net8.0\Business.pdb
 C:\Users\HP ENVY x360\Source\Repos\Finance-Pillow\App\Business\obj\Debug\net8.0\ref\Business.dll
+D:\Projects\IdentityVer\Business\bin\Debug\net8.0\Business.deps.json
+D:\Projects\IdentityVer\Business\bin\Debug\net8.0\Business.dll
+D:\Projects\IdentityVer\Business\bin\Debug\net8.0\Business.pdb
+D:\Projects\IdentityVer\Business\bin\Debug\net8.0\Data.dll
+D:\Projects\IdentityVer\Business\bin\Debug\net8.0\Data.pdb
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\Business.AssemblyInfoInputs.cache
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\Business.AssemblyInfo.cs
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\Business.csproj.CoreCompileInputs.cache
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\Business.dll
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\refint\Business.dll
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\Business.pdb
+D:\Projects\IdentityVer\Business\obj\Debug\net8.0\ref\Business.dll

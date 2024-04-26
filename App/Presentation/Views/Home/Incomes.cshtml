@@ -2,13 +2,13 @@
 <title>@ViewData["Title"]</title>
 
 <div class="home-div">
-    <h2 data-lang="en">Income Statistics</h2>
-    <h2 data-lang="uk" style="display: none;">Статистика Доходів</h2>
+    <h1 data-lang="en">Income Statistics</h1>
+    <h1 data-lang="uk" style="display: none;">Статистика Доходів</h1>
 </div>
 
 <div class="home-div">
-    <h2 data-lang="en">Month</h2>
-    <h2 data-lang="uk">За місяць</h2>
+    <h1 data-lang="en">Month</h1>
+    <h1 data-lang="uk">За місяць</h1>
     <div class="statistics-div">
         <div id="columnChartForMonthDaily" style="width: 60%; height: 500px;"></div>
         <div id="pieChartForMonthTotal" style="width: 45%; height: 500px;"></div>
@@ -16,8 +16,8 @@
 </div>
 
 <div class="home-div">
-    <h2 data-lang="en">6 Month</h2>
-    <h2 data-lang="uk">За 6 місяців</h2>
+    <h1 data-lang="en">6 Month</h1>
+    <h1 data-lang="uk">За 6 місяців</h1>
     <div class="statistics-div">
         <div id="columnChartForSixMonthsMonthly" style="width: 60%; height: 500px;"></div>
         <div id="pieChartForSixMonthsTotal" style="width: 45%; height: 500px;"></div>
@@ -25,8 +25,8 @@
 </div>
 
 <div class="home-div">
-    <h2 data-lang="en">Year</h2>
-    <h2 data-lang="uk">За рік</h2>
+    <h1 data-lang="en">Year</h1>
+    <h1 data-lang="uk">За рік</h1>
     <div class="statistics-div">
         <div id="columnChartForYearMonthly" style="width: 60%; height: 500px;"></div>
         <div id="pieChartForYearTotal" style="width: 45%; height: 500px;"></div>
@@ -44,4 +44,5 @@
     var yearMonthly = @Html.Raw(Json.Serialize(Model.YearMonthly));
     var yearTotal = @Html.Raw(Json.Serialize(Model.YearTotal));
 </script>
+
 <script src="~/js/statistics.js"></script>

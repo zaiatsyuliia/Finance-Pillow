@@ -1,15 +1,15 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Presentation.Models;
-
 public class LoginViewModel
 {
-    // Login fields
-    [Required(ErrorMessage = "Please enter your login.")]
-    public string Login { get; set; }
+    [Required]
+    [EmailAddress]
+    public string Email { get; set; }
 
-    [Required(ErrorMessage = "Please enter your password.")]
+    [Required]
     [DataType(DataType.Password)]
     public string Password { get; set; }
 
+    [Display(Name = "Remember me?")]
+    public bool RememberMe { get; set; }
 }

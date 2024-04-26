@@ -5,7 +5,7 @@ namespace Data.Models;
 
 public partial class IncomeCategory
 {
-    public int IdCategory { get; set; }
+    public int IncomeCategoryId { get; set; }
 
     public string Name { get; set; } = null!;
 

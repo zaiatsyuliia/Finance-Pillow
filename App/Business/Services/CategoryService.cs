@@ -23,7 +23,7 @@ namespace Business.Services
             {
                 categoryDtoList.Add(new CategoryDto
                 {
-                    IdCategory = category.IdCategory,
+                    CategoryId = category.ExpenseCategoryId,
                     Name = category.Name
                 });
             }
@@ -39,7 +39,7 @@ namespace Business.Services
             {
                 categoryDtoList.Add(new CategoryDto
                 {
-                    IdCategory = category.IdCategory,
+                    CategoryId = category.IncomeCategoryId,
                     Name = category.Name
                 });
             }

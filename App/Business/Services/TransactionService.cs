@@ -16,15 +16,34 @@ public class TransactionService
         _transactionRepository = transactionRepository;
     }
 
-    public async Task AddTransactionAsync(int userId, TransactionDto dto)
+    public async Task AddTransactionAsync(string userId, TransactionDto dto)
     {
         DateTime currentTime = DateTime.Now;
-        if (dto.Type == "expense")
+        switch (dto.Type)
         {
-            await _transactionRepository.AddExpenseAsync(userId, dto.CategoryId, currentTime, dto.Sum);
-        }
-        else { 
-            await _transactionRepository.AddIncomeAsync(userId, dto.CategoryId, currentTime, dto.Sum);
+            case TransactionType.Expense:
+                await _transactionRepository.AddExpenseAsync(userId, dto.CategoryId, currentTime, dto.Sum);
+                break;
+            case TransactionType.Income:
+                await _transactionRepository.AddIncomeAsync(userId, dto.CategoryId, currentTime, dto.Sum);
+                break;
+            default:
+                throw new ArgumentException("Invalid transaction type specified.");
         }
     }
+    public async Task DeleteTransactionAsync(TransactionType type, int transactionId)
+    {
+        switch (type)
+        {
+            case TransactionType.Income:
+                await _transactionRepository.DeleteIncomeAsync(transactionId);
+                break;
+            case TransactionType.Expense:
+                await _transactionRepository.DeleteExpenseAsync(transactionId);
+                break;
+            default:
+                throw new ArgumentOutOfRangeException(nameof(type), type, "Invalid transaction type specified.");
+        }
+    }
+
 }

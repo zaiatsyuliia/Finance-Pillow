@@ -1,51 +1,52 @@
-﻿@model Presentation.Models.HomeViewModel
+﻿@model Presentation.Models.BudgetViewModel
+@using Business.DTO
 
 <div class="home-div">
-    <h2 data-lang="en">Budget: @Model.Budget</h2>
-    <h2 data-lang="uk" style="display: none;">Бюджет: @Model.Budget</h2>
+    <h1 data-lang="en">Budget: @Model.Budget</h1>
+    <h1 data-lang="uk" style="display: none;">Бюджет: @Model.Budget</h1>
 
-    @if (Model.IncomeLimit != null && Model.IncomeLimit.LimitStatus)
+    @if (Model.Limits?.IncomeLimitExceeded == true)
     {
         <div class="limit-warning-income limit-warning" data-lang="en">
-            <p>Limit: @Model.IncomeLimit.UserLimit - Total Income: @Model.IncomeLimit.TotalSum - Your income has exceeded limit!!!</p>
+            <p>Limit: @Model.Limits.IncomeLimit - Total Income: @Model.Limits.TotalIncome - Your income has exceeded limit!!!</p>
         </div>
         <div class="limit-warning-income limit-warning" data-lang="uk" style="display: none;">
-            <p>Ліміт: @Model.IncomeLimit.UserLimit - Загальні Доходи: @Model.IncomeLimit.TotalSum - Ви перевищили ліміт!!!</p>
+            <p>Ліміт: @Model.Limits.IncomeLimit - Загальні Доходи: @Model.Limits.TotalIncome - Ви перевищили ліміт!!!</p>
         </div>
     }
 
-    @if (Model.ExpenseLimit != null && Model.ExpenseLimit.LimitStatus)
+    @if (Model.Limits?.ExpenseLimitExceeded == true)
     {
         <div class="limit-warning-expense limit-warning" data-lang="uk">
-            <p>Ліміт: @Model.ExpenseLimit.UserLimit - Загальні витрати: @Model.ExpenseLimit.TotalSum - Ви перевищили ліміт!!!</p>
+            <p>Ліміт: @Model.Limits.ExpenseLimit - Загальні витрати: @Model.Limits.TotalExpense - Ви перевищили ліміт!!!</p>
         </div>
         <div class="limit-warning-expense limit-warning" data-lang="en" style="display: none;">
-            <p>Limit: @Model.ExpenseLimit.UserLimit - Total Expenses: @Model.ExpenseLimit.TotalSum - You have exceeded your limit!!!</p>
+            <p>Limit: @Model.Limits.ExpenseLimit - Total Expenses: @Model.Limits.TotalExpense - You have exceeded your limit!!!</p>
         </div>
     }
 </div>
 
 <div class="home-div">
-    <h2 data-lang="uk">Додати транзакцію</h2>
-    <h2 data-lang="en" style="display: none;">Add Transaction</h2>
-    <form id="transactionForm" asp-action="AddTransaction" method="post">
+    <h1 data-lang="uk">Додати транзакцію</h1>
+    <h1 data-lang="en" style="display: none;">Add Transaction</h1>
+    <form asp-action="AddTransaction" asp-controller="Home" method="post">
         <div>
             <label for="type" data-lang="en">Type:</label>
             <label for="type" data-lang="uk" style="display: none;">Тип:</label>
             <select name="Type" id="type">
-                <option value="Income" selected data-lang="en">Income</option>
-                <option value="Expense" data-lang="en">Expense</option>
-                <option value="Income" data-lang="uk" style="display: none;">Дохід</option>
-                <option value="Expense" data-lang="uk" style="display: none;">Витрата</option>
+                @foreach (var type in Enum.GetValues(typeof(TransactionType)))
+                {
+                    <option value="@type">@type</option>
+                }
             </select>
         </div>
         <div>
             <label for="categoryId" data-lang="en">Category:</label>
             <label for="categoryId" data-lang="uk" style="display: none;">Категорія:</label>
             <select name="CategoryId" id="categoryId">
-                @foreach (var category in Model.IncomeCategories)
+                @foreach (var category in Model.ExpenseCategories)
                 {
-                    <option value="@category.IdCategory">@category.Name</option>
+                    <option value="@category.CategoryId">@category.Name</option>
                 }
             </select>
         </div>
@@ -60,35 +61,32 @@
 </div>
 
 <div class="home-div transactionHistory">
-    <h2>Transaction History</h2>
+    <h1>Transaction History</h1>
     <table>
         <tr>
             <th data-lang="en">Type</th>
             <th data-lang="uk" style="display: none;">Тип</th>
-
             <th data-lang="en">Category</th>
             <th data-lang="uk" style="display: none;">Категорія</th>
-
             <th data-lang="en">Sum</th>
             <th data-lang="uk" style="display: none;">Сума</th>
-
             <th data-lang="en">Time</th>
             <th data-lang="uk" style="display: none;">Час</th>
-
             <th></th>
         </tr>
         @foreach (var transaction in Model.History)
         {
-            <tr class="@transaction.TransactionType.ToLower()">
+            <tr class="@transaction.TransactionType.ToString().ToLower()">
                 <td>@transaction.TransactionType</td>
                 <td>@transaction.Category</td>
                 <td>@transaction.Sum</td>
                 <td>@transaction.Date.ToString("dd.MM.yyyy")</td>
                 <td>
-                    <form asp-action="DeleteTransaction" method="post">
+                    <form asp-action="DeleteTransaction" asp-controller="Home" method="post">
                         <input type="hidden" name="type" value="@transaction.TransactionType" />
-                        <input type="hidden" name="transactionId" value="@transaction.IdTransaction" />
+                        <input type="hidden" name="transactionId" value="@transaction.TransactionId" />
                         <button type="submit">Delete</button>
+                        <button type="submit" data-lang="uk" style="display: none;">Видалити</button>
                     </form>
                 </td>
             </tr>
@@ -100,4 +98,5 @@
     var incomeCategories = @Html.Raw(Json.Serialize(Model.IncomeCategories));
     var expenseCategories = @Html.Raw(Json.Serialize(Model.ExpenseCategories));
 </script>
+
 <script src="~/js/transactionForm.js"></script>

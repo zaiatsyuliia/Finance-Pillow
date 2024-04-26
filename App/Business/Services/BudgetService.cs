@@ -1,77 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Business.DTO;
+using Data.Models;
 using Data.Repositories;
 
 namespace Business.Services
 {
     public class BudgetService
     {
-        private readonly IBudgetRepository _userBudgetRepository;
-        private readonly IHistoryRepository _historyRepository;
+        private readonly IBudgetRepository _budgetRepository;
 
-        public BudgetService(IBudgetRepository userBudgetRepository, IHistoryRepository historyRepository)
+        public BudgetService(IBudgetRepository budgetRepository)
         {
-            _userBudgetRepository = userBudgetRepository;
-            _historyRepository = historyRepository;
+            _budgetRepository = budgetRepository;
         }
 
-        public async Task<double> GetUserBudgetAsync(int userId)
+        public async Task<double> GetUserBudgetAsync(string userId)
         {
-            return await _userBudgetRepository.GetUserBudgetAsync(userId) ?? 0;
+            // Default to 0 if no budget is found
+            return await _budgetRepository.GetUserBudgetAsync(userId) ?? 0;
         }
 
-        public async Task<List<HistoryDto>> GetUserHistoryAsync(int userId)
+        public async Task<LimitsDto> GetLimitsAsync(string userId)
         {
-            var historyList = await _historyRepository.GetUserHistoryAsync(userId);
-            return historyList.Select(h => new HistoryDto
+            var limits = await _budgetRepository.GetLimitsAsync(userId);
+            if (limits == null)
+                return null;
+
+            return new LimitsDto
             {
+                UserId = userId,
+                TotalExpense = limits.TotalExpense ?? 0,
+                ExpenseLimit = limits.ExpenseLimit ?? 0,
+                ExpenseLimitExceeded = limits.ExpenseLimitExceeded ?? false,
+                TotalIncome = limits.TotalIncome ?? 0,
+                IncomeLimit = limits.IncomeLimit ?? 0,
+                IncomeLimitExceeded = limits.IncomeLimitExceeded ?? false
+            };
+        }
+
+        public async Task<List<HistoryDto>> GetUserHistoryAsync(string userId)
+        {
+            var histories = await _budgetRepository.GetUserHistoryAsync(userId);
+            return histories.Select(h => new HistoryDto
+            {
+                TransactionId = h.TransactionId ?? 0,
                 TransactionType = h.TransactionType,
-                IdTransaction = h.IdTransaction ?? 0,
                 Category = h.Category,
-                Date = h.Time.HasValue ? h.Time.Value.Date : DateTime.MinValue, // Extract only the date part
+                Date = h.Time ?? DateTime.MinValue,
                 Sum = h.Sum ?? 0
             }).ToList();
-        }
-
-        public async Task<LimitDTO> GetExpenseLimitAsync(int userId)
-        {
-            var limit = await _userBudgetRepository.GetExpenseMonthLimitComparisonAsync(userId);
-
-            return new LimitDTO
-            {
-                TotalSum = limit.TotalSum,
-                UserLimit = limit.UserLimit,
-                LimitStatus = limit.LimitStatus
-            };
-        }
-        public async Task<LimitDTO> GetIncomeLimitAsync(int userId)
-        {
-            var limit = await _userBudgetRepository.GetIncomeMonthLimitComparisonAsync(userId);
-
-            return new LimitDTO
-            {
-                TotalSum = limit.TotalSum,
-                UserLimit = limit.UserLimit,
-                LimitStatus = limit.LimitStatus
-            };
-        }
-
-        public async Task DeleteTransactionAsync(string type, int transactionId)
-        {
-            if (type.Equals("income", StringComparison.OrdinalIgnoreCase))
-            {
-                await _userBudgetRepository.DeleteIncomeAsync(transactionId);
-            }
-            else if (type.Equals("expense", StringComparison.OrdinalIgnoreCase))
-            {
-                await _userBudgetRepository.DeleteExpenseAsync(transactionId);
-            }
-            else
-            {
-                throw new ArgumentException("Invalid transaction type specified.");
-            }
         }
     }
 }

@@ -5,7 +5,7 @@ namespace Data.Models;
 
 public partial class ExpenseMonthDaily
 {
-    public int? IdUser { get; set; }
+    public string? UserId { get; set; }
 
     public DateTime? Day { get; set; }
 
