@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NgH21KzgdhAhvU1L84exC4ZcYK24W6yfcrMAKHmDpU0=",
+  "Hash": "uN+iM9LFA/AeVnI+5PZOAJxeTVujt8CqFfSmRHDJOhs=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Presentation\\wwwroot",
       "Source": "Presentation",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "Pattern": "**"
     }
@@ -1157,10 +1157,29 @@
       "OriginalItemSpec": "C:\\Users\\bluel\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.4\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\css\\darkTheme.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\colors.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "css/colors.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\colors.css"
+    },
+    {
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\darkTheme.css",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "css/darkTheme.css",
       "AssetKind": "All",
@@ -1176,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\css\\darkTheme.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\css\\lightTheme.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\lightTheme.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "css/lightTheme.css",
       "AssetKind": "All",
@@ -1195,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\css\\lightTheme.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\css\\logReg.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\logReg.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "css/logReg.css",
       "AssetKind": "All",
@@ -1214,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\css\\logReg.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\css\\site.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\site.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1233,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\favicon.ico",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\favicon.ico",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1252,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman0.png",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\images\\hangman0.png",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "images/hangman0.png",
       "AssetKind": "All",
@@ -1271,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hangman0.png"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman1.png",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\images\\hangman1.png",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "images/hangman1.png",
       "AssetKind": "All",
@@ -1290,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hangman1.png"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman2.png",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\images\\hangman2.png",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "images/hangman2.png",
       "AssetKind": "All",
@@ -1309,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hangman2.png"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman3.png",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\images\\hangman3.png",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "images/hangman3.png",
       "AssetKind": "All",
@@ -1328,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hangman3.png"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman4.png",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\images\\hangman4.png",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "images/hangman4.png",
       "AssetKind": "All",
@@ -1347,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hangman4.png"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman5.png",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\images\\hangman5.png",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "images/hangman5.png",
       "AssetKind": "All",
@@ -1366,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hangman5.png"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\images\\hangman6.png",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\images\\hangman6.png",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "images/hangman6.png",
       "AssetKind": "All",
@@ -1385,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\images\\hangman6.png"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\credit.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\credit.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "js/credit.js",
       "AssetKind": "All",
@@ -1404,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\js\\credit.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\currency.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\currency.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "js/currency.js",
       "AssetKind": "All",
@@ -1423,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\js\\currency.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\game.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\game.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "js/game.js",
       "AssetKind": "All",
@@ -1442,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\js\\game.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\hangman.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\hangman.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "js/hangman.js",
       "AssetKind": "All",
@@ -1461,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\js\\hangman.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\music.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\music.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "js/music.js",
       "AssetKind": "All",
@@ -1480,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\js\\music.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\site.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\site.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1499,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\statistics.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\statistics.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "js/statistics.js",
       "AssetKind": "All",
@@ -1518,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\js\\statistics.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\js\\transactionForm.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "js/transactionForm.js",
       "AssetKind": "All",
@@ -1537,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\js\\transactionForm.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1556,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1575,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1594,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1613,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1632,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1651,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1670,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1689,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1708,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1727,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1746,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1765,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1784,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -1803,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -1822,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -1841,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -1860,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -1879,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -1898,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -1917,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -1936,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -1955,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -1974,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -1993,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2012,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2031,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2050,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2069,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2088,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2107,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2126,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2145,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2164,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2183,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2202,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2221,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2240,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2259,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2278,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2297,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2316,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2335,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2354,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2373,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2392,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2411,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2430,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2449,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2468,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2487,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2506,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2525,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2544,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2563,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2582,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2601,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -2620,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\A Melody to Break the Curse.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\A Melody to Break the Curse.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/A Melody to Break the Curse.mp3",
       "AssetKind": "All",
@@ -2639,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\music\\A Melody to Break the Curse.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Alls Well.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Alls Well.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Alls Well.mp3",
       "AssetKind": "All",
@@ -2658,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Alls Well.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Aria Math.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Aria Math.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Aria Math.mp3",
       "AssetKind": "All",
@@ -2677,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Aria Math.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Blood and Wine.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Blood and Wine.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Blood and Wine.mp3",
       "AssetKind": "All",
@@ -2696,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Blood and Wine.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Civilisations Lost.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Civilisations Lost.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Civilisations Lost.mp3",
       "AssetKind": "All",
@@ -2715,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Civilisations Lost.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Crisis City.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Crisis City.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Crisis City.mp3",
       "AssetKind": "All",
@@ -2734,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Crisis City.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Dad Battle.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Dad Battle.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Dad Battle.mp3",
       "AssetKind": "All",
@@ -2753,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Dad Battle.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Dearest Hue.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Dearest Hue.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Dearest Hue.mp3",
       "AssetKind": "All",
@@ -2772,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Dearest Hue.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Farewell.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Farewell.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Farewell.mp3",
       "AssetKind": "All",
@@ -2791,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Farewell.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Final Fortress.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Final Fortress.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Final Fortress.mp3",
       "AssetKind": "All",
@@ -2810,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Final Fortress.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Karasu.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Karasu.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Karasu.mp3",
       "AssetKind": "All",
@@ -2829,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Karasu.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Kingdom Valley.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Kingdom Valley.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Kingdom Valley.mp3",
       "AssetKind": "All",
@@ -2848,10 +2867,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Kingdom Valley.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Kronos Island.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Kronos Island.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Kronos Island.mp3",
       "AssetKind": "All",
@@ -2867,10 +2886,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Kronos Island.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Living Mice.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Living Mice.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Living Mice.mp3",
       "AssetKind": "All",
@@ -2886,10 +2905,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Living Mice.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\M.I.L.F.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\M.I.L.F.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/M.I.L.F.mp3",
       "AssetKind": "All",
@@ -2905,10 +2924,10 @@
       "OriginalItemSpec": "wwwroot\\music\\M.I.L.F.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Out of time.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Out of time.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Out of time.mp3",
       "AssetKind": "All",
@@ -2924,10 +2943,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Out of time.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Phantom's Legacy.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Phantom's Legacy.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Phantom's Legacy.mp3",
       "AssetKind": "All",
@@ -2943,10 +2962,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Phantom's Legacy.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Restoring the Light, Facing the Dark.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Restoring the Light, Facing the Dark.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Restoring the Light, Facing the Dark.mp3",
       "AssetKind": "All",
@@ -2962,10 +2981,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Restoring the Light, Facing the Dark.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Resurrections.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Resurrections.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Resurrections.mp3",
       "AssetKind": "All",
@@ -2981,10 +3000,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Resurrections.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Sand Ruins.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Sand Ruins.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Sand Ruins.mp3",
       "AssetKind": "All",
@@ -3000,10 +3019,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Sand Ruins.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Sealed Ground.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Sealed Ground.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Sealed Ground.mp3",
       "AssetKind": "All",
@@ -3019,10 +3038,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Sealed Ground.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Seaside Hill.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Seaside Hill.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Seaside Hill.mp3",
       "AssetKind": "All",
@@ -3038,10 +3057,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Seaside Hill.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Splash Canyon.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Splash Canyon.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Splash Canyon.mp3",
       "AssetKind": "All",
@@ -3057,10 +3076,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Splash Canyon.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Sweden.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Sweden.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Sweden.mp3",
       "AssetKind": "All",
@@ -3076,10 +3095,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Sweden.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Through the Valleys.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Through the Valleys.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Through the Valleys.mp3",
       "AssetKind": "All",
@@ -3095,10 +3114,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Through the Valleys.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Un-gravitify.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Un-gravitify.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Un-gravitify.mp3",
       "AssetKind": "All",
@@ -3114,10 +3133,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Un-gravitify.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Walking The Walk.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Walking The Walk.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Walking The Walk.mp3",
       "AssetKind": "All",
@@ -3133,10 +3152,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Walking The Walk.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Windy and Ripply.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Windy and Ripply.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Windy and Ripply.mp3",
       "AssetKind": "All",
@@ -3152,10 +3171,10 @@
       "OriginalItemSpec": "wwwroot\\music\\Windy and Ripply.mp3"
     },
     {
-      "Identity": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\music\\Windy Hill.mp3",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\music\\Windy Hill.mp3",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projects\\IdentityVer\\Presentation\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "music/Windy Hill.mp3",
       "AssetKind": "All",

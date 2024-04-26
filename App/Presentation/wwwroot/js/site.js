@@ -1,6 +1,9 @@
 ﻿themeToggleBtns = document.querySelectorAll('.theme-toggle-btn');
+colorToggleBtns = document.querySelectorAll('.color-toggle-btn');
+
 const body = document.body;
 const theme = localStorage.getItem('theme');
+const color = localStorage.getItem('color');
 const languageSelect = document.getElementById('languageSelect');
 const selectedLanguage = localStorage.getItem('language');
 
@@ -9,18 +12,44 @@ if (theme) {
     body.classList.add(theme);
 }
 
-// Check if a language is stored in local storage
+if (color) {
+    body.classList.add(color);
+}
+
 if (selectedLanguage) {
     changeLanguage(selectedLanguage);
     languageSelect.value = selectedLanguage;
 }
 
-// Theme toggle button event listener
+const themes = ['light', 'dark'];
+
 themeToggleBtns.forEach(btn => {
     btn.addEventListener('click', function () {
         body.classList.toggle('dark');
         // Save the current theme selection to local storage
         localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+    });
+});
+
+const colors = ['color-red', 'color-yellow', 'color-orange', 'color-green', 'color-cyan', 'color-blue', 'color-purple'];
+
+colorToggleBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+        let currentThemeClass = null;
+
+        // Remove any existing color class
+        colors.forEach(color => {
+            if (body.classList.contains(color)) {
+                body.classList.remove(color);
+            }
+        });
+
+        // Apply a new random color class
+        const newColorClass = colors[Math.floor(Math.random() * colors.length)];
+        body.classList.add(newColorClass);
+
+        // Save the current color selection to local storage
+        localStorage.setItem('color', newColorClass);
     });
 });
 

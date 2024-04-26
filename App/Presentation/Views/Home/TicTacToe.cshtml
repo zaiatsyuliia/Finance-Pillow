@@ -1,0 +1,176 @@
+﻿@{
+    ViewData["Title"] = "Tic Tac Toe";
+}
+<style>
+    .board {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+        gap: 5px;
+    }
+
+    .cell {
+        width: 100px;
+        height: 100px;
+        border: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+        .cell:hover {
+            background-color: #f0f0f0;
+        }
+
+    .message,
+    .messageuk{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+</style>
+
+<h1 data-lang="en">Tic Tac Toe Game</h1>
+<h1 data-lang="uk" style="display: none;">Гра "Хрестики-нулики"</h1>
+
+<div style="display: flex; justify-content: space-between;">
+    <div style="width: 48%;">
+<div data-lang="en">
+    <button onclick="startGame('bot')">Play against a bot</button>
+    <button onclick="startGame('player')">Play against a player</button>
+</div>
+
+<div data-lang="uk" style="display: none;">
+    <button onclick="startGame('bot')">Грати проти бота</button>
+    <button onclick="startGame('player')">Грати проти гравця</button>
+</div>
+
+<div class="board" id="board" hidden>
+    <div class="cell" onclick="makeMove(0)"></div>
+    <div class="cell" onclick="makeMove(1)"></div>
+    <div class="cell" onclick="makeMove(2)"></div>
+    <div class="cell" onclick="makeMove(3)"></div>
+    <div class="cell" onclick="makeMove(4)"></div>
+    <div class="cell" onclick="makeMove(5)"></div>
+    <div class="cell" onclick="makeMove(6)"></div>
+    <div class="cell" onclick="makeMove(7)"></div>
+    <div class="cell" onclick="makeMove(8)"></div>
+</div>
+
+<div data-lang="en" class="message"></div>
+<div data-lang="uk" style="display: none;" class="messageuk"></div>
+    </div>
+
+    <div style="width: 48%;">
+        <h3 data-lang="en">Rules:</h3>
+        <h3 data-lang="uk" style="display: none;">Правила:</h3>
+        <p data-lang="en">The game is played on a 3x3 grid.</p>
+        <p data-lang="uk" style="display: none;">Гра відбувається на полі 3x3.</p>
+        <p data-lang="en">The user needs to choose who he will play against.</p>
+        <p data-lang="uk" style="display: none;">Користувачеві потрібно вибрати проти кого він буде грати.</p>
+        <p data-lang="en">Players take turns marking a cell with their respective symbol (X or O).</p>
+        <p data-lang="uk" style="display: none;">Гравці по черзі відзначають клітину своїм символом (X або O).</p>
+        <ul>
+            <li data-lang="en">The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</li>
+            <li data-lang="uk" style="display: none;">Гравець, який зможе розмістити три своїх символи в горизонтальному, вертикальному або діагональному рядку, перемагає в грі.</li>
+            <li data-lang="en">If the grid is filled with no winner, the game is a draw.</li>
+            <li data-lang="uk" style="display: none;">Якщо поле заповнене і немає переможця, гра закінчується внічию.</li>
+            <li data-lang="en">The first player starts with 'X'.</li>
+            <li data-lang="uk" style="display: none;">Перший гравець починає з символом 'X'.</li>
+        </ul>
+        <p data-lang="en">Good luck!</p>
+        <p data-lang="uk" style="display: none;">Щасти!</p>
+
+    </div>
+</div>
+
+<script>
+    let board = ['', '', '', '', '', '', '', '', ''];
+    let currentPlayer = 'X';
+    let gameOver = false;
+    let gameMode = '';
+
+    const startGame = (mode) => {
+        gameMode = mode;
+        resetBoard();
+        document.getElementById('board').removeAttribute('hidden');
+    };
+
+    const resetBoard = () => {
+        board = Array(9).fill('');
+        document.querySelectorAll('.cell').forEach(cell => cell.innerText = '');
+        document.querySelector('.message').innerText = '';
+        document.querySelector('.messageuk').innerText = '';
+        gameOver = false;
+        currentPlayer = 'X';
+    };
+
+    const makeMove = (index) => {
+        if (gameOver || board[index]) return;
+        board[index] = currentPlayer;
+        document.getElementById('board').children[index].innerText = currentPlayer;
+
+        if (checkWinner()) {
+            document.querySelector('.message').innerText = `${currentPlayer} wins!`;
+            document.querySelector('.messageuk').innerText = `${currentPlayer} виграв(-ла)!`;
+            gameOver = true;
+            return;
+        }
+
+        if (board.every(cell => cell)) {
+            document.querySelector('.message').innerText = 'It\'s a draw!';
+            document.querySelector('.messageuk').innerText = 'Це нічия!';
+            gameOver = true;
+            return;
+        }
+
+        currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+
+        if (currentPlayer === 'O' && gameMode === 'bot') computerMove();
+    };
+
+    const computerMove = () => {
+        let bestScore = -Infinity;
+        let move;
+        board.forEach((cell, i) => {
+            if (!cell) {
+                board[i] = 'O';
+                let score = minimax(board, 0, false);
+                board[i] = '';
+                if (score > bestScore) {
+                    bestScore = score;
+                    move = i;
+                }
+            }
+        });
+        makeMove(move);
+    };
+
+    const minimax = (board, depth, isMaximizing) => {
+        if (checkWinner() && isMaximizing) return -10 + depth;
+        if (checkWinner() && !isMaximizing) return 10 - depth;
+        if (!board.includes('')) return 0;
+
+        let bestScore = isMaximizing ? -Infinity : Infinity;
+        board.forEach((cell, i) => {
+            if (!cell) {
+                board[i] = isMaximizing ? 'O' : 'X';
+                let score = minimax(board, depth + 1, !isMaximizing);
+                board[i] = '';
+                bestScore = isMaximizing ? Math.max(score, bestScore) : Math.min(score, bestScore);
+            }
+        });
+        return bestScore;
+    };
+
+    const checkWinner = () => {
+        const winningCombos = [
+            [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+            [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+            [0, 4, 8], [2, 4, 6]             // Diagonals
+        ];
+        return winningCombos.some(combo => {
+            return board[combo[0]] && board[combo[0]] === board[combo[1]] && board[combo[1]] === board[combo[2]];
+        });
+    };
+</script>

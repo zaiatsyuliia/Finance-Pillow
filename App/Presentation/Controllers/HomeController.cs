@@ -212,6 +212,10 @@ public class HomeController : Controller
     {
         return View();
     }
+    public async Task<IActionResult> TicTacToe()
+    {
+        return View();
+    }
 
     [HttpPost]
     public async Task<IActionResult> Settings(SettingsViewModel model)

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/lightTheme.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/darkTheme.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/colors.css" asp-append-version="true" />
 </head>
 <body>
     <header>
@@ -46,6 +47,10 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Hangman" data-lang="uk" style="display: none;">Шибениця</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TicTacToe" data-lang="en">Tic Tac Toe</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TicTacToe" data-lang="uk" style="display: none;">Хрестики-нулики</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Settings" data-lang="en">Settings</a>
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Settings" data-lang="uk" style="display: none;">Налаштування</a>
                         </li>
@@ -62,6 +67,10 @@
                         <li class="nav-item right-nav">
                             <button onclick="changeSong()" class="song-toggle-btn" data-lang="en">Change Song</button>
                             <button onclick="changeSong()" class="song-toggle-btn" data-lang="uk" style="display: none;">Змінити музику</button>
+                        </li>
+                        <li class="nav-item right-nav">
+                            <button class="color-toggle-btn" data-lang="en">Change Color</button>
+                            <button class="color-toggle-btn" data-lang="uk" style="display: none;">Змінити колір</button>
                         </li>
                         <li class="nav-item right-nav">
                             <button class="theme-toggle-btn" data-lang="en">Change Theme</button>
