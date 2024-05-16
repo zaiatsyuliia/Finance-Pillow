@@ -204,7 +204,7 @@ public class HomeController : Controller
     }
 
     [HttpGet]
-    public async Task<IActionResult> Currency()
+    public IActionResult Currency()
     {
         return View();
     }
@@ -245,12 +245,6 @@ public class HomeController : Controller
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            if (!string.Equals(model.NewPassword, model.ConfirmPassword))
-            {
-                ModelState.AddModelError("", "The new password and confirmation password do not match.");
-                return View(model);
-            }
-
             var userSettingsDto = new SettingsDto
             {
                 UserId = userId,
@@ -274,7 +268,6 @@ public class HomeController : Controller
             }
         }
         return View(model);
-
     }
 
     public async Task<IActionResult> Games()

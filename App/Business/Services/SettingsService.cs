@@ -7,22 +7,19 @@ using Microsoft.EntityFrameworkCore;
 public class SettingsService
 {
     private readonly UserManager<ApplicationUser> _userManager;
-    private readonly ISettingsRepository _settingsRepository;
 
-    public SettingsService(UserManager<ApplicationUser> userManager, ISettingsRepository userSettingsRepository)
+    public SettingsService(UserManager<ApplicationUser> userManager)
     {
         _userManager = userManager;
-        _settingsRepository = userSettingsRepository;
     }
 
     public async Task<SettingsDto> GetUserSettingsAsync(string userId)
     {
         var user = await _userManager.FindByIdAsync(userId);
-        var userSetting = await _settingsRepository.GetUserSettingsAsync(userId);
 
-        if (user == null || userSetting == null)
+        if (user == null)
         {
-            return null;
+            return null; // або обробка помилки
         }
 
         return new SettingsDto
@@ -30,8 +27,8 @@ public class SettingsService
             UserId = user.Id,
             UserName = user.UserName,
             Email = user.Email,
-            ExpenseLimit = userSetting.ExpenseLimit ?? 0,
-            IncomeLimit = userSetting.IncomeLimit ?? 0
+            ExpenseLimit = user.ExpenseLimit,
+            IncomeLimit = user.IncomeLimit
         };
     }
 
@@ -54,22 +51,16 @@ public class SettingsService
                 user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, dto.Password);
             }
 
+            if (user.ExpenseLimit != dto.ExpenseLimit)
+            {
+                user.ExpenseLimit = dto.ExpenseLimit;
+            }
+            if (user.IncomeLimit != dto.IncomeLimit)
+            {
+                user.IncomeLimit = dto.IncomeLimit;
+            }
+
             await _userManager.UpdateAsync(user);
-        }
-
-        var userSetting = await _settingsRepository.GetUserSettingsAsync(dto.UserId);
-        if (userSetting != null)
-        {
-            if (userSetting.ExpenseLimit != dto.ExpenseLimit)
-            {
-                userSetting.ExpenseLimit = dto.ExpenseLimit;
-            }
-            if (userSetting.IncomeLimit != dto.IncomeLimit)
-            {
-                userSetting.IncomeLimit = dto.IncomeLimit;
-            }
-
-            await _settingsRepository.UpdateUserSettingsAsync(userSetting);
         }
     }
 }

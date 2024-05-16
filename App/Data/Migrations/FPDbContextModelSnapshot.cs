@@ -41,6 +41,12 @@ namespace Data.Migrations
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("boolean");
 
+                    b.Property<int>("ExpenseLimit")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("IncomeLimit")
+                        .HasColumnType("integer");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("boolean");
 
@@ -544,28 +550,6 @@ namespace Data.Migrations
                     b.ToView("limits", (string)null);
                 });
 
-            modelBuilder.Entity("Data.Models.UserSetting", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("text");
-
-                    b.Property<int?>("ExpenseLimit")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasDefaultValue(999999999)
-                        .HasColumnName("expense_limit");
-
-                    b.Property<int?>("IncomeLimit")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer")
-                        .HasDefaultValue(999999999)
-                        .HasColumnName("income_limit");
-
-                    b.HasKey("UserId");
-
-                    b.ToTable("UserSettings");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -734,17 +718,6 @@ namespace Data.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("Data.Models.UserSetting", b =>
-                {
-                    b.HasOne("ApplicationUser", "User")
-                        .WithOne("UserSetting")
-                        .HasForeignKey("Data.Models.UserSetting", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -793,12 +766,6 @@ namespace Data.Migrations
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("ApplicationUser", b =>
-                {
-                    b.Navigation("UserSetting")
                         .IsRequired();
                 });
 

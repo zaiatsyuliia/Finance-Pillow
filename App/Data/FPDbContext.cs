@@ -54,11 +54,9 @@ public partial class FPDbContext : IdentityDbContext<ApplicationUser>
 
     public virtual DbSet<Limit> Limits { get; set; }
 
-    public virtual DbSet<UserSetting> UserSettings { get; set; }
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=FinancePillowIdentity;User Id=postgres;Password=postgres;");
+        => optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=FinancePillow;User Id=postgres;Password=postgres;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -356,28 +354,6 @@ public partial class FPDbContext : IdentityDbContext<ApplicationUser>
             entity.Property(e => e.TotalExpense).HasColumnName("total_expense");
             entity.Property(e => e.TotalIncome).HasColumnName("total_income");
             entity.Property(e => e.UserId).HasColumnName("user_id");
-        });
-
-        modelBuilder.Entity<UserSetting>(entity =>
-        {
-            entity
-                .HasNoKey()
-                .ToTable("user_settings");
-
-            entity.Property(e => e.ExpenseLimit)
-                .HasDefaultValue(999999999)
-                .HasColumnName("expense_limit");
-            entity.Property(e => e.IncomeLimit)
-                .HasDefaultValue(999999999)
-                .HasColumnName("income_limit");
-            entity.Property(e => e.UserId).HasColumnName("user_id");
-
-            entity.HasOne<ApplicationUser>(d => d.User)
-            .WithMany() // You might want to specify the navigation property if there is one.
-            .HasForeignKey(d => d.UserId)
-            .HasConstraintName("user_settings_user_id_fkey")
-            .IsRequired() // Making sure every UserSetting has a User associated with it.
-            .OnDelete(DeleteBehavior.Cascade);
         });
 
         OnModelCreatingPartial(modelBuilder);
