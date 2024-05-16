@@ -29,28 +29,4 @@ public class AccountService
     {
         await _signInManager.SignOutAsync();
     }
-
-    public async Task<IdentityResult> ChangePasswordAsync(string userId, string currentPassword, string newPassword)
-    {
-        var user = await _userManager.FindByIdAsync(userId);
-        return await _userManager.ChangePasswordAsync(user, currentPassword, newPassword);
-    }
-
-    public async Task<bool> IsEmailConfirmedAsync(string userId)
-    {
-        var user = await _userManager.FindByIdAsync(userId);
-        return await _userManager.IsEmailConfirmedAsync(user);
-    }
-
-    public async Task<string> GeneratePasswordResetTokenAsync(string userId)
-    {
-        var user = await _userManager.FindByIdAsync(userId);
-        return await _userManager.GeneratePasswordResetTokenAsync(user);
-    }
-
-    public async Task<IdentityResult> ResetPasswordAsync(string userId, string token, string newPassword)
-    {
-        var user = await _userManager.FindByIdAsync(userId);
-        return await _userManager.ResetPasswordAsync(user, token, newPassword);
-    }
 }

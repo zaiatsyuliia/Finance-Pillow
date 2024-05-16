@@ -62,6 +62,4 @@ public class AccountController : Controller
         await _accountService.LogoutAsync();
         return RedirectToAction("Login");
     }
-
-    // Include other methods similar to the above, refactoring to use the service
 }

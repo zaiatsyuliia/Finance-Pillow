@@ -7,49 +7,108 @@ using Data.Repositories;
 using Business.DTO;
 using Data.Models;
 
-namespace Testing;
-
-public class TransactionServiceTests
+namespace Testing
 {
-    [Fact]
-    public async Task AddExpenseAsync_CallsRepositoryWithCorrectParameters()
+    public class TransactionServiceTests
     {
-        // Arrange
-        var mockRepo = new Mock<ITransactionRepository>();
-        var service = new TransactionService(mockRepo.Object);
-        var userId = 1;
-        var transactionDto = new TransactionDto
+        private readonly Mock<ITransactionRepository> _mockTransactionRepository;
+        private readonly TransactionService _transactionService;
+
+        public TransactionServiceTests()
         {
-            Type = "expense",
-            CategoryId = 10,
-            Sum = 100.00
-        };
+            _mockTransactionRepository = new Mock<ITransactionRepository>();
+            _transactionService = new TransactionService(_mockTransactionRepository.Object);
+        }
 
-        // Act
-        await service.AddTransactionAsync(userId, transactionDto);
-
-        // Assert
-        mockRepo.Verify(repo => repo.AddExpenseAsync(userId, transactionDto.CategoryId, It.IsAny<DateTime>(), transactionDto.Sum), Times.Once());
-    }
-
-    [Fact]
-    public async Task AddIncomeAsync_CallsRepositoryWithCorrectParameters()
-    {
-        // Arrange
-        var mockRepo = new Mock<ITransactionRepository>();
-        var service = new TransactionService(mockRepo.Object);
-        var userId = 1;
-        var transactionDto = new TransactionDto
+        [Fact]
+        public async Task AddExpenseAsync_CallsRepositoryWithCorrectParameters()
         {
-            Type = "income",
-            CategoryId = 20,
-            Sum = 200.00
-        };
+            // Arrange
+            var userId = "abc";
+            var transactionDto = new TransactionDto
+            {
+                Type = TransactionType.Expense,
+                CategoryId = 10,
+                Sum = 100.00
+            };
 
-        // Act
-        await service.AddTransactionAsync(userId, transactionDto);
+            // Act
+            await _transactionService.AddTransactionAsync(userId, transactionDto);
 
-        // Assert
-        mockRepo.Verify(repo => repo.AddIncomeAsync(userId, transactionDto.CategoryId, It.IsAny<DateTime>(), transactionDto.Sum), Times.Once());
+            // Assert
+            _mockTransactionRepository.Verify(repo => repo.AddExpenseAsync(userId, transactionDto.CategoryId, It.IsAny<DateTime>(), transactionDto.Sum), Times.Once());
+        }
+
+        [Fact]
+        public async Task AddIncomeAsync_CallsRepositoryWithCorrectParameters()
+        {
+            // Arrange
+            var userId = "abc";
+            var transactionDto = new TransactionDto
+            {
+                Type = TransactionType.Income,
+                CategoryId = 20,
+                Sum = 200.00
+            };
+
+            // Act
+            await _transactionService.AddTransactionAsync(userId, transactionDto);
+
+            // Assert
+            _mockTransactionRepository.Verify(repo => repo.AddIncomeAsync(userId, transactionDto.CategoryId, It.IsAny<DateTime>(), transactionDto.Sum), Times.Once());
+        }
+
+        [Fact]
+        public async Task AddTransactionAsync_ThrowsExceptionForInvalidTransactionType()
+        {
+            // Arrange
+            var userId = "abc";
+            var transactionDto = new TransactionDto
+            {
+                Type = (TransactionType)99, // Invalid transaction type
+                CategoryId = 30,
+                Sum = 300.00
+            };
+
+            // Act & Assert
+            await Assert.ThrowsAsync<ArgumentException>(() => _transactionService.AddTransactionAsync(userId, transactionDto));
+        }
+
+        [Fact]
+        public async Task DeleteIncomeAsync_CallsRepositoryWithCorrectParameters()
+        {
+            // Arrange
+            var transactionId = 1;
+
+            // Act
+            await _transactionService.DeleteTransactionAsync(TransactionType.Income, transactionId);
+
+            // Assert
+            _mockTransactionRepository.Verify(repo => repo.DeleteIncomeAsync(transactionId), Times.Once());
+        }
+
+        [Fact]
+        public async Task DeleteExpenseAsync_CallsRepositoryWithCorrectParameters()
+        {
+            // Arrange
+            var transactionId = 1;
+
+            // Act
+            await _transactionService.DeleteTransactionAsync(TransactionType.Expense, transactionId);
+
+            // Assert
+            _mockTransactionRepository.Verify(repo => repo.DeleteExpenseAsync(transactionId), Times.Once());
+        }
+
+        [Fact]
+        public async Task DeleteTransactionAsync_ThrowsExceptionForInvalidTransactionType()
+        {
+            // Arrange
+            var transactionId = 1;
+            var invalidTransactionType = (TransactionType)99; // Invalid transaction type
+
+            // Act & Assert
+            await Assert.ThrowsAsync<ArgumentOutOfRangeException>(() => _transactionService.DeleteTransactionAsync(invalidTransactionType, transactionId));
+        }
     }
 }

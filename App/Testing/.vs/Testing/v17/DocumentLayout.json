@@ -3,19 +3,22 @@
   "WorkspaceRootPath": "D:\\Projects\\FinancePillow\\App\\Testing\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71F59F81-E63F-4A6F-B8D4-C30CD5D7FAA3}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|d:\\projects\\financepillow\\app\\testing\\creditservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|solutionrelative:creditservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|d:\\projects\\financepillow\\app\\testing\\budgetservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|solutionrelative:budgetservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|d:\\projects\\financepillow\\app\\testing\\transactionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|solutionrelative:transactionservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|d:\\projects\\financepillow\\app\\testing\\userservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|solutionrelative:userservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|d:\\projects\\financepillow\\app\\testing\\categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7118AAC4-0836-401B-86DA-6A9008C0B87B}|Testing.csproj|solutionrelative:categoryservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F59F81-E63F-4A6F-B8D4-C30CD5D7FAA3}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71F59F81-E63F-4A6F-B8D4-C30CD5D7FAA3}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\budgetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\FinancePillow\\App\\Business\\Services\\CreditService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -28,7 +31,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -44,31 +47,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserServiceTests.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Testing\\UserServiceTests.cs",
-              "RelativeDocumentMoniker": "UserServiceTests.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Testing\\UserServiceTests.cs",
-              "RelativeToolTip": "UserServiceTests.cs",
-              "ViewState": "AQIAAFsAAABAMzMzMzMRwF0AAAAVAAAA",
+              "DocumentIndex": 2,
+              "Title": "CategoryServiceTests.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Testing\\CategoryServiceTests.cs",
+              "RelativeDocumentMoniker": "CategoryServiceTests.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Testing\\CategoryServiceTests.cs",
+              "RelativeToolTip": "CategoryServiceTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T23:07:11.533Z"
+              "WhenOpened": "2024-05-16T22:49:21.394Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\CategoryService.cs",
+              "RelativeDocumentMoniker": "..\\Business\\Services\\CategoryService.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\CategoryService.cs",
+              "RelativeToolTip": "..\\Business\\Services\\CategoryService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvx4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T22:48:00.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BudgetServiceTests.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Testing\\BudgetServiceTests.cs",
+              "RelativeDocumentMoniker": "BudgetServiceTests.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Testing\\BudgetServiceTests.cs",
+              "RelativeToolTip": "BudgetServiceTests.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAASwFAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T22:46:13.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "TransactionServiceTests.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Testing\\TransactionServiceTests.cs",
               "RelativeDocumentMoniker": "TransactionServiceTests.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Testing\\TransactionServiceTests.cs",
               "RelativeToolTip": "TransactionServiceTests.cs",
-              "ViewState": "AQIAAA8AAAAAQjMzMzMDwBYAAAAdAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAQwGQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T23:03:39.979Z"
+              "WhenOpened": "2024-04-11T23:03:39.979Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "CreditService.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\CreditService.cs",
               "RelativeDocumentMoniker": "..\\Business\\Services\\CreditService.cs",
@@ -80,26 +111,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreditServiceTests.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Testing\\CreditServiceTests.cs",
-              "RelativeDocumentMoniker": "CreditServiceTests.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Testing\\CreditServiceTests.cs",
-              "RelativeToolTip": "CreditServiceTests.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAADwvxkAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T22:32:32.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "BudgetService.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\BudgetService.cs",
               "RelativeDocumentMoniker": "..\\Business\\Services\\BudgetService.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\BudgetService.cs",
               "RelativeToolTip": "..\\Business\\Services\\BudgetService.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAowCkAAAAFAAAA",
+              "ViewState": "AQIAADcAAAAAAAAAAAAUwEsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-11T22:24:13.344Z",
               "EditorCaption": ""

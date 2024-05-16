@@ -1,8 +1,7 @@
 ﻿using Business.DTO;
 using Data.Models;
-using Data.Repositories;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 public class SettingsService
 {
@@ -36,31 +35,52 @@ public class SettingsService
     {
         var user = await _userManager.FindByIdAsync(dto.UserId);
 
-        if (user != null)
+        if (user == null)
         {
-            if (user.UserName != dto.UserName)
-            {
-                user.UserName = dto.UserName;
-            }
-            if (user.Email != dto.Email)
-            {
-                user.Email = dto.Email;
-            }
-            if (!string.IsNullOrEmpty(dto.Password) && dto.Password == dto.ConfirmPassword)
-            {
-                user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, dto.Password);
-            }
+            throw new KeyNotFoundException("User not found.");
+        }
 
-            if (user.ExpenseLimit != dto.ExpenseLimit)
-            {
-                user.ExpenseLimit = dto.ExpenseLimit;
-            }
-            if (user.IncomeLimit != dto.IncomeLimit)
-            {
-                user.IncomeLimit = dto.IncomeLimit;
-            }
+        if (user.UserName != dto.UserName)
+        {
+            user.UserName = dto.UserName;
+        }
 
-            await _userManager.UpdateAsync(user);
+        if (user.Email != dto.Email)
+        {
+            var emailChangeResult = await _userManager.SetEmailAsync(user, dto.Email);
+            if (!emailChangeResult.Succeeded)
+            {
+                throw new Exception("Failed to update email.");
+            }
+        }
+
+        if (!string.IsNullOrEmpty(dto.Password) && dto.Password == dto.ConfirmPassword)
+        {
+            var passwordChangeResult = await _userManager.RemovePasswordAsync(user);
+            if (passwordChangeResult.Succeeded)
+            {
+                passwordChangeResult = await _userManager.AddPasswordAsync(user, dto.Password);
+            }
+            if (!passwordChangeResult.Succeeded)
+            {
+                throw new Exception("Failed to update password.");
+            }
+        }
+
+        if (user.ExpenseLimit != dto.ExpenseLimit)
+        {
+            user.ExpenseLimit = dto.ExpenseLimit;
+        }
+
+        if (user.IncomeLimit != dto.IncomeLimit)
+        {
+            user.IncomeLimit = dto.IncomeLimit;
+        }
+
+        var updateResult = await _userManager.UpdateAsync(user);
+        if (!updateResult.Succeeded)
+        {
+            throw new Exception("Failed to update user settings.");
         }
     }
 }
