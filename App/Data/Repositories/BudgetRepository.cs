@@ -13,6 +13,12 @@ public interface IBudgetRepository
     Task<Limit> GetLimitsAsync(string userId);
 
     Task<List<History>> GetUserHistoryAsync(string userId);
+
+    Task<List<History>> GetUserHistoryTimeAsync(string userId, DateTime startDate, DateTime endDate);
+
+    Task<List<History>> GetUserExpenseHistoryAsync(string userId);
+
+    Task<List<History>> GetUserIncomeHistoryAsync(string userId);
 }
 
 public class BudgetRepository : IBudgetRepository
@@ -48,5 +54,37 @@ public class BudgetRepository : IBudgetRepository
             .ToListAsync();
 
         return userHistory;
+    }
+
+    public async Task<List<History>> GetUserHistoryTimeAsync(string userId, DateTime startDate, DateTime endDate)
+    {
+        endDate = endDate.Date.AddDays(1).AddSeconds(-1);
+
+        var userHistory = await _context.Histories
+            .Where(h => h.UserId == userId && h.Time >= startDate && h.Time <= endDate)
+            .OrderByDescending(h => h.Time)
+            .ToListAsync();
+
+        return userHistory;
+    }
+
+    public async Task<List<History>> GetUserExpenseHistoryAsync(string userId)
+    {
+        var userExpenseHistory = await _context.Histories
+            .Where(h => h.UserId == userId && h.TransactionType == "expense")
+            .OrderByDescending(h => h.Time)
+            .ToListAsync();
+
+        return userExpenseHistory;
+    }
+
+    public async Task<List<History>> GetUserIncomeHistoryAsync(string userId)
+    {
+        var userIncomeHistory = await _context.Histories
+            .Where(h => h.UserId == userId && h.TransactionType == "income")
+            .OrderByDescending(h => h.Time)
+            .ToListAsync();
+
+        return userIncomeHistory;
     }
 }

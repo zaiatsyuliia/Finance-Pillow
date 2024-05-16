@@ -1,7 +1,8 @@
 ﻿let secretNumber;
 let attemptsLeft = 10;
 
-function startGame() {
+function startBnC() {
+    document.getElementById('winningMessage').style.display = 'none';
     attemptsLeft = 10;
     const numberLength = document.getElementById('numberLength').value;
     if (numberLength < 4 || numberLength > 10) {
@@ -18,7 +19,8 @@ function startGame() {
     document.getElementById('resultsList').innerHTML = '';
 }
 
-function startGameuk() {
+function startBnCuk() {
+    document.getElementById('winningMessage').style.display = 'none';
     attemptsLeft = 10;
     const numberLength = document.getElementById('numberLength').value;
     if (numberLength < 4 || numberLength > 10) {
@@ -47,6 +49,7 @@ function generateNumber(length) {
 }
 
 function checkGuess() {
+    document.getElementById('winningMessage').style.display = 'none';
     const userGuess = document.getElementById('userGuess').value;
 
     if (new Set(userGuess).size !== userGuess.length) {
@@ -93,6 +96,7 @@ function checkGuess() {
 }
 
 function checkGuessuk() {
+    document.getElementById('winningMessage').style.display = 'none';
     const userGuess = document.getElementById('userGuess').value;
 
     if (new Set(userGuess).size !== userGuess.length) {
@@ -139,13 +143,7 @@ function checkGuessuk() {
 }
 
 function showAlert(message) {
-    const overlay = document.getElementById('overlay');
-    const overlayMessage = document.getElementById('overlay-message');
-    overlayMessage.innerText = message;
-    overlay.style.display = 'flex';
-}
-
-function hideAlert() {
-    const overlay = document.getElementById('overlay');
-    overlay.style.display = 'none';
+    const winningMessageText = document.getElementById('winningMessageText');
+    winningMessageText.textContent = message;
+    document.getElementById('winningMessage').style.display = 'block';
 }

@@ -46,3 +46,7 @@
 .dark .currency {
     color: #fff;
 }
+
+tr:hover {
+    background-color: #333333;
+}

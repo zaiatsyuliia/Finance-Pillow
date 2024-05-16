@@ -93,3 +93,19 @@ span[data-valmsg-for="ConfirmPassword"] {
     display: block;
     margin-top: 5px;
 }
+
+@media screen and (max-width: 1100px) {
+    body {
+        align-content: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 10% 10px 10px 10px;
+    }
+
+    .login-form,
+    .register-form {
+        padding: 20px;
+    }
+}

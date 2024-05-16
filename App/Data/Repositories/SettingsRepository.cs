@@ -8,9 +8,7 @@ public interface ISettingsRepository
 {
     Task<UserSetting> GetUserSettingsAsync(string userId);
 
-    Task UpdateIncomeLimitAsync(string userId, int newIncomeLimit);
-
-    Task UpdateExpenseLimitAsync(string userId, int newExpenseLimit);
+    Task UpdateUserSettingsAsync(UserSetting userSetting);
 }
 
 public class SettingsRepository : ISettingsRepository
@@ -25,29 +23,13 @@ public class SettingsRepository : ISettingsRepository
     public async Task<UserSetting> GetUserSettingsAsync(string userId)
     {
         return await _context.UserSettings
+            .Include(us => us.User)
             .FirstOrDefaultAsync(us => us.UserId == userId);
     }
 
-    public async Task UpdateIncomeLimitAsync(string userId, int newIncomeLimit)
+    public async Task UpdateUserSettingsAsync(UserSetting userSetting)
     {
-        var userSettings = await GetUserSettingsAsync(userId);
-
-        if (userSettings != null)
-        {
-            userSettings.IncomeLimit = newIncomeLimit;
-            await _context.SaveChangesAsync();
-            Console.WriteLine("!@#");
-        }
-    }
-
-    public async Task UpdateExpenseLimitAsync(string userId, int newExpenseLimit)
-    {
-        var userSettings = await GetUserSettingsAsync(userId);
-        if (userSettings != null)
-        {
-            userSettings.ExpenseLimit = newExpenseLimit;
-            await _context.SaveChangesAsync();
-            Console.WriteLine("!@#");
-        }
+        _context.UserSettings.Update(userSetting);
+        await _context.SaveChangesAsync();
     }
 }

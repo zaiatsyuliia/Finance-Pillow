@@ -7,84 +7,69 @@ using Microsoft.EntityFrameworkCore;
 public class SettingsService
 {
     private readonly UserManager<ApplicationUser> _userManager;
-    private readonly ISettingsRepository _userSettingsRepository;
+    private readonly ISettingsRepository _settingsRepository;
 
     public SettingsService(UserManager<ApplicationUser> userManager, ISettingsRepository userSettingsRepository)
     {
         _userManager = userManager;
-        _userSettingsRepository = userSettingsRepository;
+        _settingsRepository = userSettingsRepository;
     }
+
     public async Task<SettingsDto> GetUserSettingsAsync(string userId)
     {
         var user = await _userManager.FindByIdAsync(userId);
-        if (user == null) throw new Exception("User not found.");
+        var userSetting = await _settingsRepository.GetUserSettingsAsync(userId);
 
-        var userSettings = await _userSettingsRepository.GetUserSettingsAsync(userId);
-        if (userSettings == null) throw new Exception("User settings not found.");
+        if (user == null || userSetting == null)
+        {
+            return null;
+        }
 
         return new SettingsDto
         {
             UserId = user.Id,
             UserName = user.UserName,
             Email = user.Email,
-            ExpenseLimit = userSettings.ExpenseLimit ?? 0,
-            IncomeLimit = userSettings.IncomeLimit ?? 0
+            ExpenseLimit = userSetting.ExpenseLimit ?? 0,
+            IncomeLimit = userSetting.IncomeLimit ?? 0
         };
     }
 
     public async Task UpdateSettingsAsync(SettingsDto dto)
     {
-        Console.WriteLine("Settings Post Service!");
-
         var user = await _userManager.FindByIdAsync(dto.UserId);
-        if (user == null)
-        {
-            throw new Exception("User not found.");
-        }
 
-        if (!string.IsNullOrWhiteSpace(dto.UserName))
+        if (user != null)
         {
-            user.UserName = dto.UserName;
-            Console.WriteLine("Username Changed!");
-        }
-
-        if (!string.IsNullOrWhiteSpace(dto.Email))
-        {
-            user.Email = dto.Email;
-            Console.WriteLine("Email Changed!");
-        }
-
-        var identityResult = await _userManager.UpdateAsync(user);
-        if (!identityResult.Succeeded)
-        {
-            throw new Exception("Failed to update user identity details.");
-        }
-
-        if (!string.IsNullOrWhiteSpace(dto.Password))
-        {
-            if (dto.Password != dto.ConfirmPassword)
+            if (user.UserName != dto.UserName)
             {
-                throw new Exception("The new password and confirmation password do not match.");
+                user.UserName = dto.UserName;
+            }
+            if (user.Email != dto.Email)
+            {
+                user.Email = dto.Email;
+            }
+            if (!string.IsNullOrEmpty(dto.Password) && dto.Password == dto.ConfirmPassword)
+            {
+                user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, dto.Password);
             }
 
-            var token = await _userManager.GeneratePasswordResetTokenAsync(user);
-            var passwordResult = await _userManager.ResetPasswordAsync(user, token, dto.Password);
-            if (!passwordResult.Succeeded)
+            await _userManager.UpdateAsync(user);
+        }
+
+        var userSetting = await _settingsRepository.GetUserSettingsAsync(dto.UserId);
+        if (userSetting != null)
+        {
+            if (userSetting.ExpenseLimit != dto.ExpenseLimit)
             {
-                throw new Exception("Failed to update user password.");
+                userSetting.ExpenseLimit = dto.ExpenseLimit;
             }
-            Console.WriteLine("Password Changed!");
-        }
+            if (userSetting.IncomeLimit != dto.IncomeLimit)
+            {
+                userSetting.IncomeLimit = dto.IncomeLimit;
+            }
 
-        if (dto.ExpenseLimit >= 0)
-        {
-            await _userSettingsRepository.UpdateExpenseLimitAsync(dto.UserId, dto.ExpenseLimit);
+            await _settingsRepository.UpdateUserSettingsAsync(userSetting);
         }
-        if (dto.IncomeLimit >= 0)
-        {
-            await _userSettingsRepository.UpdateExpenseLimitAsync(dto.UserId, dto.ExpenseLimit);
-        }
-
-        Console.WriteLine("Settings Post Service End!");
     }
 }

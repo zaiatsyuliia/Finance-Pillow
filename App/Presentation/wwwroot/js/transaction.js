@@ -1,4 +1,4 @@
-﻿document.getElementById('type').addEventListener('change', function () {
+document.getElementById('type').addEventListener('change', function () {
     var type = this.value;
     var categories = [];
 
@@ -14,14 +14,12 @@
     // Clear existing options
     var selectElement = document.getElementById('categoryId');
     selectElement.innerHTML = '';
-    console.log('Dropdown Element:', selectElement);
 
     // Add new options
     categories.forEach(function (category) {
         var option = document.createElement('option');
-        option.value = category.idCategory;
+        option.value = parseInt(category.categoryId);
         option.textContent = category.name;
         selectElement.appendChild(option);
     });
-    console.log('Dropdown HTML:', selectElement.innerHTML);
 });

@@ -42,10 +42,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/FinancePillow/App/Presentation/Views/Home/BullsAndCows.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxCdWxsc0FuZENvd3MuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Projects/FinancePillow/App/Presentation/Views/Home/Credit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,8 +54,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFeHBlbnNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/FinancePillow/App/Presentation/Views/Home/Hangman.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIYW5nbWFuLmNzaHRtbA==
+[D:/Projects/FinancePillow/App/Presentation/Views/Home/Games.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxHYW1lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/FinancePillow/App/Presentation/Views/Home/Incomes.cshtml]
@@ -74,8 +70,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXR0aW5ncy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/FinancePillow/App/Presentation/Views/Home/TicTacToe.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUaWNUYWNUb2UuY3NodG1s
+[D:/Projects/FinancePillow/App/Presentation/Views/Home/_HistoryPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfSGlzdG9yeVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/FinancePillow/App/Presentation/Views/Shared/Error.cshtml]

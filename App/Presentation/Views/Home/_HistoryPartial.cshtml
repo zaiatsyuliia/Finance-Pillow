@@ -1,0 +1,32 @@
+﻿@model List<Business.DTO.HistoryDto>
+
+<table>
+    <tr>
+        <th data-lang="en">Type</th>
+        <th data-lang="uk" style="display: none;">Тип</th>
+        <th data-lang="en">Category</th>
+        <th data-lang="uk" style="display: none;">Категорія</th>
+        <th data-lang="en">Sum</th>
+        <th data-lang="uk" style="display: none;">Сума</th>
+        <th data-lang="en">Time</th>
+        <th data-lang="uk" style="display: none;">Час</th>
+        <th></th>
+    </tr>
+    @foreach (var transaction in Model)
+    {
+        <tr class="@transaction.TransactionType.ToString().ToLower()">
+            <td>@transaction.TransactionType</td>
+            <td>@transaction.Category</td>
+            <td>@transaction.Sum</td>
+            <td>@transaction.Date.ToString("dd.MM.yyyy")</td>
+            <td>
+                <form asp-action="DeleteTransaction" asp-controller="Home" method="post">
+                    <input type="hidden" name="type" value="@transaction.TransactionType" />
+                    <input type="hidden" name="transactionId" value="@transaction.TransactionId" />
+                    <button type="submit">Delete</button>
+                    <button type="submit" data-lang="uk" style="display: none;">Видалити</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>

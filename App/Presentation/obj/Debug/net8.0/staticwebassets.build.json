@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "uN+iM9LFA/AeVnI+5PZOAJxeTVujt8CqFfSmRHDJOhs=",
+  "Hash": "cDUyZZDlme8MFKxxETboz9LMcosaJFbQmBQen+WVwL0=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -1214,12 +1214,12 @@
       "OriginalItemSpec": "wwwroot\\css\\lightTheme.css"
     },
     {
-      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\logReg.css",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\logReg2.css",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
-      "RelativePath": "css/logReg.css",
+      "RelativePath": "css/logReg2.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1230,7 +1230,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\logReg.css"
+      "OriginalItemSpec": "wwwroot\\css\\logReg2.css"
+    },
+    {
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\media.css",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "css/media.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\media.css"
     },
     {
       "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\css\\site.css",
@@ -1404,6 +1423,25 @@
       "OriginalItemSpec": "wwwroot\\images\\hangman6.png"
     },
     {
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\bnc.js",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "js/bnc.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\bnc.js"
+    },
+    {
       "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\credit.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
@@ -1442,12 +1480,12 @@
       "OriginalItemSpec": "wwwroot\\js\\currency.js"
     },
     {
-      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\game.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\hang.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
-      "RelativePath": "js/game.js",
+      "RelativePath": "js/hang.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1458,15 +1496,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\game.js"
+      "OriginalItemSpec": "wwwroot\\js\\hang.js"
     },
     {
-      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\hangman.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\history.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
-      "RelativePath": "js/hangman.js",
+      "RelativePath": "js/history.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1477,7 +1515,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\hangman.js"
+      "OriginalItemSpec": "wwwroot\\js\\history.js"
     },
     {
       "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\music.js",
@@ -1537,12 +1575,12 @@
       "OriginalItemSpec": "wwwroot\\js\\statistics.js"
     },
     {
-      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transactionForm.js",
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\ticTacToe.js",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
-      "RelativePath": "js/transactionForm.js",
+      "RelativePath": "js/ticTacToe.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1553,7 +1591,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\transactionForm.js"
+      "OriginalItemSpec": "wwwroot\\js\\ticTacToe.js"
+    },
+    {
+      "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\js\\transaction.js",
+      "SourceId": "Presentation",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\",
+      "BasePath": "_content/Presentation",
+      "RelativePath": "js/transaction.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\transaction.js"
     },
     {
       "Identity": "D:\\Projects\\FinancePillow\\App\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

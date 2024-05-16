@@ -1,0 +1,207 @@
+﻿<div class="home-div">
+    <h1 data-lang="en">Bulls and Cows Game</h1>
+    <h1 data-lang="uk" style="display: none;">Гра "Бики та корови"</h1>
+
+    <div class="flex-div">
+        <div>
+            <label for="numberLength" data-lang="en">Choose number length (4-10):</label>
+            <label for="numberLength" data-lang="uk" style="display: none;">Вибери довжину числа (4-10):</label>
+
+            <select id="numberLength">
+                @for (int i = 4; i <= 10; i++)
+                {
+                    <option value="@i">@i</option>
+                }
+            </select>
+
+            <button onclick="startBnC()" data-lang="en">Start Game</button>
+            <button onclick="startBnCuk()" data-lang="uk" style="display: none;">Почати гру</button>
+
+            <div id="gameArea" style="display: none;">
+                <input type="text" id="userGuess" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+
+                <button onclick="checkGuess()" data-lang="en">Check</button>
+                <button onclick="checkGuessuk()" data-lang="uk" style="display: none;">Перевірити</button>
+
+                <p data-lang="en">Attempts left:</p>
+                <p data-lang="uk" style="display: none;">Спроб залишилось:</p>
+                <span id="attempts">10</span>
+
+                <p data-lang="en">Results:</p>
+                <p data-lang="uk" style="display: none;">Результати:</p>
+                <div id="resultsList"></div>
+            </div>
+        </div>
+
+        <div class="rules">
+            <h2 data-lang="en">Rules:</h2>
+            <h2 data-lang="uk" style="display: none;">Правила:</h2>
+
+            <p data-lang="en">You need to guess a randomly generated number in the least number of attempts.</p>
+            <p data-lang="uk" style="display: none;">Вам потрібно вгадати випадково згенероване число за найменшу кількість спроб.</p>
+
+            <p data-lang="en">The number consists of unique digits from 4 to 10, depending on the length chosen by the player.</p>
+            <p data-lang="uk" style="display: none;">Номер складається з унікальних цифр від 4 до 10, залежно від довжини, обраної гравцем.</p>
+
+            <p data-lang="en">The player chooses the length of the number from 4 to 10 digits, and also that the numbers are not repeated.</p>
+            <p data-lang="uk" style="display: none;">Гравець вибирає довжину числа від 4 до 10 цифр, а також щоб числа не повторювалися.</p>
+
+            <p data-lang="en">The player enters his number in the input field and presses the "Check" button.</p>
+            <p data-lang="uk" style="display: none;">Гравець вводить свій номер у поле введення і натискає кнопку «Перевірити».</p>
+
+            <p data-lang="en">After each entered number, the game informs the player about the number of "bulls" and "cows" in the entered number:</p>
+            <p data-lang="uk" style="display: none;">Після кожного введеного числа гра повідомляє гравця про кількість "биків" та "корів" у введеному числі:</p>
+
+            <p data-lang="en">Bull (B): the figure is guessed in its correct place.</p>
+            <p data-lang="uk" style="display: none;">Бик (Б): цифра вгадана на своєму правильному місці.</p>
+
+            <p data-lang="en">Cow (C): The number is guessed, but not in its correct place.</p>
+            <p data-lang="uk" style="display: none;">Корова (К): цифра вгадана, але не на своєму правильному місці.</p>
+
+            <p data-lang="en">The game continues until the player guesses all the numbers in the maximum number of attempts (10).</p>
+            <p data-lang="uk" style="display: none;">Гра триває, доки гравець не вгадає всі цифри за максимальну кількість спроб (10).</p>
+
+            <p data-lang="en">A player wins when he guesses all the numbers in the fewest number of tries.</p>
+            <p data-lang="uk" style="display: none;">Гравець перемагає, коли він вгадує всі цифри за меншу кількість спроб.</p>
+
+            <p data-lang="en">Good luck!</p>
+            <p data-lang="uk" style="display: none;">Щасти!</p>
+        </div>
+    </div>
+
+    <div id="winningMessage" style="display: none;">
+        <p id="winningMessageText"></p>
+    </div>
+</div>
+
+<div class="home-div">
+    <h1 data-lang="en">Hangman Game</h1>
+    <h1 data-lang="uk" style="display: none;">Гра "Шибениця"</h1>
+
+    <div class="flex-div">
+        <div>
+            <div id="hangmanWordContainer">
+                <div id="hangmanContainer">
+                    <img id="hangmanImage" src="/Images/hangman0.png" alt="Hangman" />
+                </div>
+
+                <div id="wordContainer">
+                    <span id="wordToGuess"></span>
+                </div>
+            </div>
+
+            <div>
+                @for (char c = 'A'; c <= 'Z'; c++)
+                {
+                    <button onclick="checkLetter('@c')" id="@c">@c</button>
+                }
+            </div>
+
+            <div>
+                <p class="message" data-lang="en"></p>
+                <p class="messageuk" data-lang="uk" style="display: none;"></p>
+            </div>
+
+            <div id="attemptsContainer">
+                <p class="attempts" data-lang="en">Attempts: 0/6</p>
+                <p class="attemptsuk" data-lang="uk" style="display: none;">Спроби: 0/6</p>
+            </div>
+
+            <button class="restartButton" data-lang="en" onclick="restartHangman()">Start new game</button>
+            <button class="restartButton" data-lang="uk" style="display: none;" onclick="restartHangman()">Розпочати нову гру</button>
+        </div>
+
+        <div class="rules">
+            <h2 data-lang="en">Rules:</h2>
+            <h2 data-lang="uk" style="display: none;">Правила:</h2>
+
+            <p data-lang="en">The game chooses a random word from a list of words to guess.</p>
+            <p data-lang="uk" style="display: none;">Гра вибирає випадкове слово зі списку слів для відгадування.</p>
+
+            <p data-lang="en">The player must guess the word by entering the letters that he thinks can be part of the word.</p>
+            <p data-lang="uk" style="display: none;">Гравець має вгадати слово, введенням літер, які, на його думку, можуть входити в це слово.</p>
+                <p data-lang="en">If the letter entered is part of a word, that letter is displayed in the position(s) in the word.</p>
+                <p data-lang="uk" style="display: none;">Якщо введена літера входить в слово, ця літера відображається на місці(-ах) у слові.</p>
+
+                <p data-lang="en">If the entered letter is not included in the word, then the letter changes color and one attempt is deducted.</p>
+                <p data-lang="uk" style="display: none;">Якщо введена літера не входить в слово, то літера змінює колір та віднімається одна спроба.</p>
+
+                <p data-lang="en">The player wins if he guesses the word without making too many mistakes (less than 6 mistakes for this version of the game).</p>
+                <p data-lang="uk" style="display: none;">Гравець виграє, якщо відгадає слово, не допустивши зайвої кількості помилок (для цієї версії гри - менше 6 помилок).</p>
+
+                <p data-lang="en">The player loses if they make 6 or more mistakes before guessing the word.</p>
+                <p data-lang="uk" style="display: none;">Гравець програє, якщо зробить 6 помилок перед відгадуванням слова.</p>
+
+                <p data-lang="uk" style="display: none;">У цій грі є лише англійські слова.</p>
+
+            <p data-lang="en">Good luck!</p>
+            <p data-lang="uk" style="display: none;">Удачі!</p>
+        </div>
+    </div>
+</div>
+
+<div class="home-div">
+    <h1 data-lang="en">Tic Tac Toe Game</h1>
+    <h1 data-lang="uk" style="display: none;">Гра "Хрестики-нулики"</h1>
+
+    <div class="flex-div">
+        <div>
+            <div data-lang="en">
+                <button onclick="startGame('bot')">Play against a bot</button>
+                <button onclick="startGame('player')">Play against a player</button>
+            </div>
+
+            <div data-lang="uk" style="display: none;">
+                <button onclick="startGame('bot')">Грати проти бота</button>
+                <button onclick="startGame('player')">Грати проти гравця</button>
+            </div>
+
+            <div class="board" id="board" hidden>
+                <div class="cell" onclick="makeMove(0)"></div>
+                <div class="cell" onclick="makeMove(1)"></div>
+                <div class="cell" onclick="makeMove(2)"></div>
+                <div class="cell" onclick="makeMove(3)"></div>
+                <div class="cell" onclick="makeMove(4)"></div>
+                <div class="cell" onclick="makeMove(5)"></div>
+                <div class="cell" onclick="makeMove(6)"></div>
+                <div class="cell" onclick="makeMove(7)"></div>
+                <div class="cell" onclick="makeMove(8)"></div>
+            </div>
+
+            <div data-lang="en" class="message"></div>
+            <div data-lang="uk" style="display: none;" class="messageuk"></div>
+        </div>
+
+        <div class="rules">
+            <h2 data-lang="en">Rules:</h2>
+            <h2 data-lang="uk" style="display: none;">Правила:</h2>
+
+            <p data-lang="en">The game is played on a 3x3 grid.</p>
+            <p data-lang="uk" style="display: none;">Гра відбувається на полі 3x3.</p>
+
+            <p data-lang="en">The user needs to choose who he will play against.</p>
+            <p data-lang="uk" style="display: none;">Користувачеві потрібно вибрати проти кого він буде грати.</p>
+
+            <p data-lang="en">Players take turns marking a cell with their respective symbol (X or O).</p>
+            <p data-lang="uk" style="display: none;">Гравці по черзі відзначають клітину своїм символом (X або O).</p>
+
+            <p data-lang="en">The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.</p>
+            <p data-lang="uk" style="display: none;">Гравець, який зможе розмістити три своїх символи в горизонтальному, вертикальному або діагональному рядку, перемагає в грі.</p>
+            
+            <p data-lang="en">If the grid is filled with no winner, the game is a draw.</p>
+            <p data-lang="uk" style="display: none;">Якщо поле заповнене і немає переможця, гра закінчується внічию.</p>
+
+            <p data-lang="en">The first player starts with 'X'.</p>
+            <p data-lang="uk" style="display: none;">Перший гравець починає з символом 'X'.</p>
+
+            <p data-lang="en">Good luck!</p>
+            <p data-lang="uk" style="display: none;">Щасти!</p>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="~/js/bnc.js"></script>
+<script src="~/js/hang.js"></script>
+<script src="~/js/ticTacToe.js"></script>

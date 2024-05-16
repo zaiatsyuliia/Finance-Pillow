@@ -76,7 +76,7 @@ function updateHangmanImage() {
     hangmanImage.src = imagePath;
 }
 
-function restartGame() {
+function restartHangman() {
     selectedWord = words[Math.floor(Math.random() * words.length)];
     guessedWord = Array(selectedWord.length).fill('_');
     incorrectGuesses = 0;

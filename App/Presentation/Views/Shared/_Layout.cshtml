@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="~/css/lightTheme.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/darkTheme.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/colors.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/media.css" asp-append-version="true" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow mb-3 fixed-top">
             <div class="container-fluid">
                 <p class="navbar-brand" asp-area="">FinancePillow</p>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <button class="navbar-toggle" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNavbar()">
+                    Menu
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" >
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" data-lang="en">Home</a>
@@ -39,16 +43,8 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Currency" data-lang="uk" style="display: none;">Валюта</a>
                         </li>
                         <li class="nav-item" >
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="BullsAndCows" data-lang="en">Bulls and Cows</a>
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="BullsAndCows" data-lang="uk" style="display: none;">Бики і корови</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Hangman" data-lang="en">Hangman</a>
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Hangman" data-lang="uk" style="display: none;">Шибениця</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TicTacToe" data-lang="en">Tic Tac Toe</a>
-                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="TicTacToe" data-lang="uk" style="display: none;">Хрестики-нулики</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Games" data-lang="en">Games</a>
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Games" data-lang="uk" style="display: none;">Ігри</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Settings" data-lang="en">Settings</a>
@@ -78,7 +74,7 @@
                         </li>
                         <li class="nav-item right-nav">
                             <form class="logout-form" asp-controller="Account" asp-action="Logout" method="post">
-                                <button іtype="submit" data-lang="en">Exit</button>
+                                <button type="submit" data-lang="en">Exit</button>
                                 <button type="submit" data-lang="uk" style="display: none">Вихід</button>
                             </form>
                         </li>
@@ -86,6 +82,61 @@
                 </div>
             </div>
         </nav>
+        <div id="overlay-menu" class="overlay-menun">
+            <ul class="navbar-nav-ov">
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" data-lang="en">Home</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" data-lang="uk" style="display: none;">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Expenses" data-lang="en">Expenses</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Expenses" data-lang="uk" style="display: none;">Витрати</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Incomes" data-lang="en">Incomes</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Incomes" data-lang="uk" style="display: none;">Доходи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Credit" data-lang="en">Credit</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Credit" data-lang="uk" style="display: none;">Кредит</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Currency" data-lang="en">Currency</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Currency" data-lang="uk" style="display: none;">Валюта</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Games" data-lang="en">Games</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Games" data-lang="uk" style="display: none;">Ігри</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Settings" data-lang="en">Settings</a>
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Settings" data-lang="uk" style="display: none;">Налаштування</a>
+                </li>
+            </ul>
+
+            <div class="navbar-nav-ov" style="display: flex; width: 100%; justify-content:center;">
+                <audio id="audioPlayer">
+                    <source src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <button onclick="togglePlayPause()" class="song-toggle-btn">Play/Pause</button>
+
+                <button onclick="changeSong()" class="song-toggle-btn" data-lang="en">Change Song</button>
+                <button onclick="changeSong()" class="song-toggle-btn" data-lang="uk" style="display: none;">Змінити музику</button>
+
+                <button class="color-toggle-btn" data-lang="en">Change Color</button>
+                <button class="color-toggle-btn" data-lang="uk" style="display: none;">Змінити колір</button>
+
+                <button class="theme-toggle-btn" data-lang="en">Change Theme</button>
+                <button class="theme-toggle-btn" data-lang="uk" style="display: none;">Змінити тему</button>
+
+                <form class="logout-form" asp-controller="Account" asp-action="Logout" method="post">
+                    <button type="submit" data-lang="en">Exit</button>
+                    <button type="submit" data-lang="uk" style="display: none">Вихід</button>
+                </form>
+
+            </div>
+        </div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -109,6 +160,16 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/music.js" asp-append-version="true"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navbarToggler = document.querySelector('.navbar-toggle');
+            var overlayMenu = document.getElementById('overlay-menu');
+
+            navbarToggler.addEventListener('click', function () {
+                overlayMenu.classList.toggle('show');
+            });
+        });
+    </script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

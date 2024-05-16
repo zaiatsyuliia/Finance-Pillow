@@ -70,12 +70,13 @@ public class HomeController : Controller
                 Sum = model.Sum
             };
 
+            Console.WriteLine("Valid" + model.Type + ' ' + model.CategoryId + ' ' + model.Sum);
             await _transactionService.AddTransactionAsync(userId, transactionDto);
 
             return RedirectToAction("Index");
         }
-
-        return View("Index", model);
+        Console.WriteLine("Invalid" + model.Type + ' '+ model.CategoryId + ' ' + model.Sum);
+        return RedirectToAction("Index");
     }
 
     [HttpPost]
@@ -95,6 +96,38 @@ public class HomeController : Controller
             return RedirectToAction(nameof(Login), "Account");
         }
     }
+
+    [HttpGet]
+    public async Task<IActionResult> FilteredHistory(string filterType, DateTime? startDate, DateTime? endDate)
+    {
+        if (!User.Identity.IsAuthenticated)
+        {
+            return RedirectToAction("Login", "Account");
+        }
+
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        List<HistoryDto> filteredHistory = new List<HistoryDto>();
+
+        switch (filterType)
+        {
+            case "expense":
+                filteredHistory = await _budgetService.GetUserExpenseHistoryAsync(userId);
+                break;
+            case "income":
+                filteredHistory = await _budgetService.GetUserIncomeHistoryAsync(userId);
+                break;
+            case "date":
+                filteredHistory = await _budgetService.GetUserHistoryTimeAsync(userId, startDate.Value, endDate.Value);
+                break;
+            default:
+                filteredHistory = await _budgetService.GetUserHistoryAsync(userId);
+                break;
+        }
+
+        return PartialView("_HistoryPartial", filteredHistory);
+    }
+
 
     [HttpGet]
     public async Task<IActionResult> Expenses()
@@ -203,20 +236,6 @@ public class HomeController : Controller
         return RedirectToAction("Login", "Account");
     }
 
-    public async Task<IActionResult> BullsAndCows()
-    {
-        return View();
-    }
-
-    public async Task<IActionResult> Hangman()
-    {
-        return View();
-    }
-    public async Task<IActionResult> TicTacToe()
-    {
-        return View();
-    }
-
     [HttpPost]
     public async Task<IActionResult> Settings(SettingsViewModel model)
     {
@@ -255,8 +274,13 @@ public class HomeController : Controller
             }
         }
         return View(model);
+
     }
 
+    public async Task<IActionResult> Games()
+    {
+        return View();
+    }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
