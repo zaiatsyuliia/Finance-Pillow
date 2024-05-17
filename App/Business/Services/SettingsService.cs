@@ -40,12 +40,12 @@ public class SettingsService
             throw new KeyNotFoundException("User not found.");
         }
 
-        if (user.UserName != dto.UserName)
+        if (!string.IsNullOrEmpty(dto.UserName) && user.UserName != dto.UserName)
         {
             user.UserName = dto.UserName;
         }
 
-        if (user.Email != dto.Email)
+        if (!string.IsNullOrEmpty(dto.UserName) && user.Email != dto.Email)
         {
             var emailChangeResult = await _userManager.SetEmailAsync(user, dto.Email);
             if (!emailChangeResult.Succeeded)

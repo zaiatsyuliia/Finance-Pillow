@@ -55,8 +55,7 @@
               "RelativeToolTip": "CategoryServiceTests.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T22:49:21.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T22:49:21.394Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "..\\Business\\Services\\CategoryService.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAADwvx4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T22:48:00.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-16T22:48:00.819Z"
             },
             {
               "$type": "Document",
@@ -79,7 +77,7 @@
               "RelativeDocumentMoniker": "BudgetServiceTests.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Testing\\BudgetServiceTests.cs",
               "RelativeToolTip": "BudgetServiceTests.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAASwFAAAAAAAAAA",
+              "ViewState": "AQIAAEAAAAAAAAAAAAASwEgAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T22:46:13.618Z",
               "EditorCaption": ""
@@ -94,8 +92,7 @@
               "RelativeToolTip": "TransactionServiceTests.cs",
               "ViewState": "AQIAAFAAAAAAAAAAAAAQwGQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T23:03:39.979Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T23:03:39.979Z"
             },
             {
               "$type": "Document",
@@ -119,8 +116,7 @@
               "RelativeToolTip": "..\\Business\\Services\\BudgetService.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAAUwEsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-11T22:24:13.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-11T22:24:13.344Z"
             }
           ]
         }

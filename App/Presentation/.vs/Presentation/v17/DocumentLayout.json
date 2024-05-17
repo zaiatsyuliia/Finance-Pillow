@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{321BC97F-2FD5-4E3C-AAAF-DB28F4EA5494}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{321BC97F-2FD5-4E3C-AAAF-DB28F4EA5494}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 475,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,27 +47,27 @@
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBIAAAAAAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAowBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T22:34:45.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAwwFQAAAAAAAAA",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAwwF4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T21:12:17.582Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Settings.cshtml",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Settings.cshtml",
@@ -80,13 +80,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "SettingsService.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\SettingsService.cs",
               "RelativeDocumentMoniker": "..\\Business\\Services\\SettingsService.cs",
               "ToolTip": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\SettingsService.cs",
               "RelativeToolTip": "..\\Business\\Services\\SettingsService.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAiwCAAAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAwwEAAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T18:20:29.684Z",
               "EditorCaption": ""
