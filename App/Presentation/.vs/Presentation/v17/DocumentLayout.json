@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\",
+  "WorkspaceRootPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{321BC97F-2FD5-4E3C-AAAF-DB28F4EA5494}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,6 +12,9 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+=======
+      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+>>>>>>> b4af075bd9a6282ce6b7c92043753acb7405aed8
       "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -25,7 +29,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 475,
+<<<<<<< HEAD
           "SelectedChildIndex": 6,
+=======
+          "SelectedChildIndex": 3,
+>>>>>>> b4af075bd9a6282ce6b7c92043753acb7405aed8
           "Children": [
             {
               "$type": "Bookmark",
@@ -41,6 +49,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\AccountController.cs",
@@ -68,15 +77,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+=======
+              "DocumentIndex": 0,
+>>>>>>> b4af075bd9a6282ce6b7c92043753acb7405aed8
               "Title": "Settings.cshtml",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Settings.cshtml",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
+              "ToolTip": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
               "RelativeToolTip": "Views\\Home\\Settings.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-16T20:11:07.206Z",
               "EditorCaption": ""
+<<<<<<< HEAD
             },
             {
               "$type": "Document",
@@ -90,6 +103,8 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T18:20:29.684Z",
               "EditorCaption": ""
+=======
+>>>>>>> b4af075bd9a6282ce6b7c92043753acb7405aed8
             }
           ]
         }

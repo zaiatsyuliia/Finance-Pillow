@@ -1991,19 +1991,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bluel\\.nuget\\packages\\": {}
+    "C:\\Users\\HP ENVY x360\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj",
-      "packagesPath": "C:\\Users\\bluel\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\FinancePillow\\App\\Business\\obj\\",
+      "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\HP ENVY x360\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Business\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bluel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP ENVY x360\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2017,8 +2017,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj": {
-              "projectPath": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj"
+            "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj"
             }
           }
         }

@@ -14,14 +14,22 @@
                 }
             </select>
 
-            <button onclick="startBnC()" data-lang="en">Start Game</button>
-            <button onclick="startBnCuk()" data-lang="uk" style="display: none;">Почати гру</button>
+            <div class="form-buttons">
+                <button onclick="startBnC()" class="add-transaction-button" data-lang="en">Start Game</button>
+                <button onclick="startBnCuk()" class="add-transaction-button" data-lang="uk" style="display: none;">Почати гру</button>
+            </div>
 
             <div id="gameArea" style="display: none;">
                 <input type="text" id="userGuess" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
 
-                <button onclick="checkGuess()" data-lang="en">Check</button>
-                <button onclick="checkGuessuk()" data-lang="uk" style="display: none;">Перевірити</button>
+                <div class="form-buttons">
+                    <button onclick="checkGuess()" class="add-transaction-button" data-lang="en">Check</button>
+                    <button onclick="checkGuessuk()" class="add-transaction-button" data-lang="uk" style="display: none;">Перевірити</button>
+                </div>
+
+                <div id="winningMessage" style="display: none;">
+                    <p id="winningMessageText"></p>
+                </div>
 
                 <p data-lang="en">Attempts left:</p>
                 <p data-lang="uk" style="display: none;">Спроб залишилось:</p>
@@ -68,10 +76,6 @@
             <p data-lang="uk" style="display: none;">Щасти!</p>
         </div>
     </div>
-
-    <div id="winningMessage" style="display: none;">
-        <p id="winningMessageText"></p>
-    </div>
 </div>
 
 <div class="home-div">
@@ -107,8 +111,10 @@
                 <p class="attemptsuk" data-lang="uk" style="display: none;">Спроби: 0/6</p>
             </div>
 
-            <button class="restartButton" data-lang="en" onclick="restartHangman()">Start new game</button>
-            <button class="restartButton" data-lang="uk" style="display: none;" onclick="restartHangman()">Розпочати нову гру</button>
+            <div class="form-buttons">
+                <button class="restartButton" class="add-transaction-button" data-lang="en" onclick="restartHangman()">Start new game</button>
+                <button class="restartButton" class="add-transaction-button" data-lang="uk" style="display: none;" onclick="restartHangman()">Розпочати нову гру</button>
+            </div>
         </div>
 
         <div class="rules">
@@ -155,17 +161,19 @@
                 <button onclick="startGame('bot')">Грати проти бота</button>
                 <button onclick="startGame('player')">Грати проти гравця</button>
             </div>
-
-            <div class="board" id="board" hidden>
-                <div class="cell" onclick="makeMove(0)"></div>
-                <div class="cell" onclick="makeMove(1)"></div>
-                <div class="cell" onclick="makeMove(2)"></div>
-                <div class="cell" onclick="makeMove(3)"></div>
-                <div class="cell" onclick="makeMove(4)"></div>
-                <div class="cell" onclick="makeMove(5)"></div>
-                <div class="cell" onclick="makeMove(6)"></div>
-                <div class="cell" onclick="makeMove(7)"></div>
-                <div class="cell" onclick="makeMove(8)"></div>
+            <br /><br />
+            <div class="form-buttons">
+                <div class="board" id="board" hidden>
+                    <div class="cell" onclick="makeMove(0)"></div>
+                    <div class="cell" onclick="makeMove(1)"></div>
+                    <div class="cell" onclick="makeMove(2)"></div>
+                    <div class="cell" onclick="makeMove(3)"></div>
+                    <div class="cell" onclick="makeMove(4)"></div>
+                    <div class="cell" onclick="makeMove(5)"></div>
+                    <div class="cell" onclick="makeMove(6)"></div>
+                    <div class="cell" onclick="makeMove(7)"></div>
+                    <div class="cell" onclick="makeMove(8)"></div>
+                </div>
             </div>
 
             <div data-lang="en" class="message"></div>

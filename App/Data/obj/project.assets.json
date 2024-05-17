@@ -2468,19 +2468,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bluel\\.nuget\\packages\\": {}
+    "C:\\Users\\HP ENVY x360\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj",
-      "packagesPath": "C:\\Users\\bluel\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\FinancePillow\\App\\Data\\obj\\",
+      "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj",
+      "packagesPath": "C:\\Users\\HP ENVY x360\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\bluel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\HP ENVY x360\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2563,5 +2563,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Npgsql' 8.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-x9vc-6hfv-hg8c",
+      "libraryId": "Npgsql",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
