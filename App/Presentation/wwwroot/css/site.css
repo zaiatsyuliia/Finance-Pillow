@@ -27,6 +27,20 @@ body {
         font-weight: bold;
     }
 
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.add-transaction-button {
+    margin: 5px;
+}
 button {
     padding: 12px;
     border: none;
