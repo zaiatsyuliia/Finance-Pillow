@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj": {}
+    "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj": {
+    "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj",
+        "projectUniqueName": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\HP ENVY x360\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Data\\obj\\",
+        "projectPath": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\bluel\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\FinancePillow\\App\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP ENVY x360\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bluel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -47,29 +47,29 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Npgsql": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.3, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

@@ -1,0 +1,244 @@
+﻿/*BLUE*/
+.color-blue label {
+    color: #316DCC;
+}
+
+.color-blue span,
+.color-blue .navbar-brand,
+.color-blue a{
+    color: #5485D5;
+}
+
+.color-blue button,
+.color-blue th {
+    background-color: #316DCC;
+}
+
+    .color-blue button:hover {
+        background-color: #5485D5;
+    }
+
+.color-blue .home-div,
+.color-blue h1 {
+    border-bottom: 3px solid #316DCC;
+}
+
+.color-blue select,
+.color-blue input {
+    border: 2px solid #316DCC;
+}
+
+    .color-blue select:focus,
+    .color-blue input:focus {
+        border-color: #5485D5;
+    }
+
+/*RED*/
+.color-red label {
+    color: #C94A4A;
+}
+
+.color-red span,
+.color-red .navbar-brand,
+.color-red a:hover{
+    color: #C94A4A;
+}
+
+.color-red button,
+.color-red th {
+    background-color: #B63636;
+}
+
+    .color-red button:hover {
+        background-color: #C94A4A;
+    }
+
+.color-red .home-div,
+.color-red h1 {
+    border-bottom: 3px solid #B63636;
+}
+
+.color-red select,
+.color-red input {
+    border: 2px solid #B63636;
+}
+
+    .color-red select:focus,
+    .color-red input:focus {
+        border-color: #C94A4A;
+    }
+
+/*YELLOW*/
+.color-yellow label {
+    color: #E8DB23;
+}
+
+.color-yellow span,
+.color-yellow .navbar-brand,
+.color-yellow a:hover{
+    color: #ECE14B;
+}
+
+.color-yellow button,
+.color-yellow th {
+    background-color: #E8DB23;
+}
+
+    .color-yellow button:hover {
+        background-color: #ECE14B;
+    }
+
+.color-yellow .home-div,
+.color-yellow h1 {
+    border-bottom: 3px solid #E8DB23;
+}
+
+.color-yellow select,
+.color-yellow input {
+    border: 2px solid #E8DB23;
+}
+
+    .color-yellow select:focus,
+    .color-yellow input:focus {
+        border-color: #ECE14B;
+    }
+
+/*ORANGE*/
+.color-orange label {
+    color: #E86123;
+}
+
+.color-orange span,
+.color-orange .navbar-brand,
+.color-orange a:hover{
+    color: #EC7E4B;
+}
+
+.color-orange button,
+.color-orange th {
+    background-color: #E86123;
+}
+
+    .color-orange button:hover {
+        background-color: #EC7E4B;
+    }
+
+.color-orange .home-div,
+.color-orange h1 {
+    border-bottom: 3px solid #E86123;
+}
+
+.color-orange select,
+.color-orange input {
+    border: 2px solid #E86123;
+}
+
+    .color-orange select:focus,
+    .color-orange input:focus {
+        border-color: #EC7E4B;
+    }
+
+/*GREEN*/
+.color-green label {
+    color: #2FCF3A;
+}
+
+.color-green span,
+.color-green .navbar-brand,
+.color-green a:hover{
+    color: #50D759;
+}
+
+.color-green button,
+.color-green th {
+    background-color: #2FCF3A;
+}
+
+    .color-green button:hover {
+        background-color: #50D759;
+    }
+
+.color-green .home-div,
+.color-green h1 {
+    border-bottom: 3px solid #2FCF3A;
+}
+
+.color-green select,
+.color-green input {
+    border: 2px solid #2FCF3A;
+}
+
+    .color-green select:focus,
+    .color-green input:focus {
+        border-color: #50D759;
+    }
+
+/*CYAN*/
+.color-cyan label {
+    color: #39A286;
+}
+
+.color-cyan span,
+.color-cyan .navbar-brand,
+.color-cyan a:hover{
+    color: #42BB9B;
+}
+
+.color-cyan button,
+.color-cyan th {
+    background-color: #42BB9B;
+}
+
+    .color-cyan button:hover {
+        background-color: #42BB9B;
+    }
+
+.color-cyan .home-div,
+.color-cyan h1 {
+    border-bottom: 3px solid #39A286;
+}
+
+.color-cyan select,
+.color-cyan input {
+    border: 2px solid #39A286;
+}
+
+    .color-cyan select:focus,
+    .color-cyan input:focus {
+        border-color: #42BB9B;
+    }
+
+/*PURPLE*/
+.color-purple label {
+    color: #5339A2;
+}
+
+.color-purple span,
+.color-purple .navbar-brand,
+.color-purple a:hover{
+    color: #6042BB;
+}
+
+.color-purple button,
+.color-purple th {
+    background-color: #5339A2;
+}
+
+    .color-purple button:hover {
+        background-color: #6042BB;
+    }
+
+.color-purple .home-div,
+.color-purple h1 {
+    border-bottom: 3px solid #5339A2;
+}
+
+.color-purple select,
+.color-purple input {
+    border: 2px solid #5339A2;
+}
+
+    .color-purple select:focus,
+    .color-purple input:focus {
+        border-color: #6042BB;
+    }

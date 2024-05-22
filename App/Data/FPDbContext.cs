@@ -56,7 +56,7 @@ public partial class FPDbContext : IdentityDbContext<ApplicationUser>
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=FinancePillow;User Id=postgres;Password=postgres;");
+        => optionsBuilder.UseNpgsql("Server=fin-pil-db2.postgres.database.azure.com;Port=5432;Database=postgres;User Id=Akinabisu;Password=Final2025!0");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

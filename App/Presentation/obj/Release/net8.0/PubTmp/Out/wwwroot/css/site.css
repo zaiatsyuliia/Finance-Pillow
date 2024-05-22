@@ -1,0 +1,226 @@
+﻿/* General styles */
+html {
+    font-size: 20px;
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    padding-top: 100px;
+    min-height: 100%;
+}
+
+.home-div, .limit-warning {
+    padding: 25px 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .home-div h1 {
+        border-bottom: 3px solid #007BFF;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.add-transaction-button {
+    margin: 5px;
+}
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+    margin: 5px 5px;
+    background-color: #007BFF;
+}
+
+    button:hover {
+        background-color: #58a6ff;
+    }
+
+label, .currency {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+select, input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    transition: 0.3s;
+    border: 2px solid #007BFF;
+}
+
+    select:focus, input:focus {
+        border-color: #58a6ff;
+        outline: none;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 20px;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+.flex-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-div > * {
+    flex: 0 0 48%; /* Adjust width of children to fit two per row */
+}
+
+.navbar-brand {
+    color: #58a6ff;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 25%;
+}
+
+.income, .limit-warning-income {
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+.expense, .limit-warning-expense {
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+#resultsList {
+    margin-top: 20px;
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#resultsList p {
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-bottom: 1px solid #444;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#wordToGuess {
+    width: 50%;
+    font-size: 40px;
+}
+
+#hangmanImage {
+    width: 70%;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 5px;
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+    .cell:hover {
+        background-color: #ddd;
+    }
+
+.message,
+.messageuk {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.navbar-toggle{
+    display: none;
+}
+
+.overlay-menun {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black background */
+    display: none; /* Initially hidden */
+    z-index: 1000; /* Ensure it's above other content */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.overlay-menun.show {
+    display: block; /* Show the overlay menu when toggled */
+}
+
+.overlay-menun ul {
+    list-style-type: none; /* Remove bullets from list */
+    padding: 0;
+    margin: 20% auto; /* Center the menu vertically */
+    text-align: center; /* Center the menu horizontally */
+}
+
+.overlay-menun ul li {
+    margin-bottom: 20px;
+}
+
+.overlay-menun ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: all 0.3s ease; /* Add transition effect for smoother appearance */
+}
+
+.overlay-menun ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+}

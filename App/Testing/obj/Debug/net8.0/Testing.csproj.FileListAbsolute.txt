@@ -1,7 +1,6 @@
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\CoverletSourceRootsMapping_Testing
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\testhost.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\testhost.exe
-D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\Testing.deps.json
@@ -33,7 +32,6 @@ D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\Moq.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\Npgsql.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\NuGet.Frameworks.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\System.Diagnostics.EventLog.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\xunit.abstractions.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\xunit.assert.dll
@@ -150,3 +148,4 @@ D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\System.Security.Cryptogra
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Security.Cryptography.Pkcs.dll
+D:\Projects\FinancePillow\App\Testing\bin\Debug\net8.0\xunit.runner.visualstudio.testadapter.dll

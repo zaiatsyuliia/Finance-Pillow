@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\Presentation.csproj": {}
+    "D:\\Projects\\FinancePillow\\App\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Business\\Business.csproj": {
+    "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Business\\Business.csproj",
+        "projectUniqueName": "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\HP ENVY x360\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Business\\obj\\",
+        "projectPath": "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\bluel\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\FinancePillow\\App\\Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP ENVY x360\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bluel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj"
+              "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj": {
+                "projectPath": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj"
               }
             }
           }
@@ -55,7 +55,7 @@
             },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
@@ -78,17 +78,17 @@
         }
       }
     },
-    "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj": {
+    "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj",
+        "projectUniqueName": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\HP ENVY x360\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP ENVY x360\\Source\\Repos\\Finance-Pillow\\App\\Data\\obj\\",
+        "projectPath": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\bluel\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\FinancePillow\\App\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP ENVY x360\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bluel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,29 +121,29 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Analyzers": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Npgsql": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.3, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
             },
             "StyleCop.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -172,17 +172,17 @@
         }
       }
     },
-    "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\Presentation.csproj": {
+    "D:\\Projects\\FinancePillow\\App\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "D:\\Projects\\FinancePillow\\App\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\HP ENVY x360\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\obj\\",
+        "projectPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\bluel\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HP ENVY x360\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bluel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -196,11 +196,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Business\\Business.csproj"
+              "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj": {
+                "projectPath": "D:\\Projects\\FinancePillow\\App\\Business\\Business.csproj"
               },
-              "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Data\\Data.csproj"
+              "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj": {
+                "projectPath": "D:\\Projects\\FinancePillow\\App\\Data\\Data.csproj"
               }
             }
           }
@@ -222,31 +222,31 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[8.0.5, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
@@ -254,7 +254,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
             }
           },
           "imports": [

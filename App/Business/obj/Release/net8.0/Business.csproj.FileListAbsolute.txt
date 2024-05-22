@@ -1,0 +1,16 @@
+D:\Projects\FinancePillow\App\Business\bin\Release\net8.0\Business.deps.json
+D:\Projects\FinancePillow\App\Business\bin\Release\net8.0\Business.dll
+D:\Projects\FinancePillow\App\Business\bin\Release\net8.0\Business.pdb
+D:\Projects\FinancePillow\App\Business\bin\Release\net8.0\Data.dll
+D:\Projects\FinancePillow\App\Business\bin\Release\net8.0\Data.pdb
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.csproj.AssemblyReference.cache
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.AssemblyInfoInputs.cache
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.AssemblyInfo.cs
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.csproj.CoreCompileInputs.cache
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.sourcelink.json
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.csproj.Up2Date
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.dll
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\refint\Business.dll
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\Business.pdb
+D:\Projects\FinancePillow\App\Business\obj\Release\net8.0\ref\Business.dll

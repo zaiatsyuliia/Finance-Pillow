@@ -1,0 +1,59 @@
+﻿@media screen and (max-width: 1200px) {
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        background-color: #f8f9fa;
+        width: 100%;
+        top: 56px; /* Adjust as needed based on your navbar height */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+        .navbar-nav .nav-item {
+            width: 100%;
+            text-align: center;
+        }
+}
+
+@media screen and (max-width: 800px) {
+    th, td {
+        padding: 8px; /* Further reduce padding for very small screens */
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .rules {
+        font-size: 16px;
+    }
+
+    .flex-div {
+        margin-bottom: 10px; /* Add margin between stacked items */
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    th, td {
+        padding: 6px; /* Further reduce padding for very small screens */
+        font-size: 14px; /* Further reduce font size for very small screens */
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

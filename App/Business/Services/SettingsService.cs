@@ -24,7 +24,6 @@ public class SettingsService
         return new SettingsDto
         {
             UserId = user.Id,
-            UserName = user.UserName,
             Email = user.Email,
             ExpenseLimit = user.ExpenseLimit,
             IncomeLimit = user.IncomeLimit
@@ -38,20 +37,6 @@ public class SettingsService
         if (user == null)
         {
             throw new KeyNotFoundException("User not found.");
-        }
-
-        if (!string.IsNullOrEmpty(dto.UserName) && user.UserName != dto.UserName)
-        {
-            user.UserName = dto.UserName;
-        }
-
-        if (!string.IsNullOrEmpty(dto.UserName) && user.Email != dto.Email)
-        {
-            var emailChangeResult = await _userManager.SetEmailAsync(user, dto.Email);
-            if (!emailChangeResult.Succeeded)
-            {
-                throw new Exception("Failed to update email.");
-            }
         }
 
         if (!string.IsNullOrEmpty(dto.Password) && dto.Password == dto.ConfirmPassword)

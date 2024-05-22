@@ -1,25 +1,32 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\",
+  "WorkspaceRootPath": "D:\\Projects\\FinancePillow\\App\\Presentation\\",
   "Documents": [
     {
-<<<<<<< HEAD
-      "AbsoluteMoniker": "D:0:0:{321BC97F-2FD5-4E3C-AAAF-DB28F4EA5494}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\settingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\expenses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:views\\home\\expenses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-=======
-      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
->>>>>>> b4af075bd9a6282ce6b7c92043753acb7405aed8
-      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:views\\home\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\incomes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:views\\home\\incomes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\views\\home\\games.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:views\\home\\games.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|d:\\projects\\financepillow\\app\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CD31EEB-CDE7-426E-AE69-3C34BB987D87}|Presentation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{321BC97F-2FD5-4E3C-AAAF-DB28F4EA5494}|..\\Business\\Business.csproj|d:\\projects\\financepillow\\app\\business\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD5B147-7DE7-4DE8-B4E8-E1A851080572}|..\\Testing\\Testing.csproj|d:\\projects\\financepillow\\app\\testing\\budgetservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,11 +36,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 475,
-<<<<<<< HEAD
-          "SelectedChildIndex": 6,
-=======
           "SelectedChildIndex": 3,
->>>>>>> b4af075bd9a6282ce6b7c92043753acb7405aed8
           "Children": [
             {
               "$type": "Bookmark",
@@ -49,62 +52,89 @@
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 1,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAowBIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T22:34:45.131Z",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAHUAAAAA0DIzMzP7v34AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-22T12:46:53.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAwwF4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T21:12:17.582Z",
-              "EditorCaption": ""
+              "Title": "Games.cshtml",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Games.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Games.cshtml",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Games.cshtml",
+              "RelativeToolTip": "Views\\Home\\Games.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T14:53:55.116Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-=======
-              "DocumentIndex": 0,
->>>>>>> b4af075bd9a6282ce6b7c92043753acb7405aed8
-              "Title": "Settings.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Settings.cshtml",
-              "ToolTip": "C:\\Users\\HP ENVY x360\\source\\repos\\Finance-Pillow\\App\\Presentation\\Views\\Home\\Settings.cshtml",
-              "RelativeToolTip": "Views\\Home\\Settings.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Title": "Incomes.cshtml",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Incomes.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Incomes.cshtml",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Incomes.cshtml",
+              "RelativeToolTip": "Views\\Home\\Incomes.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-16T20:11:07.206Z",
-              "EditorCaption": ""
-<<<<<<< HEAD
+              "WhenOpened": "2024-05-21T14:53:37.502Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SettingsService.cs",
-              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\SettingsService.cs",
-              "RelativeDocumentMoniker": "..\\Business\\Services\\SettingsService.cs",
-              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\SettingsService.cs",
-              "RelativeToolTip": "..\\Business\\Services\\SettingsService.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwEAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T18:20:29.684Z",
+              "DocumentIndex": 1,
+              "Title": "Expenses.cshtml",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Expenses.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Expenses.cshtml",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Views\\Home\\Expenses.cshtml",
+              "RelativeToolTip": "Views\\Home\\Expenses.cshtml",
+              "ViewState": "AQIAABUAAAAgzczMzMwnwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T14:53:26.411Z",
               "EditorCaption": ""
-=======
->>>>>>> b4af075bd9a6282ce6b7c92043753acb7405aed8
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Presentation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Presentation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T13:18:41.767Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BudgetServiceTests.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Testing\\BudgetServiceTests.cs",
+              "RelativeDocumentMoniker": "..\\Testing\\BudgetServiceTests.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Testing\\BudgetServiceTests.cs",
+              "RelativeToolTip": "..\\Testing\\BudgetServiceTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T13:18:38.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "..\\Business\\Services\\AccountService.cs",
+              "ToolTip": "D:\\Projects\\FinancePillow\\App\\Business\\Services\\AccountService.cs",
+              "RelativeToolTip": "..\\Business\\Services\\AccountService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T13:17:59.237Z"
             }
           ]
         }

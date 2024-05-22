@@ -1,0 +1,39 @@
+﻿/* Light theme styles */
+
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-link,
+p {
+    color: #333;
+}
+
+button {
+    color: #fff;
+}
+
+.home-div {
+    background-color: #fff;
+    color: #333;
+}
+
+select,
+input {
+    background-color: #fff;
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f4f4f4;
+}

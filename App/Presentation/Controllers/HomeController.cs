@@ -11,7 +11,6 @@ namespace Presentation.Controllers;
 
 public class HomeController : Controller
 {
-
     private readonly BudgetService _budgetService;
     private readonly TransactionService _transactionService;
     private readonly CategoryService _categoryService;
@@ -189,7 +188,6 @@ public class HomeController : Controller
         var viewModel = new SettingsViewModel
         {
             UserId = userId,
-            UserName = settingsDto.UserName,
             Email = settingsDto.Email,
             ExpenseLimit = settingsDto.ExpenseLimit,
             IncomeLimit = settingsDto.IncomeLimit
@@ -209,7 +207,6 @@ public class HomeController : Controller
         var userSettingsDto = new SettingsDto
         {
             UserId = userId,
-            UserName = model.UserName,
             Email = model.Email,
             Password = model.NewPassword,
             ConfirmPassword = model.ConfirmPassword,

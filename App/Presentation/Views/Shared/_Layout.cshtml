@@ -125,22 +125,27 @@
                     <source src="" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                <button onclick="togglePlayPause()" class="song-toggle-btn">Play/Pause</button>
+                <button onclick="togglePlayPause()" class="song-toggle-btn">
+                    <img src="/images/play.png" style="width: 30px; height: 30px;">
+                </button>
 
-                <button onclick="changeSong()" class="song-toggle-btn" data-lang="en">Change Song</button>
-                <button onclick="changeSong()" class="song-toggle-btn" data-lang="uk" style="display: none;">Змінити музику</button>
+                <button onclick="changeSong()" class="song-toggle-btn">
+                    <img src="/images/music.png" style="width: 30px; height: 30px;">
+                </button>
 
-                <button class="color-toggle-btn" data-lang="en">Change Color</button>
-                <button class="color-toggle-btn" data-lang="uk" style="display: none;">Змінити колір</button>
+                <button class="color-toggle-btn">
+                    <img src="/images/color.png" style="width: 30px; height: 30px;">
+                </button>
 
-                <button class="theme-toggle-btn" data-lang="en">Change Theme</button>
-                <button class="theme-toggle-btn" data-lang="uk" style="display: none;">Змінити тему</button>
+                <button class="theme-toggle-btn">
+                    <img src="/images/theme.png" style="width: 30px; height: 30px;">
+                </button>
 
                 <form class="logout-form" asp-controller="Account" asp-action="Logout" method="post">
-                    <button type="submit" data-lang="en">Exit</button>
-                    <button type="submit" data-lang="uk" style="display: none">Вихід</button>
+                    <button type="submit">
+                        <img src="/images/exit.png" style="width: 30px; height: 30px;">
+                    </button>
                 </form>
-
             </div>
         </div>
     </header>
