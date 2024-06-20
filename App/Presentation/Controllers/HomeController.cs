@@ -28,6 +28,22 @@ public class HomeController : Controller
 
     [Authorize]
     [HttpGet]
+    public async Task<IActionResult> IndexCopy()
+    {
+        var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get user ID from claims.
+
+        var userHistory = await _budgetService.GetUserExpenseHistoryAsync(userId);
+
+        var model = new CopyViewModel
+        {
+            History = userHistory,
+        };
+
+        return View(model);
+    }
+
+    [Authorize]
+    [HttpGet]
     public async Task<IActionResult> Index()
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Get user ID from claims.
@@ -62,7 +78,8 @@ public class HomeController : Controller
             {
                 Type = model.Type,
                 CategoryId = model.CategoryId,
-                Sum = model.Sum
+                Sum = model.Sum,
+                Details = model.Details,
             };
 
             await _transactionService.AddTransactionAsync(userId, transactionDto);

@@ -26,6 +26,7 @@ public class BudgetService
     public async Task<LimitsDto> GetLimitsAsync(string userId)
     {
         var limits = await _budgetRepository.GetLimitsAsync(userId);
+
         if (limits == null)
             return null;
 
@@ -44,13 +45,15 @@ public class BudgetService
     public async Task<List<HistoryDto>> GetUserHistoryAsync(string userId)
     {
         var histories = await _budgetRepository.GetUserHistoryAsync(userId);
+
         return histories.Select(h => new HistoryDto
         {
             TransactionId = h.TransactionId ?? 0,
             TransactionType = h.TransactionType,
             Category = h.Category,
             Date = h.Time ?? DateTime.MinValue,
-            Sum = h.Sum ?? 0
+            Sum = h.Sum ?? 0,
+            Details = h.Details ?? "",
         }).ToList();
     }
 

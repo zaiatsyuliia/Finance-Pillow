@@ -5,241 +5,240 @@ using Business.DTO;
 using Data.Models;
 using Data.Repositories;
 
-namespace Business.Services
+namespace Business.Services;
+
+public class StatisticsService
 {
-    public class StatisticsService
+    private readonly IStatisticsRepository _statisticsRepository;
+
+    public StatisticsService(IStatisticsRepository statisticsRepository)
     {
-        private readonly IStatisticsRepository _statisticsRepository;
+        _statisticsRepository = statisticsRepository;
+    }
 
-        public StatisticsService(IStatisticsRepository statisticsRepository)
+    public async Task<List<StatisticsDailyDto>> GetExpenseMonthDailyAsync(string userId)
+    {
+        var expenses = await _statisticsRepository.GetExpenseMonthDailyAsync(userId);
+
+        var dtoList = new List<StatisticsDailyDto>();
+        foreach (var expense in expenses)
         {
-            _statisticsRepository = statisticsRepository;
-        }
-
-        public async Task<List<StatisticsDailyDto>> GetExpenseMonthDailyAsync(string userId)
-        {
-            var expenses = await _statisticsRepository.GetExpenseMonthDailyAsync(userId);
-
-            var dtoList = new List<StatisticsDailyDto>();
-            foreach (var expense in expenses)
+            var dto = new StatisticsDailyDto
             {
-                var dto = new StatisticsDailyDto
-                {
-                    Day = expense.Day.HasValue ? expense.Day.Value.Date : DateTime.MinValue,
-                    CategoryName = expense.CategoryName,
-                    TotalSum = expense.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
+                Day = expense.Day.HasValue ? expense.Day.Value.Date : DateTime.MinValue,
+                CategoryName = expense.CategoryName,
+                TotalSum = expense.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
         }
 
-        public async Task<List<StatisticsTotalDto>> GetExpenseMonthTotalAsync(string userId)
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsTotalDto>> GetExpenseMonthTotalAsync(string userId)
+    {
+        var expenses = await _statisticsRepository.GetExpenseMonthTotalAsync(userId);
+
+        var dtoList = new List<StatisticsTotalDto>();
+        foreach (var expense in expenses)
         {
-            var expenses = await _statisticsRepository.GetExpenseMonthTotalAsync(userId);
-
-            var dtoList = new List<StatisticsTotalDto>();
-            foreach (var expense in expenses)
+            var dto = new StatisticsTotalDto
             {
-                var dto = new StatisticsTotalDto
-                {
-                    CategoryName = expense.CategoryName,
-                    TotalSum = expense.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
+                CategoryName = expense.CategoryName,
+                TotalSum = expense.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
         }
 
-        public async Task<List<StatisticsMonthlyDto>> GetExpense6MonthsMonthlyAsync(string userId)
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsMonthlyDto>> GetExpense6MonthsMonthlyAsync(string userId)
+    {
+        var expenses = await _statisticsRepository.GetExpense6MonthsMonthlyAsync(userId);
+
+        var dtoList = new List<StatisticsMonthlyDto>();
+        foreach (var expense in expenses)
         {
-            var expenses = await _statisticsRepository.GetExpense6MonthsMonthlyAsync(userId);
-
-            var dtoList = new List<StatisticsMonthlyDto>();
-            foreach (var expense in expenses)
+            var dto = new StatisticsMonthlyDto
             {
-                var dto = new StatisticsMonthlyDto
-                {
-                    Month = expense.Month.HasValue ? expense.Month.Value.Date : DateTime.MinValue,
-                    CategoryName = expense.CategoryName,
-                    TotalSum = expense.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
+                Month = expense.Month.HasValue ? expense.Month.Value.Date : DateTime.MinValue,
+                CategoryName = expense.CategoryName,
+                TotalSum = expense.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
         }
 
-        public async Task<List<StatisticsTotalDto>> GetExpense6MonthsTotalAsync(string userId)
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsTotalDto>> GetExpense6MonthsTotalAsync(string userId)
+    {
+        var expenses = await _statisticsRepository.GetExpense6MonthsTotalAsync(userId);
+
+        var dtoList = new List<StatisticsTotalDto>();
+        foreach (var expense in expenses)
         {
-            var expenses = await _statisticsRepository.GetExpense6MonthsTotalAsync(userId);
-
-            var dtoList = new List<StatisticsTotalDto>();
-            foreach (var expense in expenses)
+            var dto = new StatisticsTotalDto
             {
-                var dto = new StatisticsTotalDto
-                {
-                    CategoryName = expense.CategoryName,
-                    TotalSum = expense.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
+                CategoryName = expense.CategoryName,
+                TotalSum = expense.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
         }
 
-        public async Task<List<StatisticsMonthlyDto>> GetExpenseYearMonthlyAsync(string userId)
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsMonthlyDto>> GetExpenseYearMonthlyAsync(string userId)
+    {
+        var expenses = await _statisticsRepository.GetExpenseYearMonthlyAsync(userId);
+
+        var dtoList = new List<StatisticsMonthlyDto>();
+        foreach (var expense in expenses)
         {
-            var expenses = await _statisticsRepository.GetExpenseYearMonthlyAsync(userId);
-
-            var dtoList = new List<StatisticsMonthlyDto>();
-            foreach (var expense in expenses)
+            var dto = new StatisticsMonthlyDto
             {
-                var dto = new StatisticsMonthlyDto
-                {
-                    Month = expense.Month.HasValue ? expense.Month.Value.Date : DateTime.MinValue,
-                    CategoryName = expense.CategoryName,
-                    TotalSum = expense.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
-
+                Month = expense.Month.HasValue ? expense.Month.Value.Date : DateTime.MinValue,
+                CategoryName = expense.CategoryName,
+                TotalSum = expense.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
         }
 
-        public async Task<List<StatisticsTotalDto>> GetExpenseYearTotalAsync(string userId)
-        {
-            var expenses = await _statisticsRepository.GetExpenseYearTotalAsync(userId);
-
-            var dtoList = new List<StatisticsTotalDto>();
-            foreach (var expense in expenses)
-            {
-                var dto = new StatisticsTotalDto
-                {
-                    CategoryName = expense.CategoryName,
-                    TotalSum = expense.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
-        }
-
-        public async Task<List<StatisticsDailyDto>> GetIncomeMonthDailyAsync(string userId)
-        {
-            var incomes = await _statisticsRepository.GetIncomeMonthDailyAsync(userId);
-
-            var dtoList = new List<StatisticsDailyDto>();
-            foreach (var income in incomes)
-            {
-                var dto = new StatisticsDailyDto
-                {
-                    Day = income.Day.HasValue ? income.Day.Value.Date : DateTime.MinValue,
-                    CategoryName = income.CategoryName,
-                    TotalSum = income.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
-        }
-
-        public async Task<List<StatisticsTotalDto>> GetIncomeMonthTotalAsync(string userId)
-        {
-            var incomes = await _statisticsRepository.GetIncomeMonthTotalAsync(userId);
-
-            var dtoList = new List<StatisticsTotalDto>();
-            foreach (var income in incomes)
-            {
-                var dto = new StatisticsTotalDto
-                {
-                    CategoryName = income.CategoryName,
-                    TotalSum = income.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
-
-        }
-
-        public async Task<List<StatisticsMonthlyDto>> GetIncome6MonthsMonthlyAsync(string userId)
-        {
-            var incomes = await _statisticsRepository.GetIncome6MonthsMonthlyAsync(userId);
-
-            var dtoList = new List<StatisticsMonthlyDto>();
-            foreach (var income in incomes)
-            {
-                var dto = new StatisticsMonthlyDto
-                {
-                    Month = income.Month.HasValue ? income.Month.Value.Date : DateTime.MinValue,
-                    CategoryName = income.CategoryName,
-                    TotalSum = income.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
-        }
-
-        public async Task<List<StatisticsTotalDto>> GetIncome6MonthsTotalAsync(string userId)
-        {
-            var incomes = await _statisticsRepository.GetIncome6MonthsTotalAsync(userId);
-
-            var dtoList = new List<StatisticsTotalDto>();
-            foreach (var income in incomes)
-            {
-                var dto = new StatisticsTotalDto
-                {
-                    CategoryName = income.CategoryName,
-                    TotalSum = income.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
-        }
-
-        public async Task<List<StatisticsMonthlyDto>> GetIncomeYearMonthlyAsync(string userId)
-        {
-            var incomes = await _statisticsRepository.GetIncomeYearMonthlyAsync(userId);
-
-            var dtoList = new List<StatisticsMonthlyDto>();
-            foreach (var income in incomes)
-            {
-                var dto = new StatisticsMonthlyDto
-                {
-                    Month = income.Month.HasValue ? income.Month.Value.Date : DateTime.MinValue,
-                    CategoryName = income.CategoryName,
-                    TotalSum = income.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
-        }
-
-        public async Task<List<StatisticsTotalDto>> GetIncomeYearTotalAsync(string userId)
-        {
-            var incomes = await _statisticsRepository.GetIncomeYearTotalAsync(userId);
-
-            var dtoList = new List<StatisticsTotalDto>();
-            foreach (var income in incomes)
-            {
-                var dto = new StatisticsTotalDto
-                {
-                    CategoryName = income.CategoryName,
-                    TotalSum = income.TotalSum ?? 0
-                };
-                dtoList.Add(dto);
-            }
-
-            return dtoList;
-        }
-
+        return dtoList;
 
     }
+
+    public async Task<List<StatisticsTotalDto>> GetExpenseYearTotalAsync(string userId)
+    {
+        var expenses = await _statisticsRepository.GetExpenseYearTotalAsync(userId);
+
+        var dtoList = new List<StatisticsTotalDto>();
+        foreach (var expense in expenses)
+        {
+            var dto = new StatisticsTotalDto
+            {
+                CategoryName = expense.CategoryName,
+                TotalSum = expense.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
+        }
+
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsDailyDto>> GetIncomeMonthDailyAsync(string userId)
+    {
+        var incomes = await _statisticsRepository.GetIncomeMonthDailyAsync(userId);
+
+        var dtoList = new List<StatisticsDailyDto>();
+        foreach (var income in incomes)
+        {
+            var dto = new StatisticsDailyDto
+            {
+                Day = income.Day.HasValue ? income.Day.Value.Date : DateTime.MinValue,
+                CategoryName = income.CategoryName,
+                TotalSum = income.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
+        }
+
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsTotalDto>> GetIncomeMonthTotalAsync(string userId)
+    {
+        var incomes = await _statisticsRepository.GetIncomeMonthTotalAsync(userId);
+
+        var dtoList = new List<StatisticsTotalDto>();
+        foreach (var income in incomes)
+        {
+            var dto = new StatisticsTotalDto
+            {
+                CategoryName = income.CategoryName,
+                TotalSum = income.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
+        }
+
+        return dtoList;
+
+    }
+
+    public async Task<List<StatisticsMonthlyDto>> GetIncome6MonthsMonthlyAsync(string userId)
+    {
+        var incomes = await _statisticsRepository.GetIncome6MonthsMonthlyAsync(userId);
+
+        var dtoList = new List<StatisticsMonthlyDto>();
+        foreach (var income in incomes)
+        {
+            var dto = new StatisticsMonthlyDto
+            {
+                Month = income.Month.HasValue ? income.Month.Value.Date : DateTime.MinValue,
+                CategoryName = income.CategoryName,
+                TotalSum = income.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
+        }
+
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsTotalDto>> GetIncome6MonthsTotalAsync(string userId)
+    {
+        var incomes = await _statisticsRepository.GetIncome6MonthsTotalAsync(userId);
+
+        var dtoList = new List<StatisticsTotalDto>();
+        foreach (var income in incomes)
+        {
+            var dto = new StatisticsTotalDto
+            {
+                CategoryName = income.CategoryName,
+                TotalSum = income.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
+        }
+
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsMonthlyDto>> GetIncomeYearMonthlyAsync(string userId)
+    {
+        var incomes = await _statisticsRepository.GetIncomeYearMonthlyAsync(userId);
+
+        var dtoList = new List<StatisticsMonthlyDto>();
+        foreach (var income in incomes)
+        {
+            var dto = new StatisticsMonthlyDto
+            {
+                Month = income.Month.HasValue ? income.Month.Value.Date : DateTime.MinValue,
+                CategoryName = income.CategoryName,
+                TotalSum = income.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
+        }
+
+        return dtoList;
+    }
+
+    public async Task<List<StatisticsTotalDto>> GetIncomeYearTotalAsync(string userId)
+    {
+        var incomes = await _statisticsRepository.GetIncomeYearTotalAsync(userId);
+
+        var dtoList = new List<StatisticsTotalDto>();
+        foreach (var income in incomes)
+        {
+            var dto = new StatisticsTotalDto
+            {
+                CategoryName = income.CategoryName,
+                TotalSum = income.TotalSum ?? 0
+            };
+            dtoList.Add(dto);
+        }
+
+        return dtoList;
+    }
+
+
 }

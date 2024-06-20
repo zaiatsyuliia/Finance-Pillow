@@ -16,6 +16,8 @@ public partial class Income
 
     public double Sum { get; set; }
 
+    public string? Details { get; set; }
+
     public virtual IncomeCategory? IncomeCategory { get; set; }
 
     public virtual ApplicationUser User { get; set; }

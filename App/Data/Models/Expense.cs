@@ -16,6 +16,8 @@ public partial class Expense
 
     public double Sum { get; set; }
 
+    public string? Details { get; set; }
+
     public virtual ExpenseCategory? ExpenseCategory { get; set; }
 
     public virtual ApplicationUser User { get; set; }

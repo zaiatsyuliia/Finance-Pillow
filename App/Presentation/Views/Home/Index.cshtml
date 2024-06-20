@@ -1,6 +1,10 @@
 ﻿@model Presentation.Models.BudgetViewModel
 @using Business.DTO
 
+@{
+    ViewData["Title"] = "Home";
+}
+
 <div class="home-div">
     <h1 data-lang="en">Budget: @Model.Budget</h1>
     <h1 data-lang="uk" style="display: none;">Бюджет: @Model.Budget</h1>
@@ -55,6 +59,11 @@
             <label for="sum" data-lang="uk" style="display: none;">Сума:</label>
             <input type="number" name="Sum" id="sum" step="1" required>
         </div>
+        <div>
+            <label for="details" data-lang="en">Details:</label>
+            <label for="details" data-lang="uk" style="display: none;">Деталі:</label>
+            <input type="text" name="Details" id="details">
+        </div>
         <div class="form-buttons">
             <button type="submit" class="add-transaction-button" data-lang="en">Add Transaction</button>
             <button type="submit" class="add-transaction-button" data-lang="uk" style="display: none;">Додати транзакцію</button>
@@ -82,6 +91,8 @@
             <th data-lang="uk" style="display: none;">Сума</th>
             <th data-lang="en">Time</th>
             <th data-lang="uk" style="display: none;">Час</th>
+            <th data-lang="en">Details</th>
+            <th data-lang="uk" style="display: none;">Деталі</th>
             <th></th>
         </tr>
         @foreach (var transaction in Model.History)
@@ -91,6 +102,7 @@
                 <td>@transaction.Category</td>
                 <td>@transaction.Sum</td>
                 <td>@transaction.Date.ToString("dd.MM.yyyy")</td>
+                <td>@transaction.Details</td>
                 <td>
                     <form asp-action="DeleteTransaction" asp-controller="Home" method="post">
                         <input type="hidden" name="type" value="@transaction.TransactionType" />

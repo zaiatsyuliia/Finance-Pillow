@@ -22,10 +22,10 @@ public class TransactionService
         switch (dto.Type)
         {
             case TransactionType.Expense:
-                await _transactionRepository.AddExpenseAsync(userId, dto.CategoryId, currentTime, dto.Sum);
+                await _transactionRepository.AddExpenseAsync(userId, dto.CategoryId, currentTime, dto.Sum, dto.Details);
                 break;
             case TransactionType.Income:
-                await _transactionRepository.AddIncomeAsync(userId, dto.CategoryId, currentTime, dto.Sum);
+                await _transactionRepository.AddIncomeAsync(userId, dto.CategoryId, currentTime, dto.Sum, dto.Details);
                 break;
             default:
                 throw new ArgumentException("Invalid transaction type specified.");

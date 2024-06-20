@@ -7,4 +7,5 @@ public class HistoryDto
     public string Category { get; set; }
     public DateTime Date { get; set; }
     public double Sum { get; set; }
+    public string Details { get; set; }
 }

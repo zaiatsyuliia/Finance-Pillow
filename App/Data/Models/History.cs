@@ -16,4 +16,6 @@ public partial class History
     public string? Category { get; set; }
 
     public double? Sum { get; set; }
+
+    public string? Details { get; set; }
 }

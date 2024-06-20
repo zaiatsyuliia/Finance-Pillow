@@ -56,7 +56,7 @@ public partial class FPDbContext : IdentityDbContext<ApplicationUser>
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Server=fin-pil-db2.postgres.database.azure.com;Port=5432;Database=postgres;User Id=Akinabisu;Password=Final2025!0");
+        => optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=FinancePillow;User Id=postgres;Password=postgres");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -82,6 +82,7 @@ public partial class FPDbContext : IdentityDbContext<ApplicationUser>
             entity.Property(e => e.ExpenseId).HasColumnName("expense_id");
             entity.Property(e => e.ExpenseCategoryId).HasColumnName("expense_category_id");
             entity.Property(e => e.Sum).HasColumnName("sum");
+            entity.Property(e => e.Details).HasColumnName("details");
             entity.Property(e => e.Time)
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("time");
@@ -212,6 +213,7 @@ public partial class FPDbContext : IdentityDbContext<ApplicationUser>
             entity.Property(e => e.Time)
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("time");
+            entity.Property(e => e.Details).HasColumnName("details");
             entity.Property(e => e.TransactionId).HasColumnName("transaction_id");
             entity.Property(e => e.TransactionType).HasColumnName("transaction_type");
             entity.Property(e => e.UserId).HasColumnName("user_id");
@@ -226,6 +228,7 @@ public partial class FPDbContext : IdentityDbContext<ApplicationUser>
             entity.Property(e => e.IncomeId).HasColumnName("income_id");
             entity.Property(e => e.IncomeCategoryId).HasColumnName("income_category_id");
             entity.Property(e => e.Sum).HasColumnName("sum");
+            entity.Property(e => e.Details).HasColumnName("details");
             entity.Property(e => e.Time)
                 .HasColumnType("timestamp without time zone")
                 .HasColumnName("time");
